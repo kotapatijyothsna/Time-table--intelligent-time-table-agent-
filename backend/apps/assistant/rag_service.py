@@ -1,6 +1,6 @@
 """
-Smart Campus - Retrieval-Augmented Generation (RAG) Service for AIML Timetable
-Powered by Groq LLM (e.g. LLaMA-3.3-70B) & Structured Academic Database Retrieval.
+Smart Campus - Retrieval-Augmented Generation (RAG) Service for Academic Timetable
+Powered by Groq LLM (e.g. Qwen / LLaMA) & Structured Academic Database Retrieval.
 """
 
 import os
@@ -12,8 +12,14 @@ from apps.faculty.models import Faculty
 from apps.resources.models import Resource
 from apps.academics.models import AcademicSection, Subject
 from apps.timetables.models import TimetableVersion, TimetableEntry, ScheduleException, ClassSwap, TimetableClash
-from apps.availability.services import AvailabilityService
+from apps.availability.services import AvailabilityService, PERIODS, DAY_NAMES
 from apps.scheduling.services import SchedulingService
+from apps.assistant.services import (
+    parse_time_slot_and_period,
+    find_faculty_in_prompt,
+    find_section_in_prompt,
+    find_subject_in_prompt
+)
 
 class TimetableRAGService:
     @classmethod
@@ -26,94 +32,72 @@ class TimetableRAGService:
         today = datetime.date.today()
         target_date = today
 
-        # Parse Day of week
-        day_names = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
+        # 1. Parse Day of week
+        day_names_list = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
         matched_day_idx = None
-        for idx, d_name in enumerate(day_names):
+        for idx, d_name in enumerate(day_names_list):
             if d_name in prompt_lower:
                 days_ahead = (idx - today.weekday()) % 7
                 target_date = today + datetime.timedelta(days=days_ahead)
                 matched_day_idx = idx
                 break
 
-        # Parse Period or Time
-        period_match = re.search(r'\bperiod\s*([1-8])\b', prompt_lower)
-        start_t = datetime.time(10, 10)
-        end_t = datetime.time(11, 0)
-        if period_match:
-            p_num = int(period_match.group(1))
-            from apps.availability.services import PERIODS
-            if p_num in PERIODS:
-                start_t = PERIODS[p_num]['start']
-                end_t = PERIODS[p_num]['end']
-        elif re.search(r'\b(1[0-2]|0?[1-9]|1[3-9]|2[0-3])(?::([0-5][0-9]))?\s*(am|pm)\b|\b([0-1]?[0-9]|2[0-3]):([0-5][0-9])\b|\bat\s+([0-1]?[0-9]|2[0-3])\b', prompt_lower):
-            time_match = re.search(r'\b(1[0-2]|0?[1-9]|1[3-9]|2[0-3])(?::([0-5][0-9]))?\s*(am|pm)\b|\b([0-1]?[0-9]|2[0-3]):([0-5][0-9])\b|\bat\s+([0-1]?[0-9]|2[0-3])\b', prompt_lower)
-            try:
-                hr = None
-                mn = 0
-                if time_match.group(1):
-                    hr = int(time_match.group(1))
-                    mn = int(time_match.group(2) or 0)
-                    ampm = time_match.group(3)
-                    if ampm == 'pm' and hr < 12:
-                        hr += 12
-                    elif ampm == 'am' and hr == 12:
-                        hr = 0
-                elif time_match.group(4):
-                    hr = int(time_match.group(4))
-                    mn = int(time_match.group(5) or 0)
-                elif time_match.group(6):
-                    hr = int(time_match.group(6))
-                    if hr in [1, 2, 3, 4]:
-                        hr += 12
-                if hr is not None and 0 <= hr <= 23:
-                    start_t = datetime.time(hr, mn)
-                    end_min = hr * 60 + mn + 50
-                    end_t = datetime.time(min(end_min // 60, 23), end_min % 60)
-            except Exception:
-                pass
+        # 2. Parse Period & Time
+        start_t, end_t, period_num, slot_label = parse_time_slot_and_period(prompt_lower)
 
         version = AvailabilityService.get_active_version()
         retrieved_documents = []
 
-        # 1. Check Faculty Match
-        fac_candidates = []
-        for f in Faculty.objects.filter(is_active=True):
-            f_tokens = [tok.lower() for tok in re.findall(r'[a-zA-Z]{3,}', f.full_name) if tok.lower() not in ["prof", "assistant", "associate", "dr.", "mr.", "ms."]]
-            score = sum(1 for tok in f_tokens if tok in prompt_lower)
-            if score > 0 or (f.faculty_code and f.faculty_code.lower() in prompt_lower):
-                fac_candidates.append((score, f))
+        # 3. Check Faculty Match (Fuzzy & Substring)
+        fac_target, fac_score = find_faculty_in_prompt(prompt_lower)
+        if fac_target and fac_score >= 20:
+            eval_res = AvailabilityService.evaluate_faculty_status(fac_target, target_date, start_t, end_t)
 
-        fac_candidates.sort(key=lambda x: x[0], reverse=True)
-        if fac_candidates:
-            target_faculty = fac_candidates[0][1]
-            eval_res = AvailabilityService.evaluate_faculty_status(target_faculty, target_date, start_t, end_t)
-            
-            # Fetch faculty weekly schedule
-            faculty_entries = TimetableEntry.objects.filter(
+            # Fetch today's schedule
+            day_idx = target_date.weekday()
+            today_entries = TimetableEntry.objects.filter(
                 timetable_version=version,
-                faculty=target_faculty,
+                faculty=fac_target,
+                day_of_week=day_idx,
                 is_active=True
-            ).select_related('section', 'subject', 'resource').order_by('day_of_week', 'start_time')[:8]
+            ).select_related('section', 'subject', 'resource').order_by('start_time')
 
-            schedule_summary = []
-            for fe in faculty_entries:
-                schedule_summary.append(
-                    f"Day {day_names[fe.day_of_week].capitalize()} {fe.start_time.strftime('%H:%M')}-{fe.end_time.strftime('%H:%M')}: {fe.subject.name} for {fe.section.full_name} in Room {fe.resource.code if fe.resource else 'Unassigned'}"
+            today_classes = []
+            for te in today_entries:
+                r_code = te.resource.code if te.resource else "Unassigned"
+                today_classes.append(
+                    f"{te.start_time.strftime('%H:%M')}-{te.end_time.strftime('%H:%M')}: {te.subject.name} for {te.section.full_name} in Room {r_code}"
+                )
+
+            # Fetch weekly sample schedule
+            weekly_entries = TimetableEntry.objects.filter(
+                timetable_version=version,
+                faculty=fac_target,
+                is_active=True
+            ).select_related('section', 'subject', 'resource').order_by('day_of_week', 'start_time')[:10]
+
+            weekly_summary = []
+            for we in weekly_entries:
+                r_code = we.resource.code if we.resource else "Unassigned"
+                d_name = day_names_list[we.day_of_week].capitalize() if we.day_of_week < len(day_names_list) else 'Day'
+                weekly_summary.append(
+                    f"{d_name} {we.start_time.strftime('%H:%M')}-{we.end_time.strftime('%H:%M')}: {we.subject.name} ({we.section.full_name}) in Room {r_code}"
                 )
 
             retrieved_documents.append({
                 "type": "FACULTY_PROFILE_AND_SCHEDULE",
-                "entity": target_faculty.full_name,
-                "faculty_code": target_faculty.faculty_code,
-                "evaluated_slot": f"{target_date.strftime('%Y-%m-%d')} ({target_date.strftime('%A')}) {start_t.strftime('%H:%M')}-{end_t.strftime('%H:%M')}",
+                "entity": fac_target.full_name,
+                "faculty_code": fac_target.faculty_code,
+                "department": fac_target.department.code if fac_target.department else "AIML",
+                "evaluated_slot": f"{target_date.strftime('%Y-%m-%d')} ({target_date.strftime('%A')}) {slot_label}",
                 "status": eval_res["status"],
                 "reason": eval_res["reason"],
                 "evidence": eval_res.get("evidence"),
-                "sample_weekly_classes": schedule_summary
+                "classes_on_target_day": today_classes,
+                "weekly_schedule_sample": weekly_summary
             })
 
-        # 2. Check Room / Lab Match
+        # 4. Check Room / Lab Match
         room_match = re.search(r'\b(?:room|lab)\s*([a-zA-Z0-9\-]+)\b', prompt_lower)
         if room_match:
             rcode = room_match.group(1).upper()
@@ -128,8 +112,10 @@ class TimetableRAGService:
 
                 room_sched = []
                 for re_entry in room_entries:
+                    d_name = day_names_list[re_entry.day_of_week].capitalize() if re_entry.day_of_week < len(day_names_list) else 'Day'
+                    fac_n = re_entry.faculty.full_name if re_entry.faculty else "Unassigned"
                     room_sched.append(
-                        f"Day {day_names[re_entry.day_of_week].capitalize()} {re_entry.start_time.strftime('%H:%M')}-{re_entry.end_time.strftime('%H:%M')}: {re_entry.subject.name} ({re_entry.section.full_name})"
+                        f"{d_name} {re_entry.start_time.strftime('%H:%M')}-{re_entry.end_time.strftime('%H:%M')}: {re_entry.subject.name} ({re_entry.section.full_name}) | Faculty: {fac_n}"
                     )
 
                 retrieved_documents.append({
@@ -138,69 +124,83 @@ class TimetableRAGService:
                     "name": res_obj.name,
                     "capacity": res_obj.capacity,
                     "is_shared": res_obj.is_shared,
-                    "evaluated_slot": f"{target_date.strftime('%Y-%m-%d')} ({target_date.strftime('%A')}) {start_t.strftime('%H:%M')}-{end_t.strftime('%H:%M')}",
+                    "evaluated_slot": f"{target_date.strftime('%Y-%m-%d')} ({target_date.strftime('%A')}) {slot_label}",
                     "status": eval_res["status"],
                     "reason": eval_res["reason"],
                     "evidence": eval_res.get("evidence"),
                     "weekly_occupancy": room_sched
                 })
 
-        # 3. Check Section Match (e.g. "II ACSE-A", "IV CS", "III DS-B", "II CSBS", "II IOT")
-        sec_obj = None
-        # Try ACSE section match
-        sec_match = re.search(r'\b(ii|iii|iv)\s*acse-?([a-l])\b', prompt_lower)
-        if sec_match:
-            sec_full = f"{sec_match.group(1).upper()} ACSE-{sec_match.group(2).upper()}"
-            sec_obj = AcademicSection.objects.filter(full_name=sec_full).first()
-        # Try other branch matches: CS, DS, CSBS, IOT
-        if not sec_obj:
-            branch_match = re.search(r'\b(ii|iii|iv)\s*(cs|ds|csbs|iot|mtech)\b', prompt_lower)
-            if branch_match:
-                yr = branch_match.group(1).upper()
-                br = branch_match.group(2).upper()
-                sec_obj = AcademicSection.objects.filter(full_name__istartswith=f"{yr} {br}").first()
-        # Try generic section name search
-        if not sec_obj:
-            for sec_candidate in AcademicSection.objects.all():
-                if sec_candidate.full_name.lower().replace('-', ' ').replace('  ', ' ') in prompt_lower:
-                    sec_obj = sec_candidate
-                    break
+        # 5. Check Section Match (e.g. 'II AIML-A', 'IV CS', 'III DS')
+        sec_obj = find_section_in_prompt(prompt_lower)
         if sec_obj:
-                s_entries = TimetableEntry.objects.filter(
-                    timetable_version=version,
-                    section=sec_obj,
-                    is_active=True
-                ).select_related('subject', 'faculty', 'resource').order_by('day_of_week', 'start_time')
+            day_filter = matched_day_idx if matched_day_idx is not None else target_date.weekday()
+            s_entries = TimetableEntry.objects.filter(
+                timetable_version=version,
+                section=sec_obj,
+                day_of_week=day_filter,
+                is_active=True
+            ).select_related('subject', 'faculty', 'resource').order_by('start_time')
 
-                day_filter = matched_day_idx if matched_day_idx is not None else target_date.weekday()
-                day_classes = [
-                    f"{e.start_time.strftime('%H:%M')}-{e.end_time.strftime('%H:%M')}: {e.subject.name} | Faculty: {e.faculty.full_name if e.faculty else 'Department Faculty'} | Room: {e.resource.code if e.resource else 'Unassigned'}"
-                    for e in s_entries.filter(day_of_week=day_filter)
+            day_classes = [
+                f"{e.start_time.strftime('%H:%M')}-{e.end_time.strftime('%H:%M')}: {e.subject.name} | Faculty: {e.faculty.full_name if e.faculty else 'Department Faculty'} | Room: {e.resource.code if e.resource else 'Unassigned'}"
+                for e in s_entries
+            ]
+
+            retrieved_documents.append({
+                "type": "SECTION_SCHEDULE",
+                "section": sec_obj.full_name,
+                "department": sec_obj.department.code if sec_obj.department else "AIML",
+                "day": day_names_list[day_filter].capitalize(),
+                "classes": day_classes
+            })
+
+        # 6. Check Subject Match (e.g. 'Deep Learning', 'Text Mining')
+        sub_obj = find_subject_in_prompt(prompt_lower)
+        if sub_obj:
+            sub_entries = TimetableEntry.objects.filter(
+                timetable_version=version,
+                subject=sub_obj,
+                faculty__isnull=False,
+                is_active=True
+            ).select_related('faculty', 'section', 'resource').order_by('section__full_name')
+
+            teacher_map = {}
+            for se in sub_entries:
+                fn = se.faculty.full_name
+                sec_n = se.section.full_name
+                if fn not in teacher_map:
+                    teacher_map[fn] = set()
+                teacher_map[fn].add(sec_n)
+
+            retrieved_documents.append({
+                "type": "SUBJECT_FACULTY_ALLOCATION",
+                "subject_name": sub_obj.name,
+                "subject_code": sub_obj.code,
+                "allocated_teachers": [
+                    {"faculty": fn, "sections": sorted(list(secs))}
+                    for fn, secs in teacher_map.items()
                 ]
+            })
 
-                retrieved_documents.append({
-                    "type": "SECTION_SCHEDULE",
-                    "section": sec_obj.full_name,
-                    "day": day_names[day_filter].capitalize(),
-                    "classes": day_classes
-                })
-
-        # 4. Check General Classroom Recommendations
+        # 7. Check Room / Lab Vacancy Recommendations
         is_lab = bool(re.search(r'\b(?:labs?|laborator(?:y|ies))\b', prompt_lower))
         is_room = bool(re.search(r'\b(?:classrooms?|rooms?)\b', prompt_lower)) or "free room" in prompt_lower or "available room" in prompt_lower
         if is_lab or is_room:
             res_type = 'LABORATORY' if is_lab else 'CLASSROOM'
-            recs = SchedulingService.recommend_classrooms(target_date, start_t, end_t, min_capacity=30, resource_type=res_type)
+            cap_match = re.search(r'\b(?:for\s+)?(\d{2,3})\s*(?:students?|seats?|capacity)?\b', prompt_lower)
+            min_cap = int(cap_match.group(1)) if cap_match and int(cap_match.group(1)) <= 150 else 30
+            recs = SchedulingService.recommend_classrooms(target_date, start_t, end_t, min_capacity=min_cap, resource_type=res_type)
             retrieved_documents.append({
                 "type": "AVAILABLE_RESOURCES_LIST",
                 "resource_type": res_type,
-                "slot": f"{target_date.strftime('%Y-%m-%d')} {start_t.strftime('%H:%M')}-{end_t.strftime('%H:%M')}",
+                "slot": f"{target_date.strftime('%Y-%m-%d')} {slot_label}",
+                "min_capacity": min_cap,
                 "available_rooms": recs[:8]
             })
 
-        # 5. Check Free Faculty List
-        if any(k in prompt_lower for k in ["who is free", "free faculty", "available faculty", "free teacher", "faculty free"]) or \
-           (any(w in prompt_lower for w in ["faculty", "teacher", "prof", "who"]) and any(w in prompt_lower for w in ["free", "available", "vacant"])):
+        # 8. Check Free Faculty List
+        if any(k in prompt_lower for k in ["who is free", "free faculty", "available faculty", "free teacher", "faculty free", "teachers free"]):
             free_facs = []
             seen = set()
             dept_filter = None
@@ -222,16 +222,17 @@ class TimetableRAGService:
                     seen.add(norm)
                     dept_str = f" [{f.department.code}]" if f.department else ""
                     free_facs.append(f"{f.full_name} ({f.faculty_code or 'ID Unassigned'}){dept_str}")
+
             retrieved_documents.append({
                 "type": "AVAILABLE_FACULTY_LIST",
-                "slot": f"{target_date.strftime('%Y-%m-%d')} {start_t.strftime('%H:%M')}-{end_t.strftime('%H:%M')}",
+                "slot": f"{target_date.strftime('%Y-%m-%d')} {slot_label}",
                 "department_filter": dept_filter or "ALL",
                 "total_available": len(free_facs),
                 "free_faculty_sample": free_facs[:15]
             })
 
-        # 6. Check Schedule Exceptions & Substitutions
-        if any(w in prompt_lower for w in ["exception", "cancellation", "cancel", "substitut", "leave", "swap", "reallocat"]):
+        # 9. Check Schedule Exceptions & Substitutions
+        if any(w in prompt_lower for w in ["exception", "cancellation", "cancel", "substitut", "leave", "reallocat", "can 4th year"]):
             exceptions = ScheduleException.objects.filter(
                 exception_date=target_date
             ).select_related('timetable_entry', 'timetable_entry__section', 'timetable_entry__subject', 'replacement_faculty', 'replacement_resource')
@@ -250,10 +251,11 @@ class TimetableRAGService:
                 "type": "SCHEDULE_EXCEPTIONS",
                 "target_date": str(target_date),
                 "total_exceptions": len(ex_data),
-                "exceptions": ex_data
+                "exceptions": ex_data,
+                "fourth_year_policy": "Faculty members exclusively assigned to 4th-year cohorts (e.g. Abdul Rehman) are strictly restricted from substituting for 2nd-year or 3rd-year classes."
             })
 
-                # 7. Check Timetable Clashes & Conflicts
+        # 10. Check Timetable Clashes & Conflicts
         if any(w in prompt_lower for w in ['clash', 'clashes', 'conflict', 'conflicts', 'collision', 'double booking', 'overlap']):
             unresolved = TimetableClash.objects.filter(status='UNRESOLVED')
             sample_clashes = []
@@ -274,7 +276,7 @@ class TimetableRAGService:
                 'sample_clashes': sample_clashes
             })
 
-        # 8. Check Class Swaps
+        # 11. Check Class Swaps
         if any(w in prompt_lower for w in ['swap', 'swaps', 'swapped', 'exchange class', 'exchanged']):
             swaps = ClassSwap.objects.filter(swap_date=target_date).select_related(
                 'faculty_1', 'faculty_2', 'entry_1', 'entry_2',
@@ -294,12 +296,7 @@ class TimetableRAGService:
                     'class_2': s.entry_2.section.full_name,
                     'is_same_class': is_same_sec,
                     'status': s.status,
-                    'reason': s.reason,
-                    'details': (
-                        f"Within class {s.entry_1.section.full_name}: {s.faculty_2.full_name} teaches {s.entry_2.subject.name} in {s.entry_1.subject.name} slot ({s.entry_1.start_time.strftime('%H:%M')}-{s.entry_1.end_time.strftime('%H:%M')}), and {s.faculty_1.full_name} teaches {s.entry_1.subject.name} in {s.entry_2.subject.name} slot ({s.entry_2.start_time.strftime('%H:%M')}-{s.entry_2.end_time.strftime('%H:%M')})"
-                        if is_same_sec else
-                        f"{s.faculty_1.full_name} ({s.entry_1.section.full_name}) exchanged with {s.faculty_2.full_name} ({s.entry_2.section.full_name})"
-                    )
+                    'reason': s.reason
                 })
             retrieved_documents.append({
                 'type': 'CLASS_SWAPS',
@@ -308,8 +305,8 @@ class TimetableRAGService:
                 'swaps': swap_list
             })
 
-        # 9. Check College Timings & Breaks
-        if any(w in prompt_lower for w in ['break', 'breaks', 'college hours', 'working hours', 'college start', 'college end', 'class timing', 'period timing', 'lunch timing']):
+        # 12. Check College Timings & Breaks
+        if any(w in prompt_lower for w in ['break', 'breaks', 'college hours', 'working hours', 'college start', 'college end', 'class timing', 'period timing', 'lunch timing', 'morning break']):
             retrieved_documents.append({
                 'type': 'COLLEGE_HOURS_AND_BREAKS',
                 'working_hours': '08:15 AM - 04:05 PM (Monday to Saturday)',
@@ -318,11 +315,11 @@ class TimetableRAGService:
                 'periods': [
                     'Period 1: 08:15 - 09:05',
                     'Period 2: 09:05 - 09:55',
-                    'Morning Break: 09:55 - 10:10',
+                    'Morning Break: 09:55 - 10:10 (Rooms and Faculty free)',
                     'Period 3: 10:10 - 11:00',
                     'Period 4: 11:00 - 11:50',
                     'Period 5: 11:50 - 12:40',
-                    'Lunch Break: 12:40 - 13:40',
+                    'Lunch Break: 12:40 - 13:40 (Rooms and Faculty free)',
                     'Period 6: 13:40 - 14:30',
                     'Period 7: 14:30 - 15:20',
                     'Period 8: 15:20 - 16:05'
@@ -330,7 +327,7 @@ class TimetableRAGService:
                 'off_hours_rule': 'Before 08:15 AM and after 04:05 PM, as well as during official breaks, 0 classes run, and all classrooms, labs, and faculty are 100% available.'
             })
 
-        # 10. Check CRT-FSD or Villas Sir
+        # 13. Check CRT-FSD or Villas Sir
         if any(w in prompt_lower for w in ['crt', 'fsd', 'villas', 'outsourced']):
             villas = Faculty.objects.filter(full_name__icontains='villas').first()
             if villas:
@@ -349,7 +346,7 @@ class TimetableRAGService:
         return {
             "query": query_text,
             "target_date": str(target_date),
-            "target_slot": f"{start_t.strftime('%H:%M')}-{end_t.strftime('%H:%M')}",
+            "target_slot": slot_label,
             "retrieved_documents": retrieved_documents
         }
 
@@ -358,7 +355,7 @@ class TimetableRAGService:
         """
         Augmentation & Generation Step:
         Builds grounded context from retrieved database records and executes
-        high-speed inference with Groq LLM (LLaMA-3.3-70B).
+        high-speed inference with Groq LLM (LLaMA / Qwen).
         """
         from django.conf import settings
         groq_api_key = api_key or os.environ.get("GROQ_API_KEY") or getattr(settings, 'GROQ_API_KEY', None)
@@ -367,7 +364,7 @@ class TimetableRAGService:
         context_data = cls.retrieve_context(user_prompt)
         docs = context_data["retrieved_documents"]
 
-        # Step 2: Fallback to deterministic engine if no Groq API key is available
+        # Step 2: Fallback to intelligent deterministic engine if no Groq API key is available
         if not groq_api_key:
             from apps.assistant.services import AIAssistantService
             fallback_res = AIAssistantService.handle_query(user_prompt, conversation_id)
@@ -376,7 +373,6 @@ class TimetableRAGService:
                 "retrieved_documents_count": len(docs),
                 "retrieved_context": docs
             }
-            fallback_res["reply"] += "\n\n*(Note: Groq LLM RAG mode is ready. Provide your Groq API key to activate real-time LLaMA-3.3-70B generation.)*"
             return fallback_res
 
         # Step 3: Format Context for Groq LLM
@@ -390,8 +386,8 @@ class TimetableRAGService:
             "2. Never hallucinate, estimate, or invent timetable records, faculty assignments, or room occupancy.\n"
             "3. For classrooms and laboratories, use strictly 'Occupied' or 'Unoccupied'. Do not use Not Verified, Unknown, or Pending.\n"
             "4. If a room or faculty is Occupied, explicitly mention the Subject, Section cohort, Department, Room code, and exact Time slot.\n"
-            "5. If multiple faculty members are assigned to a session, name all of them.\n"
-            "6. Present your answer clearly in formatted Markdown with bullet points where appropriate."
+            "5. If a faculty member is verified AVAILABLE, confirm their availability for that specific period/time slot, and if schedule data is provided, mention their other classes for that day.\n"
+            "6. Present your answer clearly in clean Markdown with bullet points where appropriate."
         )
 
         user_content = (
@@ -407,7 +403,6 @@ class TimetableRAGService:
             from groq import Groq
             client = Groq(api_key=groq_api_key)
 
-            # Available active models on this Groq account
             model_to_use = getattr(settings, 'GROQ_MODEL', None) or os.environ.get("GROQ_MODEL", "qwen/qwen3.8-27b")
 
             chat_completion = client.chat.completions.create(
@@ -417,7 +412,7 @@ class TimetableRAGService:
                 ],
                 model=model_to_use,
                 temperature=0.1,
-                max_tokens=600
+                max_tokens=700
             )
 
             llm_reply = chat_completion.choices[0].message.content
@@ -440,7 +435,7 @@ class TimetableRAGService:
             }
 
         except Exception as e:
-            # Fall back seamlessly to deterministic timetable service if network or Groq fails
+            # Fall back seamlessly to intelligent timetable service if network or Groq fails
             from apps.assistant.services import AIAssistantService
             fallback_res = AIAssistantService.handle_query(user_prompt, conversation_id)
             fallback_res["rag_metadata"] = {

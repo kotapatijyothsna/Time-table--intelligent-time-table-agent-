@@ -10,6 +10,19 @@ import sys
 BASE_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(BASE_DIR))
 
+# Auto-load environment variables from .env
+for env_file in [BASE_DIR / '.env', BASE_DIR.parent / '.env']:
+    if env_file.exists():
+        try:
+            with open(env_file, 'r', encoding='utf-8') as _f:
+                for _line in _f:
+                    _line = _line.strip()
+                    if _line and not _line.startswith('#') and '=' in _line:
+                        _k, _v = _line.split('=', 1)
+                        os.environ.setdefault(_k.strip(), _v.strip().strip('"').strip("'"))
+        except Exception:
+            pass
+
 SECRET_KEY = 'django-insecure-g=xrtqp)kcm_%n(+8g_iny!-2iwfgy!1*s1c2c6gvay+8cd4_6'
 DEBUG = True
 ALLOWED_HOSTS = ['*']
