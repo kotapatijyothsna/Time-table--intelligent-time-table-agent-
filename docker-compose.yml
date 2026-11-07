@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  mysql-db:
+    image: mysql:8.4
+    container_name: smart_campus_mysql
+    restart: always
+    environment:
+      MYSQL_DATABASE: smart_campus_aiml
+      MYSQL_ROOT_PASSWORD: root_production_password
+      MYSQL_USER: aiml_admin
+      MYSQL_PASSWORD: aiml_secure_password
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./backend/schema.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 20s
+      retries: 10
+
+  redis-broker:
+    image: redis:7-alpine
+    container_name: smart_campus_redis
+    restart: always
+    ports:
+      - "6379:6379"
+
+  django-backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: smart_campus_backend
+    restart: always
+    depends_on:
+      mysql-db:
+        condition: service_healthy
+      redis-broker:
+        condition: service_started
+    environment:
+      DB_ENGINE: mysql
+      DB_NAME: smart_campus_aiml
+      DB_USER: aiml_admin
+      DB_PASSWORD: aiml_secure_password
+      DB_HOST: mysql-db
+      DB_PORT: 3306
+      REDIS_URL: redis://redis-broker:6379/1
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+
+volumes:
+  mysql_data:

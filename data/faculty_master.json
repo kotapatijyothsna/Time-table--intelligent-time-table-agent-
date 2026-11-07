@@ -1,0 +1,877 @@
+[
+  {
+    "id": "a7ed7c3b-72aa-54e4-bb95-6ef06459a2b5",
+    "full_name": "DR. P. Kalpana",
+    "designation": "Faculty"
+  },
+  {
+    "id": "1fb764ce-ad9e-58ed-99f5-67c63da7345c",
+    "full_name": "DR. MANIGANDAN A",
+    "designation": "Faculty"
+  },
+  {
+    "id": "f8bd78e0-393d-5f06-b1fa-f305673f3c44",
+    "full_name": "Dr. S.Srikantha Reddy",
+    "designation": "Faculty"
+  },
+  {
+    "id": "b29ea1bc-85ee-59f3-97f8-0ec4a2e665da",
+    "full_name": "P. Girija",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "2faa2f23-1029-5c28-b79b-33dfbbfd9a01",
+    "full_name": "K.Nikhitha",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "7f37bca4-6784-5e33-af12-dbebd461bd0d",
+    "full_name": "M.DEV SAMPATH KUMAR",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "21edcb84-a050-5137-bf0c-da10bd0e1017",
+    "full_name": "Y.NAGA VYSHNAVI",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "a70cc9d8-a3b8-5ab3-a7be-db82ef77689d",
+    "full_name": "Dr. B. Sudha Rani",
+    "designation": "Faculty"
+  },
+  {
+    "id": "eeb1cbf2-74c8-5acf-8555-d4fb9c570d3c",
+    "full_name": "Ms. D. Urlamma",
+    "designation": "Faculty"
+  },
+  {
+    "id": "773dd9ab-faca-581c-b8e3-90610e8abc64",
+    "full_name": "Ms. D. Begum Tamgellabi",
+    "designation": "Faculty"
+  },
+  {
+    "id": "77154e91-083a-57eb-88ce-32fa854ca2c5",
+    "full_name": "Mohammad Ruksar Afsana",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "1bf838a3-40e3-5097-8490-3467586ad2a8",
+    "full_name": "Ms. P Seetha Lakshmi",
+    "designation": "Faculty"
+  },
+  {
+    "id": "1d7a3358-453c-555a-b267-77502e24d3af",
+    "full_name": "Mr Vivek Kumar Saini",
+    "designation": "Faculty"
+  },
+  {
+    "id": "6b6d91de-6cb0-56bb-ac21-bf7edf60a60e",
+    "full_name": "Mr K Karthik",
+    "designation": "Faculty"
+  },
+  {
+    "id": "7be6d9a3-8a08-5fd3-81b6-f13a6e900278",
+    "full_name": "Ms. G. Mahalakshmi",
+    "designation": "Faculty"
+  },
+  {
+    "id": "b6b59953-0b9b-5347-9160-494a5d29b34a",
+    "full_name": "Mr Bhanu Prakash",
+    "designation": "Faculty"
+  },
+  {
+    "id": "abe0ac61-a247-5678-8fda-e0f1405366d2",
+    "full_name": "Ms. M. YAMINI",
+    "designation": "Faculty"
+  },
+  {
+    "id": "68e1fea6-f86c-51a1-8ec4-1d4bfed2cde2",
+    "full_name": "Nune Naga Surekha",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "fbeed1a0-10be-533d-91f2-64e20b681b65",
+    "full_name": "YARAGALLA KUMAR SAI(THURSDAY)",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "0f02a252-35d5-5a9d-b54e-7e4d23a6897c",
+    "full_name": "Sk. Salwar",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "8465f52d-45b3-5501-8ea6-b5ee79df7d05",
+    "full_name": "SK .SUMAYA AFFRIN",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "291a32d4-1289-575b-90f1-ce858fba9f64",
+    "full_name": "Ms. Vemuri Lakshmi Ravali",
+    "designation": "Faculty"
+  },
+  {
+    "id": "816677f5-6960-5488-8a90-41aca0cfa7c2",
+    "full_name": "R.NAGA SUMITHRA",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "941f558d-cdb1-5437-9d85-bd542955abb8",
+    "full_name": "M. GANESH",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "ffe0389b-6f31-5997-8d76-ba84cdd1a5f7",
+    "full_name": "MAHENDRA VARMA",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "93c4d880-710b-5f33-a78f-fcaffa10d831",
+    "full_name": "DR. BANDI GURAVAIAH",
+    "designation": "Faculty"
+  },
+  {
+    "id": "abefbe48-a3a1-58d3-ac37-037288f6c3a4",
+    "full_name": "DR. N. BHARGAVI",
+    "designation": "Faculty"
+  },
+  {
+    "id": "fb4f1719-d057-5124-a12e-2e165a11af04",
+    "full_name": "Mr. Bharadwaja Chepuri",
+    "designation": "Faculty"
+  },
+  {
+    "id": "993c49fc-435f-5fcf-95c0-a6ba454eae10",
+    "full_name": "Dr. A.V. Nageswara Rao",
+    "designation": "Faculty"
+  },
+  {
+    "id": "fbe5317f-0e60-5b6c-81b8-b33633a743fb",
+    "full_name": "M SRI CHAKRAPANI",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "8f2853a9-2ca8-58f3-9b20-3db146ae23d2",
+    "full_name": "Dr. G.kalai rasi",
+    "designation": "Faculty"
+  },
+  {
+    "id": "a1e1667c-9578-5645-a1c6-34cf4c5835d6",
+    "full_name": "Dr. G. Kalaiarasi",
+    "designation": "Faculty"
+  },
+  {
+    "id": "8e6ebb4c-ca4b-51fa-9896-7156b6359c8f",
+    "full_name": "Mr D Vinod Kumar",
+    "designation": "Faculty"
+  },
+  {
+    "id": "717cd6f5-fde5-54e9-b6ee-6d16429b5592",
+    "full_name": "Ms. S. RadhaRani",
+    "designation": "Faculty"
+  },
+  {
+    "id": "f9096e0e-adec-5841-a8f2-1c5a94f80fc2",
+    "full_name": "S. Venkata Bhavani",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "71cebb77-ca5d-553e-8c8f-b57998d801b8",
+    "full_name": "K. Lakshmi Likhitha",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "61e2778a-b218-5ed5-ab17-0324b48703b8",
+    "full_name": "Ms.Jasmitha Parasa",
+    "designation": "Faculty"
+  },
+  {
+    "id": "04d54ee3-2bd2-5b11-b023-d288a2a04d99",
+    "full_name": "Ms. I.Leela Priya",
+    "designation": "Faculty"
+  },
+  {
+    "id": "829fe4f1-8c14-5165-aa44-ec25fc360f28",
+    "full_name": "Mitikala Ramanjaneyulu",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "6636c6c9-2513-5cb9-83cd-a41c62bc4a6c",
+    "full_name": "SK.Sameera Sultana",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "71e0c847-cdc9-5d24-bfa8-7f1b7901c47b",
+    "full_name": "M.Gopi",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "f09601e3-f805-5247-923b-6ded3cf849b3",
+    "full_name": "Mr. S. Uday Kiran",
+    "designation": "Faculty"
+  },
+  {
+    "id": "7b2e5296-5b34-57a1-ba19-f912ded2c933",
+    "full_name": "Summaya Afrin",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "6f5b67bf-a42a-5c01-a45a-5f47171bed13",
+    "full_name": "DR. RUSHI PRASAD SAHOO",
+    "designation": "Faculty"
+  },
+  {
+    "id": "a49cf13f-2dd5-5104-a5d6-5cf3d61d513e",
+    "full_name": "K.JAHNAVI",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "95bba84c-7d41-5acb-ac15-c2c70652ff57",
+    "full_name": "B.HIMAJA",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "60e8cd3d-635d-5663-a0c1-038d73909c03",
+    "full_name": "B. SANGEETHA",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "4bc4a1ae-9dec-584a-a420-190e3c4494fa",
+    "full_name": "PANTHANGI GOPI KRISHNA(TUESDAY)",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "d62f1acc-5a0a-5956-b585-1b079a15f2cb",
+    "full_name": "Dr. P. Giri Prasad",
+    "designation": "Faculty"
+  },
+  {
+    "id": "4379a785-2951-55c2-b11b-783ff85dc08e",
+    "full_name": "Mr. A.Siva Naga Rama Gopal",
+    "designation": "Faculty"
+  },
+  {
+    "id": "87199248-2099-5678-8596-36a05afd5e46",
+    "full_name": "Mr Prajwal Santakke",
+    "designation": "Faculty"
+  },
+  {
+    "id": "1f4ea4ec-e63a-587f-9238-ccb224077140",
+    "full_name": "M.Pramod Chandra",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "668ac31d-ba81-5439-ba65-843bef28d2d9",
+    "full_name": "Ms. A. Chandana",
+    "designation": "Faculty"
+  },
+  {
+    "id": "a16730a3-0e86-5896-bf62-00330c48a87a",
+    "full_name": "prasanna",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "79f8d143-2cf2-5d21-ae05-66032df93e7b",
+    "full_name": "Mr K Phanindra",
+    "designation": "Faculty"
+  },
+  {
+    "id": "f0ad4dd8-7223-5114-94b3-f04ccd2be596",
+    "full_name": "Ms. K. Sabhamini",
+    "designation": "Faculty"
+  },
+  {
+    "id": "e14e18f3-7386-52ad-9584-f267e90879a2",
+    "full_name": "DR. B. N. NAVEEN KUMAR",
+    "designation": "Faculty"
+  },
+  {
+    "id": "724d08e4-f5c3-544a-b0a7-99bec72dc8a4",
+    "full_name": "DR. IMTIYAZ BHATT",
+    "designation": "Faculty"
+  },
+  {
+    "id": "f4b61620-b940-5139-acc0-1a561604334e",
+    "full_name": "PENDEN RUDHRA KRISHNA",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "0748dd91-19a7-561a-9397-5aa535565dc6",
+    "full_name": "G.KRISHNA PRAKASH",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "8a9392ae-5178-5d1e-ab2f-d910081afd2a",
+    "full_name": "ALUMOLU JAGADEESH REDDY(WED)",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "96996c8c-1df6-5f90-acd5-135b32e5b98a",
+    "full_name": "P.MOKSHAGNA",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "914b8690-81ba-53a4-bb70-36cf8be34976",
+    "full_name": "V.RISHITHA",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "a5c7e34e-a545-5b67-bcb1-10f845ac7bfe",
+    "full_name": "Mr T Leela Uma Mahesh",
+    "designation": "Faculty"
+  },
+  {
+    "id": "9742a2bb-4f29-5465-af92-e8061053a290",
+    "full_name": "Mr. VSNS Yaswanth Kommuri",
+    "designation": "Faculty"
+  },
+  {
+    "id": "ca06e3ca-9526-5532-b0ca-110b972553ed",
+    "full_name": "U.HARSHAD(P)",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "8c59dda7-c1ec-5f0a-a57b-4872fe404aed",
+    "full_name": "Dr. Jawad Ahmad Dar",
+    "designation": "Faculty"
+  },
+  {
+    "id": "dba86224-1fe5-5d6e-b690-87d273460396",
+    "full_name": "Mr N. Murali Krishna",
+    "designation": "Faculty"
+  },
+  {
+    "id": "4cc70015-a14a-5c15-885a-a1a5607d484c",
+    "full_name": "Salwar",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "692a0a58-54f1-54ba-a1bd-3885642f71ab",
+    "full_name": "Dr. B Sai Sambasiva Rao",
+    "designation": "Faculty"
+  },
+  {
+    "id": "0afd1785-e90b-5efa-96e9-7c96c7096784",
+    "full_name": "Dr. Mastan Sharif",
+    "designation": "Faculty"
+  },
+  {
+    "id": "544a8628-de3e-568a-ac2a-9090b1598d43",
+    "full_name": "Mr. Sourabh Viswakarma",
+    "designation": "Faculty"
+  },
+  {
+    "id": "f6e14ffd-7c37-5ad2-9b61-f9ea64b373c0",
+    "full_name": "Ms. B. Bhavana Sreeja",
+    "designation": "Faculty"
+  },
+  {
+    "id": "c3a4cbfa-a87b-5cec-ad47-5aa8f869d7d8",
+    "full_name": "Ms. Beulah Bontha",
+    "designation": "Faculty"
+  },
+  {
+    "id": "7edb99d0-a875-5830-9fee-9c2f9bd25936",
+    "full_name": "B.NAVYA",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "a90b0adf-24db-5605-a4f3-a49858471b3d",
+    "full_name": "K.SUSMITHA",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "90dbf7a7-7a63-5ea7-8373-26b214c891af",
+    "full_name": "V PRIYA SAHITHI",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "08e42fac-5da1-58f4-81cf-fc5a4cba0ef4",
+    "full_name": "J. Durga Prasad",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "8ccfc44f-f4a1-58ff-a916-a0af58a09ab2",
+    "full_name": "D.Begum",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "ff7c5086-e10c-5bc3-9fd2-70f6adeb4b88",
+    "full_name": "GORANTLA BHARGAVI",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "65f82a1b-2be5-5282-b65c-3c55a84340a6",
+    "full_name": "PATHANGI GOPI KRISHNA",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "57af6b76-b443-51f7-b485-771e4a63bdad",
+    "full_name": "DR. ANKAMMA RAO MALLELA",
+    "designation": "Faculty"
+  },
+  {
+    "id": "9dc22e89-2760-54f1-9347-a40257f97567",
+    "full_name": "Mr. PLN Manoj Kumar",
+    "designation": "Faculty"
+  },
+  {
+    "id": "becbb593-6e7a-5cdd-a5b3-cf472fec1185",
+    "full_name": "MS. D.SUPRIYA",
+    "designation": "Faculty"
+  },
+  {
+    "id": "58646836-e949-55d1-9645-54b9c6656d67",
+    "full_name": "BOMMU VIDYA SRI",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "0d3d310a-6770-54bd-bde8-bbf5871914b9",
+    "full_name": "G.Vasanthi",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "b53607c1-cdc8-5bd3-bae7-fdc71cda6087",
+    "full_name": "Mr. Mahendra Varma",
+    "designation": "Faculty"
+  },
+  {
+    "id": "aa54b0fb-1128-5749-926b-718e67710ace",
+    "full_name": "SK.MOULALI(P)",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "0d4b953d-c553-5d61-883d-55b4616327e5",
+    "full_name": "Mr. D. Pavan Kalyan",
+    "designation": "Faculty"
+  },
+  {
+    "id": "718ce967-49af-5e9b-9aa9-8b16bd7b1707",
+    "full_name": "Mr. Nagendra",
+    "designation": "Faculty"
+  },
+  {
+    "id": "100dd148-10fc-5571-8f5c-8007694610b1",
+    "full_name": "P.CHANDRIKA PADMAVATHI",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "1a949879-3541-50f8-9a3f-d6e77d278002",
+    "full_name": "K.Sateesh kumar",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "f00db2b0-3ba5-5e3a-9800-b81d9cf6bf04",
+    "full_name": "Ms Vasanthi",
+    "designation": "Faculty"
+  },
+  {
+    "id": "00f80088-e2c6-51dd-9276-b4ea7ca027df",
+    "full_name": "K.Sushmitha",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "a6b81057-9468-5ddf-907a-482029bdb21c",
+    "full_name": "SK.MOULALI(T)",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "8e9f9d64-f05b-55eb-8114-a77bc052b4e6",
+    "full_name": "S.RAMYA SRI",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "178df58e-73b3-5672-ac1d-dd9643695d95",
+    "full_name": "M.V J. Narendra",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "1215cf9d-58bb-50c8-8546-9e9363214bc0",
+    "full_name": "B.Venkat",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "54d48a12-43a6-57a6-96ea-f60a359ea53f",
+    "full_name": "Dr Gurusamy Murugesan",
+    "designation": "Faculty"
+  },
+  {
+    "id": "1625bab9-2fcb-5a1b-8d09-829113a594a0",
+    "full_name": "R.SAI TRINAYA(T)",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "f72dea33-4e58-561c-ace9-130aa3227f65",
+    "full_name": "Ms. Narra Bhagyalakshmi",
+    "designation": "Faculty"
+  },
+  {
+    "id": "c438f375-4242-526b-a3ed-3e41a50f099d",
+    "full_name": "SANAMPUDI VENKATA KAVYANJALI",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "edfa8a11-69d8-50c3-9710-20ab58c294a3",
+    "full_name": "V S N S Yaswanth Kommuri",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "a0bfe98b-64e3-57cc-b221-3e1b2e7f86a6",
+    "full_name": "M. Harya Vardhan",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "09ba3edf-6aa5-5dfa-a65b-350474a7c2a3",
+    "full_name": "Dr Ramesh Kumar Mojjada",
+    "designation": "Faculty"
+  },
+  {
+    "id": "ef68e7ff-fb18-52a3-885a-c3f90cd31bad",
+    "full_name": "IMRAN KHAN PATHAN",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "1b71fed3-d0a1-5057-a051-eb9d869c313b",
+    "full_name": "Mr. T. Krishna",
+    "designation": "Faculty"
+  },
+  {
+    "id": "25845986-a848-5bb2-95ba-62f99dbd6316",
+    "full_name": "Dr. Eva Patel",
+    "designation": "Faculty"
+  },
+  {
+    "id": "3b6b9b2d-c29b-51b4-aff1-3c20fce10bb4",
+    "full_name": "Dr. Sivadi Balakrishna",
+    "designation": "Faculty"
+  },
+  {
+    "id": "61f3e0fd-63f5-5510-9a94-883992243120",
+    "full_name": "Mr. Satwik Singh",
+    "designation": "Faculty"
+  },
+  {
+    "id": "ab39e343-475d-5ff3-a50a-53ddd0b90090",
+    "full_name": "MARRIPATI KIRANMAYE",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "6ed252f5-b7f5-5adc-9b61-15eaa607bb31",
+    "full_name": "Dr. Chennapradaga Amarendra",
+    "designation": "Faculty"
+  },
+  {
+    "id": "6b0ddb59-12f0-5656-9668-542c7680ef05",
+    "full_name": "Mr. PVV Satya Surya Teja Sri Manoj",
+    "designation": "Faculty"
+  },
+  {
+    "id": "aa76e555-a19f-5028-8fd0-152a17e71526",
+    "full_name": "K. jnaneswar",
+    "designation": "Outsourcing Staff"
+  },
+  {
+    "id": "4049128b-28d2-59ec-9a47-14a6c14fd936",
+    "full_name": "Dr. Arnab De",
+    "designation": "Faculty"
+  },
+  {
+    "id": "52a89bcb-50c6-5567-aa24-8e9955b60099",
+    "full_name": "Ms. K.Vyshnavi",
+    "designation": "Faculty"
+  },
+  {
+    "id": "78364294-b1b6-5cfa-bfba-631e09e6b153",
+    "full_name": "SK.SameeraSultana.",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "3f57ce80-feaf-5c74-a49b-fe5a500471b3",
+    "full_name": "Francis Xavier",
+    "designation": "Outsourcing Staff"
+  },
+  {
+    "id": "f94bc306-85b9-5e5f-9002-09a207de4af0",
+    "full_name": "Ms. Syed Reshma",
+    "designation": "Faculty"
+  },
+  {
+    "id": "e8fbe3d3-eadd-5371-a4c3-efacb814ce1a",
+    "full_name": "SUNKARA DEVENDRA KUMAR",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "d47b0db8-5d8e-5109-b29e-fa743d80023b",
+    "full_name": "BATTULA LEELA KRISHNA",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "20de4fdb-347c-57f5-a65f-05057d37a992",
+    "full_name": "Sk.summaya Afrin",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "9a8d7353-14c1-5fa5-9fc3-0745e3aab73b",
+    "full_name": "MR. M. Komal Krishna",
+    "designation": "Faculty"
+  },
+  {
+    "id": "ed61979b-214d-5783-b231-efbc9f7595ed",
+    "full_name": "GAMPALA KRISHNA SRI",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "fffdacd7-e165-52ee-961f-8a6f9b4fb3c2",
+    "full_name": "ARIGA PRASANTHI",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "4f4cf6c0-ddec-554c-84b1-0dda40dd074c",
+    "full_name": "Jangam Rohit",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "ccd4c79f-c760-55fa-b5f0-cf94a32c1541",
+    "full_name": "Mr. Brundavanam Satya Sai",
+    "designation": "Faculty"
+  },
+  {
+    "id": "44e5e2a5-3602-5ec2-b035-9b11a2cd8a0a",
+    "full_name": "VEMURI AISWARYA",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "28908326-6d6d-5a02-9d78-647caa6e7a54",
+    "full_name": "B.Sujitha",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "9f2dec66-4bed-59dc-8b80-2bcfe95cacd8",
+    "full_name": "Himaja",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "39b73d2f-27e4-5a8a-858c-fcd757ab1a63",
+    "full_name": "Mr. Sattwik Barua",
+    "designation": "Faculty"
+  },
+  {
+    "id": "479b00db-8289-5a05-8085-dd4854f3e49e",
+    "full_name": "DEVARAPALLI RAJA GOPAL",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "9bfd496a-0189-5daa-8d7e-720f77ab3b67",
+    "full_name": "RAMA RAJU SAI THRINAYA",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "0ab0621a-3e14-55b7-9242-47d2deea7767",
+    "full_name": "Mr K Jagadeeshwar",
+    "designation": "Faculty"
+  },
+  {
+    "id": "0f07485d-62e4-5b44-8f17-1a61fb6567b6",
+    "full_name": "Dr. B. Jyostna Devi",
+    "designation": "Faculty"
+  },
+  {
+    "id": "1dd45ef4-a1c4-54ff-8c60-13f4b4964b40",
+    "full_name": "Dr. Fathimabi Shaik.",
+    "designation": "Faculty"
+  },
+  {
+    "id": "4df0976d-f65d-5e62-9f6d-f353b904f37a",
+    "full_name": "Dr. Guttikonda Prashanti",
+    "designation": "Faculty"
+  },
+  {
+    "id": "25b6afc5-156b-5b01-90e8-26805515797b",
+    "full_name": "Ms. Jayamma Rodda",
+    "designation": "Faculty"
+  },
+  {
+    "id": "9858c603-1030-5523-9120-643044811e8e",
+    "full_name": "Ms. Attuluri Ramya",
+    "designation": "Faculty"
+  },
+  {
+    "id": "f9e17aa9-dcb9-5d7c-8fc7-e1cb620164bc",
+    "full_name": "Abdul Rehman",
+    "designation": "Outsourcing Staff"
+  },
+  {
+    "id": "457c29e9-3a7c-5cbe-b1f7-2b6b7bbaa7e0",
+    "full_name": "Mr. K. Venkata Naga Vamsi",
+    "designation": "Faculty"
+  },
+  {
+    "id": "98c46c3f-9577-5d45-9bdb-2f476d938e1b",
+    "full_name": "Harya Vardhan",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "8e4f4e15-149e-54c6-8991-4b84f7e6c4c4",
+    "full_name": "Chandrika pamavathi",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "0f213ed7-e526-5b3f-b597-a53ebd0c65a5",
+    "full_name": "Dr.K.Lova Raju",
+    "designation": "Faculty"
+  },
+  {
+    "id": "77dea089-23f4-5d85-ad72-2d40f68c6c6f",
+    "full_name": "J.Divya",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "2c96a068-cfc2-5520-b12d-8ae9f299dcb9",
+    "full_name": "Ms.G.Jyostna",
+    "designation": "Faculty"
+  },
+  {
+    "id": "95dcaa18-001f-52d3-ab35-bc1082d47d57",
+    "full_name": "M.VISHNU VARDHAN",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "77bffb03-a2f0-5883-8548-0ae422a152be",
+    "full_name": "Mr.K.Janaki Ram",
+    "designation": "Faculty"
+  },
+  {
+    "id": "1669c737-bd46-5ef8-95c1-fa90b0b10c2b",
+    "full_name": "Mr. K. Raja Dinesh",
+    "designation": "Faculty"
+  },
+  {
+    "id": "0c09ac26-6d11-5e15-a0fb-efb36659e9db",
+    "full_name": "Dr.S.Srikantha Reddy",
+    "designation": "Faculty"
+  },
+  {
+    "id": "bccde108-992a-5ec4-96e3-cf3039d478ce",
+    "full_name": "Mr.MitikalaRamanjaneyulu",
+    "designation": "Faculty"
+  },
+  {
+    "id": "dbee5222-8a73-52be-98e1-932899c42b5c",
+    "full_name": "Mr.Bharadwaja Chepuri",
+    "designation": "Faculty"
+  },
+  {
+    "id": "a9a7b660-6640-5fd5-884f-b102990519a8",
+    "full_name": "Ms S.Radha Rani",
+    "designation": "Faculty"
+  },
+  {
+    "id": "f98cad92-b677-58fa-b830-0408f78dffa5",
+    "full_name": "Ms. D.Urlamma",
+    "designation": "Faculty"
+  },
+  {
+    "id": "a5dae94f-7ea2-5ee5-a90d-bb4cbf36395b",
+    "full_name": "Mr.sathwik Barua",
+    "designation": "Faculty"
+  },
+  {
+    "id": "c00eff26-f58f-5386-a35f-49849d62b744",
+    "full_name": "Dr. B.sudha rani",
+    "designation": "Faculty"
+  },
+  {
+    "id": "3a0ff654-ff55-5dc2-892f-ebc2526a2eb7",
+    "full_name": "Ms.I.Leela Priya",
+    "designation": "Faculty"
+  },
+  {
+    "id": "bb3a435c-7485-515d-a916-e134ca12ca0a",
+    "full_name": "Dr. C. Sateesh Kumar Reddy",
+    "designation": "Faculty"
+  },
+  {
+    "id": "08ff66b7-b7e6-59c6-8efb-5f7bd2b2c964",
+    "full_name": "FSD",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "41623659-2866-50b4-b331-ea71fe06f40f",
+    "full_name": "Dr. P.M. Benson Mansingh",
+    "designation": "Faculty"
+  },
+  {
+    "id": "c75fe175-6a47-55a1-aab2-20d1d74a6f56",
+    "full_name": "Dr. Fathimabi Shaik",
+    "designation": "Faculty"
+  },
+  {
+    "id": "fd9b0c75-42b4-50ea-96d0-9182c3cd4ae0",
+    "full_name": "Sk Chand Basha",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "fd64662d-dadf-5695-8c32-f4cabf51d112",
+    "full_name": "Ms. Ugge Naga Nandini",
+    "designation": "Faculty"
+  },
+  {
+    "id": "8ad5273c-95b4-5f9f-8a07-fb6d9133436d",
+    "full_name": "A. Hruday Raj",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "ba1b5d84-2ce7-5b7a-8c2b-e23e8eba99bf",
+    "full_name": "Mr Prasant Kumar Sahoo",
+    "designation": "Faculty"
+  },
+  {
+    "id": "b65b66af-15b8-5183-aba9-3f832206bc91",
+    "full_name": "Mr. Hruday Raj",
+    "designation": "Faculty"
+  },
+  {
+    "id": "1ee38c63-cbb9-53cb-831d-b17cfff84bf0",
+    "full_name": "Dr. S. Hanumantha Rao",
+    "designation": "Faculty"
+  },
+  {
+    "id": "4e659560-660a-5823-841b-b8baee226a3d",
+    "full_name": "Mr Uma Maheswara Rao",
+    "designation": "Faculty"
+  },
+  {
+    "id": "e07e066c-9886-5545-bea8-66440dfb2ec0",
+    "full_name": "Ms. Ambati Hemalatha",
+    "designation": "Faculty"
+  },
+  {
+    "id": "2f705248-85aa-5281-a60f-8c0b7d1150c9",
+    "full_name": "Mr. K.Sambasivarao",
+    "designation": "Faculty"
+  },
+  {
+    "id": "dcaf945b-0ff0-551a-af18-fa5eb8271d93",
+    "full_name": "Mr. L.Srinivasa Rao",
+    "designation": "Faculty"
+  },
+  {
+    "id": "9fa1bd24-dff8-52e0-8741-4675ca680309",
+    "full_name": "Mr. Srinivas Rao Pallanti",
+    "designation": "Faculty"
+  },
+  {
+    "id": "36f5c9bf-cd91-5508-a7bb-f114f72118cb",
+    "full_name": "L. GANESH",
+    "designation": "Teaching Assistant"
+  },
+  {
+    "id": "3388c64e-3f7e-5135-8e87-f6744bf4da83",
+    "full_name": "Ms. N. Pooja",
+    "designation": "Faculty"
+  },
+  {
+    "id": "76fcb80b-97c3-56ed-87df-6720d1eed48c",
+    "full_name": "Dr. Amar Jukuntla",
+    "designation": "Faculty"
+  }
+]

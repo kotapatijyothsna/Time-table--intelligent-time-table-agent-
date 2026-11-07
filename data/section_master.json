@@ -1,0 +1,310 @@
+[
+  {
+    "id": "64f2ed36-87e3-550b-9f6e-5acf8c79ce41",
+    "name": "II AIML-A",
+    "year": "II",
+    "branch": "AIML",
+    "batch": "A"
+  },
+  {
+    "id": "d3de241e-4af4-5aac-abbd-494a217e46c9",
+    "name": "II AIML-B",
+    "year": "II",
+    "branch": "AIML",
+    "batch": "B"
+  },
+  {
+    "id": "46a5fb00-657b-59e1-ad86-aedaf5bdd6b7",
+    "name": "II AIML-C",
+    "year": "II",
+    "branch": "AIML",
+    "batch": "C"
+  },
+  {
+    "id": "ecacda94-97c1-5965-9f56-5536139be572",
+    "name": "II AIML-D",
+    "year": "II",
+    "branch": "AIML",
+    "batch": ""
+  },
+  {
+    "id": "dd33b0e7-9f76-538d-93fd-79ba161e83bb",
+    "name": "II AIML-E",
+    "year": "II",
+    "branch": "AIML",
+    "batch": ""
+  },
+  {
+    "id": "98aa776e-f77a-5401-bde1-18381e74cb70",
+    "name": "II AIML-F",
+    "year": "II",
+    "branch": "AIML",
+    "batch": ""
+  },
+  {
+    "id": "0d654ed5-8233-5fa2-adb6-c7a753191341",
+    "name": "II AIML-G",
+    "year": "II",
+    "branch": "AIML",
+    "batch": ""
+  },
+  {
+    "id": "fa632814-f5f3-58f0-8463-db81dde3b909",
+    "name": "II AIML-H",
+    "year": "II",
+    "branch": "AIML",
+    "batch": ""
+  },
+  {
+    "id": "892dbf87-d7bd-59bd-9fdc-d9652464a84d",
+    "name": "II AIML-I",
+    "year": "II",
+    "branch": "AIML",
+    "batch": ""
+  },
+  {
+    "id": "d2e3711b-9973-5c53-9312-cfa23fb1d9c6",
+    "name": "II AIML-J",
+    "year": "II",
+    "branch": "AIML",
+    "batch": ""
+  },
+  {
+    "id": "97064654-ce05-52e6-bb00-d22801228e65",
+    "name": "II AIML-K",
+    "year": "II",
+    "branch": "AIML",
+    "batch": ""
+  },
+  {
+    "id": "33d1e055-7e54-5056-a21e-c5c7093c8f0c",
+    "name": "II AIML-L",
+    "year": "II",
+    "branch": "AIML",
+    "batch": ""
+  },
+  {
+    "id": "6572dbad-ba08-549c-ac1a-1cbd969f1bc6",
+    "name": "III AIML-A",
+    "year": "III",
+    "branch": "AIML",
+    "batch": "A"
+  },
+  {
+    "id": "5c6062fe-d101-5565-9c99-2f25fd7485af",
+    "name": "III AIML-B",
+    "year": "III",
+    "branch": "AIML",
+    "batch": "B"
+  },
+  {
+    "id": "29c07922-2e4b-5abf-b5ea-21a36e6a6346",
+    "name": "III AIML-C",
+    "year": "III",
+    "branch": "AIML",
+    "batch": "C"
+  },
+  {
+    "id": "6f0202d3-1898-52ee-a76c-918711f201de",
+    "name": "III AIML-D",
+    "year": "III",
+    "branch": "AIML",
+    "batch": ""
+  },
+  {
+    "id": "119a12ff-6e45-5d8a-971f-827e75542e36",
+    "name": "III AIML-E",
+    "year": "III",
+    "branch": "AIML",
+    "batch": ""
+  },
+  {
+    "id": "0dceb5e8-2733-5dac-8490-28a33399c208",
+    "name": "III AIML-F",
+    "year": "III",
+    "branch": "AIML",
+    "batch": ""
+  },
+  {
+    "id": "26ae89a1-1341-501f-a06a-ae2f087f0314",
+    "name": "III AIML-G",
+    "year": "III",
+    "branch": "AIML",
+    "batch": ""
+  },
+  {
+    "id": "c9f5c6a8-c31f-58bd-b497-39a9e246070e",
+    "name": "IV AIML-A",
+    "year": "IV",
+    "branch": "AIML",
+    "batch": "A"
+  },
+  {
+    "id": "ffe2c837-ca7e-588f-932c-f2590461fa97",
+    "name": "IV AIML-B",
+    "year": "IV",
+    "branch": "AIML",
+    "batch": "B"
+  },
+  {
+    "id": "755ec121-b88a-531e-bc38-dcdb51bb0cf4",
+    "name": "IV AIML-C",
+    "year": "IV",
+    "branch": "AIML",
+    "batch": "C"
+  },
+  {
+    "id": "e08bfed5-59ae-52c0-adf8-8ea6c43b1469",
+    "name": "IV AIML-D",
+    "year": "IV",
+    "branch": "AIML",
+    "batch": ""
+  },
+  {
+    "id": "5f191f36-8687-5d93-b3cd-06602b596883",
+    "name": "IV AIML-E",
+    "year": "IV",
+    "branch": "AIML",
+    "batch": ""
+  },
+  {
+    "id": "10573e63-f8e8-5e11-8fd6-9310bb387194",
+    "name": "II CS-A (53)",
+    "year": "CS",
+    "branch": "AIML",
+    "batch": "A"
+  },
+  {
+    "id": "1423a198-4299-5b1c-97e8-06a1f36b27ff",
+    "name": "II CS-B (51)",
+    "year": "CS",
+    "branch": "AIML",
+    "batch": "B"
+  },
+  {
+    "id": "877df829-2ee5-5443-912b-89a01f0273b0",
+    "name": "III CS (76)",
+    "year": "CS",
+    "branch": "AIML",
+    "batch": ""
+  },
+  {
+    "id": "d7938f9c-4366-5d1d-be98-609f6d48febd",
+    "name": "IV CS (72)",
+    "year": "CS",
+    "branch": "AIML",
+    "batch": ""
+  },
+  {
+    "id": "3f76c726-3b4b-5164-a010-4478a5fa7201",
+    "name": "II DS-A(60)",
+    "year": "DS",
+    "branch": "AIML",
+    "batch": "A"
+  },
+  {
+    "id": "3343add0-e7b4-5bc5-aa0f-74bd031a9379",
+    "name": "II DS-B(65)",
+    "year": "DS",
+    "branch": "AIML",
+    "batch": "B"
+  },
+  {
+    "id": "cdb9ca63-ef30-55ae-bbc2-6a67fcd98428",
+    "name": "III DS-A(62)",
+    "year": "DS",
+    "branch": "AIML",
+    "batch": "A"
+  },
+  {
+    "id": "e01ca30b-abd7-5479-ba73-f4553d2f8c71",
+    "name": "III DS-B( 45)",
+    "year": "DS",
+    "branch": "AIML",
+    "batch": "B"
+  },
+  {
+    "id": "fdc5fa54-7da7-5084-a618-87437348684a",
+    "name": "IV DS(93)",
+    "year": "DS",
+    "branch": "AIML",
+    "batch": ""
+  },
+  {
+    "id": "e69ee757-01cd-5c7a-8522-fa46c092c9b9",
+    "name": "II CSBS(11)",
+    "year": "CSBS",
+    "branch": "AIML",
+    "batch": ""
+  },
+  {
+    "id": "e1b5e9d7-8c84-55d2-982e-7e687b64c3e1",
+    "name": "III CSBS(23)",
+    "year": "CSBS",
+    "branch": "AIML",
+    "batch": ""
+  },
+  {
+    "id": "da632e81-f3e0-53b9-b1ee-f037efab8aca",
+    "name": "II IOT(25)",
+    "year": "I",
+    "branch": "AIML",
+    "batch": ""
+  },
+  {
+    "id": "cae33362-d80f-56ed-bd8b-79b4d46b55b9",
+    "name": "III IOT(34)",
+    "year": "I",
+    "branch": "AIML",
+    "batch": ""
+  },
+  {
+    "id": "80092ecf-7198-5066-a6db-fbddca69acd0",
+    "name": "I BS(DS)(44)",
+    "year": "BS(DS)",
+    "branch": "AIML",
+    "batch": ""
+  },
+  {
+    "id": "ed8a9426-39e5-57c5-adc7-cb5e8de94e19",
+    "name": "II BS(DS)(HONORS)(45)",
+    "year": "BS(DS)",
+    "branch": "AIML",
+    "batch": ""
+  },
+  {
+    "id": "883b6dfa-5cb6-5b96-96b6-151eded282e9",
+    "name": "III BS(DS)",
+    "year": "BS(DS)",
+    "branch": "AIML",
+    "batch": ""
+  },
+  {
+    "id": "286a2599-0c8c-5317-91ac-2d02c637dd4c",
+    "name": "I MSC(DS)(7)",
+    "year": "MSC(DS) 2",
+    "branch": "AIML",
+    "batch": ""
+  },
+  {
+    "id": "ab70d032-e1f1-53c0-ab44-5a0368c0feda",
+    "name": "II MSC (DS)",
+    "year": "MSC(DS) 2",
+    "branch": "AIML",
+    "batch": ""
+  },
+  {
+    "id": "4958688c-825e-5fd7-acd1-4bdc41255e16",
+    "name": "I MTECH(DS)(Room No: 602)",
+    "year": "M.TECH",
+    "branch": "AIML",
+    "batch": ""
+  },
+  {
+    "id": "d9c4b616-7a41-5f05-bfbf-4f61cbb89125",
+    "name": "II MTECH(DS)",
+    "year": "M.TECH",
+    "branch": "AIML",
+    "batch": ""
+  }
+]

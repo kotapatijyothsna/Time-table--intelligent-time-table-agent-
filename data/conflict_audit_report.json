@@ -1,0 +1,128 @@
+{
+  "total_entries_scanned": 628,
+  "total_conflicts": 0,
+  "total_missing_rooms": 56,
+  "conflicts": [],
+  "missing_rooms_sample": [
+    {
+      "entry_id": "72e42efe-e5b2-500c-9507-a2b438ca7583",
+      "section": "II AIML-K",
+      "day": "WED",
+      "time": "13:40:00-14:30:00",
+      "subject": "counselling",
+      "message": "Session has no physical room assigned (e.g. self-learning, counseling, or library)"
+    },
+    {
+      "entry_id": "8203b1b3-265b-5e53-ba7c-e60fa64aea80",
+      "section": "III AIML-A",
+      "day": "MON",
+      "time": "14:30:00-15:20:00",
+      "subject": "SL(SELF LEARNING)",
+      "message": "Session has no physical room assigned (e.g. self-learning, counseling, or library)"
+    },
+    {
+      "entry_id": "88de3500-bd96-5547-8082-e74ab48088ac",
+      "section": "III AIML-A",
+      "day": "TUE",
+      "time": "14:30:00-15:20:00",
+      "subject": "SL(SELF LEARNING)",
+      "message": "Session has no physical room assigned (e.g. self-learning, counseling, or library)"
+    },
+    {
+      "entry_id": "67c7e845-e17c-51b2-a5b5-bedbe62a0c91",
+      "section": "III AIML-A",
+      "day": "WED",
+      "time": "14:30:00-15:20:00",
+      "subject": "MINORS/HONORS",
+      "message": "Session has no physical room assigned (e.g. self-learning, counseling, or library)"
+    },
+    {
+      "entry_id": "92d15d16-f598-5f7a-b277-acb99976cf8e",
+      "section": "III AIML-A",
+      "day": "THU",
+      "time": "14:30:00-15:20:00",
+      "subject": "MINORS/HONORS",
+      "message": "Session has no physical room assigned (e.g. self-learning, counseling, or library)"
+    },
+    {
+      "entry_id": "eb37e661-ec03-590e-8e94-f937aedfa273",
+      "section": "III AIML-A",
+      "day": "FRI",
+      "time": "13:40:00-14:30:00",
+      "subject": "SL(SELF LEARNING)",
+      "message": "Session has no physical room assigned (e.g. self-learning, counseling, or library)"
+    },
+    {
+      "entry_id": "55387d46-48fb-5761-98e0-dab0e2273258",
+      "section": "III AIML-A",
+      "day": "SAT",
+      "time": "10:10:00-11:00:00",
+      "subject": "counselling",
+      "message": "Session has no physical room assigned (e.g. self-learning, counseling, or library)"
+    },
+    {
+      "entry_id": "e6df33f2-0002-521e-ad23-c8b8b8f2e93e",
+      "section": "III AIML-A",
+      "day": "SAT",
+      "time": "13:40:00-14:30:00",
+      "subject": "SL(SELF LEARNING)",
+      "message": "Session has no physical room assigned (e.g. self-learning, counseling, or library)"
+    },
+    {
+      "entry_id": "2665a338-0ba0-5d8c-ab61-9b12b423a4c7",
+      "section": "III AIML-B",
+      "day": "WED",
+      "time": "14:30:00-15:20:00",
+      "subject": "MINORS/HONORS",
+      "message": "Session has no physical room assigned (e.g. self-learning, counseling, or library)"
+    },
+    {
+      "entry_id": "599a025d-d8e4-55df-a75d-f2d07c3d14f0",
+      "section": "III AIML-B",
+      "day": "THU",
+      "time": "13:40:00-14:30:00",
+      "subject": "counselling",
+      "message": "Session has no physical room assigned (e.g. self-learning, counseling, or library)"
+    },
+    {
+      "entry_id": "0615f46a-fd3d-55ed-b081-71b64977eddd",
+      "section": "III AIML-B",
+      "day": "THU",
+      "time": "14:30:00-15:20:00",
+      "subject": "MINORS/HONORS",
+      "message": "Session has no physical room assigned (e.g. self-learning, counseling, or library)"
+    },
+    {
+      "entry_id": "cb1ed8d0-5b8b-556d-a19a-2af3281a33b9",
+      "section": "III AIML-B",
+      "day": "FRI",
+      "time": "13:40:00-14:30:00",
+      "subject": "SL(SELF LEARNING)",
+      "message": "Session has no physical room assigned (e.g. self-learning, counseling, or library)"
+    },
+    {
+      "entry_id": "f11f1261-e244-5d4d-925d-1e598f0431ea",
+      "section": "III AIML-B",
+      "day": "SAT",
+      "time": "11:50:00-12:40:00",
+      "subject": "SL/EL",
+      "message": "Session has no physical room assigned (e.g. self-learning, counseling, or library)"
+    },
+    {
+      "entry_id": "bebe2018-7a95-501d-b996-25e893c6234e",
+      "section": "III AIML-B",
+      "day": "SAT",
+      "time": "13:40:00-14:30:00",
+      "subject": "SL(SELF LEARNING)",
+      "message": "Session has no physical room assigned (e.g. self-learning, counseling, or library)"
+    },
+    {
+      "entry_id": "5bf3c83e-22da-5ba1-8df0-9bbcc1f321bc",
+      "section": "III AIML-C",
+      "day": "MON",
+      "time": "13:40:00-14:30:00",
+      "subject": "SL(SELF LEARNING)",
+      "message": "Session has no physical room assigned (e.g. self-learning, counseling, or library)"
+    }
+  ]
+}

@@ -1,0 +1,2642 @@
+[
+  {
+    "id": "97a6d671-11cf-5240-825a-05b6bd5723dd",
+    "code": "DS",
+    "name": "DS",
+    "section_id": "64f2ed36-87e3-550b-9f6e-5acf8c79ce41",
+    "section": "II AIML-A",
+    "type": "L"
+  },
+  {
+    "id": "a7bd06a5-9105-558f-b5f3-231a3542f187",
+    "code": "DBMS",
+    "name": "DBMS",
+    "section_id": "64f2ed36-87e3-550b-9f6e-5acf8c79ce41",
+    "section": "II AIML-A",
+    "type": "L"
+  },
+  {
+    "id": "5efdd7b5-5f2f-595d-ad5e-b82d3a363be5",
+    "code": "CC",
+    "name": "CC",
+    "section_id": "64f2ed36-87e3-550b-9f6e-5acf8c79ce41",
+    "section": "II AIML-A",
+    "type": "L"
+  },
+  {
+    "id": "3017d6a0-af7b-581c-92bb-34cc5d80a9b4",
+    "code": "AI",
+    "name": "AI",
+    "section_id": "64f2ed36-87e3-550b-9f6e-5acf8c79ce41",
+    "section": "II AIML-A",
+    "type": "L"
+  },
+  {
+    "id": "ba1217c9-eadf-51dd-a24d-109b742b3888",
+    "code": "OOPS",
+    "name": "OOPS",
+    "section_id": "64f2ed36-87e3-550b-9f6e-5acf8c79ce41",
+    "section": "II AIML-A",
+    "type": "L"
+  },
+  {
+    "id": "e86b90bc-c89f-5b47-8283-56189f8dbedb",
+    "code": "SFCDS",
+    "name": "SFCDS",
+    "section_id": "64f2ed36-87e3-550b-9f6e-5acf8c79ce41",
+    "section": "II AIML-A",
+    "type": "P"
+  },
+  {
+    "id": "529dc890-8e6a-5b9a-bc65-863d53b34b45",
+    "code": "DEF",
+    "name": "DEF",
+    "section_id": "64f2ed36-87e3-550b-9f6e-5acf8c79ce41",
+    "section": "II AIML-A",
+    "type": "P"
+  },
+  {
+    "id": "70fdcb32-30ed-5b46-a413-72f05ce66e97",
+    "code": "DMS",
+    "name": "DMS",
+    "section_id": "64f2ed36-87e3-550b-9f6e-5acf8c79ce41",
+    "section": "II AIML-A",
+    "type": "L"
+  },
+  {
+    "id": "4c9957ac-8393-57b4-8f96-7aad8e9ad0e4",
+    "code": "Counselling",
+    "name": "Counselling",
+    "section_id": "64f2ed36-87e3-550b-9f6e-5acf8c79ce41",
+    "section": "II AIML-A",
+    "type": "L"
+  },
+  {
+    "id": "6308bef8-42d0-5902-9a6a-f0e69773a557",
+    "code": "SFCDS",
+    "name": "SFCDS",
+    "section_id": "d3de241e-4af4-5aac-abbd-494a217e46c9",
+    "section": "II AIML-B",
+    "type": "P"
+  },
+  {
+    "id": "5616c2e4-14d4-5aa4-ac2f-52109ab77895",
+    "code": "DMS",
+    "name": "DMS",
+    "section_id": "d3de241e-4af4-5aac-abbd-494a217e46c9",
+    "section": "II AIML-B",
+    "type": "L"
+  },
+  {
+    "id": "3ae3016d-5e85-5249-82f8-6a6705a467f9",
+    "code": "DS",
+    "name": "DS",
+    "section_id": "d3de241e-4af4-5aac-abbd-494a217e46c9",
+    "section": "II AIML-B",
+    "type": "L"
+  },
+  {
+    "id": "ca8b0e0a-0c24-561c-a0e6-e908519d1928",
+    "code": "AI",
+    "name": "AI",
+    "section_id": "d3de241e-4af4-5aac-abbd-494a217e46c9",
+    "section": "II AIML-B",
+    "type": "L"
+  },
+  {
+    "id": "81fdf567-e505-5b44-bb44-351d3830965e",
+    "code": "DBMS",
+    "name": "DBMS",
+    "section_id": "d3de241e-4af4-5aac-abbd-494a217e46c9",
+    "section": "II AIML-B",
+    "type": "P"
+  },
+  {
+    "id": "78c3fd06-0d27-5599-8e02-b4f1be82bf8a",
+    "code": "DEF",
+    "name": "DEF",
+    "section_id": "d3de241e-4af4-5aac-abbd-494a217e46c9",
+    "section": "II AIML-B",
+    "type": "T"
+  },
+  {
+    "id": "549f534f-e8e9-570d-bb58-14eb6c2e6cf1",
+    "code": "CC",
+    "name": "CC",
+    "section_id": "d3de241e-4af4-5aac-abbd-494a217e46c9",
+    "section": "II AIML-B",
+    "type": "L"
+  },
+  {
+    "id": "b78cff3d-128f-5bd1-8df8-67bcca6c630a",
+    "code": "counselling",
+    "name": "counselling",
+    "section_id": "d3de241e-4af4-5aac-abbd-494a217e46c9",
+    "section": "II AIML-B",
+    "type": "L"
+  },
+  {
+    "id": "c6fdf12b-eced-532a-88c8-59963495e62a",
+    "code": "OOPS",
+    "name": "OOPS",
+    "section_id": "d3de241e-4af4-5aac-abbd-494a217e46c9",
+    "section": "II AIML-B",
+    "type": "P"
+  },
+  {
+    "id": "37ff9427-2f5d-5f4a-b38c-35840a381de9",
+    "code": "DMS",
+    "name": "DMS",
+    "section_id": "46a5fb00-657b-59e1-ad86-aedaf5bdd6b7",
+    "section": "II AIML-C",
+    "type": "P"
+  },
+  {
+    "id": "921a9b26-1daa-5a6d-acd6-2e74bc51a4f3",
+    "code": "LIB",
+    "name": "LIB",
+    "section_id": "46a5fb00-657b-59e1-ad86-aedaf5bdd6b7",
+    "section": "II AIML-C",
+    "type": "L"
+  },
+  {
+    "id": "f3e1d5d9-d9e3-5c13-8536-8058a4e4fdab",
+    "code": "SFCDS",
+    "name": "SFCDS",
+    "section_id": "46a5fb00-657b-59e1-ad86-aedaf5bdd6b7",
+    "section": "II AIML-C",
+    "type": "L"
+  },
+  {
+    "id": "4aecbf66-c148-5768-a7f9-cc6ddbfac128",
+    "code": "DS",
+    "name": "DS",
+    "section_id": "46a5fb00-657b-59e1-ad86-aedaf5bdd6b7",
+    "section": "II AIML-C",
+    "type": "L"
+  },
+  {
+    "id": "95f3d9b1-9d9b-5b82-9607-3bc255bc29c6",
+    "code": "OOPS",
+    "name": "OOPS",
+    "section_id": "46a5fb00-657b-59e1-ad86-aedaf5bdd6b7",
+    "section": "II AIML-C",
+    "type": "P"
+  },
+  {
+    "id": "1b366b00-ed61-551c-8a79-3df2708ee4f1",
+    "code": "DBMS",
+    "name": "DBMS",
+    "section_id": "46a5fb00-657b-59e1-ad86-aedaf5bdd6b7",
+    "section": "II AIML-C",
+    "type": "L"
+  },
+  {
+    "id": "6fc22c25-6f87-56b7-81a2-23f30c1def5f",
+    "code": "AI",
+    "name": "AI",
+    "section_id": "46a5fb00-657b-59e1-ad86-aedaf5bdd6b7",
+    "section": "II AIML-C",
+    "type": "L"
+  },
+  {
+    "id": "8c93ca06-9a55-5e7b-b337-a0b28b434a12",
+    "code": "DEF",
+    "name": "DEF",
+    "section_id": "46a5fb00-657b-59e1-ad86-aedaf5bdd6b7",
+    "section": "II AIML-C",
+    "type": "P"
+  },
+  {
+    "id": "2f38b792-63af-509e-a7f1-3346de2a3af7",
+    "code": "counselling",
+    "name": "counselling",
+    "section_id": "46a5fb00-657b-59e1-ad86-aedaf5bdd6b7",
+    "section": "II AIML-C",
+    "type": "L"
+  },
+  {
+    "id": "b68527ec-126f-5892-a031-437b06a525b0",
+    "code": "CC",
+    "name": "CC",
+    "section_id": "46a5fb00-657b-59e1-ad86-aedaf5bdd6b7",
+    "section": "II AIML-C",
+    "type": "L"
+  },
+  {
+    "id": "cbed5a5a-8f08-586d-b91e-d23e30ec9009",
+    "code": "SFCDS",
+    "name": "SFCDS",
+    "section_id": "ecacda94-97c1-5965-9f56-5536139be572",
+    "section": "II AIML-D",
+    "type": "P"
+  },
+  {
+    "id": "8406d6e0-bc18-515d-97af-95525a0adf1d",
+    "code": "DS",
+    "name": "DS",
+    "section_id": "ecacda94-97c1-5965-9f56-5536139be572",
+    "section": "II AIML-D",
+    "type": "L"
+  },
+  {
+    "id": "d4481908-b2be-50e3-bee8-f3f78cda1622",
+    "code": "DBMS",
+    "name": "DBMS",
+    "section_id": "ecacda94-97c1-5965-9f56-5536139be572",
+    "section": "II AIML-D",
+    "type": "T"
+  },
+  {
+    "id": "a4eaa3f3-d32d-5220-b667-448c8de76c0d",
+    "code": "CC",
+    "name": "CC",
+    "section_id": "ecacda94-97c1-5965-9f56-5536139be572",
+    "section": "II AIML-D",
+    "type": "L"
+  },
+  {
+    "id": "352896ed-abbb-5971-b792-f4955e7fbfbd",
+    "code": "OOPS",
+    "name": "OOPS",
+    "section_id": "ecacda94-97c1-5965-9f56-5536139be572",
+    "section": "II AIML-D",
+    "type": "P"
+  },
+  {
+    "id": "d3b0d108-46e0-59e5-9099-e211e29144db",
+    "code": "AI",
+    "name": "AI",
+    "section_id": "ecacda94-97c1-5965-9f56-5536139be572",
+    "section": "II AIML-D",
+    "type": "L"
+  },
+  {
+    "id": "89710556-40dc-5a08-9648-0eaa6f48fb08",
+    "code": "DMS",
+    "name": "DMS",
+    "section_id": "ecacda94-97c1-5965-9f56-5536139be572",
+    "section": "II AIML-D",
+    "type": "T"
+  },
+  {
+    "id": "abecabb9-da8b-56f7-abf1-fb1ce096e124",
+    "code": "DEF",
+    "name": "DEF",
+    "section_id": "ecacda94-97c1-5965-9f56-5536139be572",
+    "section": "II AIML-D",
+    "type": "T"
+  },
+  {
+    "id": "4695ed87-c9f7-57cc-b4c4-51f08c958c14",
+    "code": "Counseling",
+    "name": "Counseling",
+    "section_id": "ecacda94-97c1-5965-9f56-5536139be572",
+    "section": "II AIML-D",
+    "type": "L"
+  },
+  {
+    "id": "cf3f8b0e-7e53-5642-84cb-28b6aa360de8",
+    "code": "DMS",
+    "name": "DMS",
+    "section_id": "dd33b0e7-9f76-538d-93fd-79ba161e83bb",
+    "section": "II AIML-E",
+    "type": "L"
+  },
+  {
+    "id": "92e01e82-0909-5b0e-9ac8-cab09231fdda",
+    "code": "SFCDS",
+    "name": "SFCDS",
+    "section_id": "dd33b0e7-9f76-538d-93fd-79ba161e83bb",
+    "section": "II AIML-E",
+    "type": "L"
+  },
+  {
+    "id": "f262cf78-32c0-57e4-b381-8dac448bbd02",
+    "code": "DS",
+    "name": "DS",
+    "section_id": "dd33b0e7-9f76-538d-93fd-79ba161e83bb",
+    "section": "II AIML-E",
+    "type": "L"
+  },
+  {
+    "id": "cb4a23e1-0b65-5eba-90d6-622bbd6f3ebd",
+    "code": "CC",
+    "name": "CC",
+    "section_id": "dd33b0e7-9f76-538d-93fd-79ba161e83bb",
+    "section": "II AIML-E",
+    "type": "L"
+  },
+  {
+    "id": "e0aeee28-8d84-5e30-aaf8-a21638c52ef1",
+    "code": "OOPS",
+    "name": "OOPS",
+    "section_id": "dd33b0e7-9f76-538d-93fd-79ba161e83bb",
+    "section": "II AIML-E",
+    "type": "T"
+  },
+  {
+    "id": "f94a35a1-6905-5218-a6de-aba7200a238b",
+    "code": "DBMS",
+    "name": "DBMS",
+    "section_id": "dd33b0e7-9f76-538d-93fd-79ba161e83bb",
+    "section": "II AIML-E",
+    "type": "P"
+  },
+  {
+    "id": "29d4e89f-c7cf-5abc-b9a0-bad34998fb74",
+    "code": "AI",
+    "name": "AI",
+    "section_id": "dd33b0e7-9f76-538d-93fd-79ba161e83bb",
+    "section": "II AIML-E",
+    "type": "L"
+  },
+  {
+    "id": "83183d24-b68b-5ba5-978c-9ea3dce39f63",
+    "code": "DEF",
+    "name": "DEF",
+    "section_id": "dd33b0e7-9f76-538d-93fd-79ba161e83bb",
+    "section": "II AIML-E",
+    "type": "P"
+  },
+  {
+    "id": "169c2367-8e78-5197-9f5c-0519e281278e",
+    "code": "DEF",
+    "name": "DEF",
+    "section_id": "98aa776e-f77a-5401-bde1-18381e74cb70",
+    "section": "II AIML-F",
+    "type": "P"
+  },
+  {
+    "id": "c28cb4c8-0eeb-58e6-925f-e969d5b439ee",
+    "code": "DBMS",
+    "name": "DBMS",
+    "section_id": "98aa776e-f77a-5401-bde1-18381e74cb70",
+    "section": "II AIML-F",
+    "type": "L"
+  },
+  {
+    "id": "af7543b5-574d-5b68-98b4-72e3df86013e",
+    "code": "AI",
+    "name": "AI",
+    "section_id": "98aa776e-f77a-5401-bde1-18381e74cb70",
+    "section": "II AIML-F",
+    "type": "L"
+  },
+  {
+    "id": "ec2a65aa-d148-53c7-88c5-a6dce59930b2",
+    "code": "DS",
+    "name": "DS",
+    "section_id": "98aa776e-f77a-5401-bde1-18381e74cb70",
+    "section": "II AIML-F",
+    "type": "T"
+  },
+  {
+    "id": "e8b43a9a-6f8e-506e-a689-59123c319552",
+    "code": "SFCDS",
+    "name": "SFCDS",
+    "section_id": "98aa776e-f77a-5401-bde1-18381e74cb70",
+    "section": "II AIML-F",
+    "type": "P"
+  },
+  {
+    "id": "d84e828d-ccdd-54ad-b9cd-66910213a043",
+    "code": "DMS",
+    "name": "DMS",
+    "section_id": "98aa776e-f77a-5401-bde1-18381e74cb70",
+    "section": "II AIML-F",
+    "type": "L"
+  },
+  {
+    "id": "f7d6f6e3-6058-50ef-a9a8-4698d2c4eeda",
+    "code": "OOPS",
+    "name": "OOPS",
+    "section_id": "98aa776e-f77a-5401-bde1-18381e74cb70",
+    "section": "II AIML-F",
+    "type": "P"
+  },
+  {
+    "id": "b96eaa5a-f32f-5918-b01e-956ba2e785df",
+    "code": "CC",
+    "name": "CC",
+    "section_id": "98aa776e-f77a-5401-bde1-18381e74cb70",
+    "section": "II AIML-F",
+    "type": "L"
+  },
+  {
+    "id": "006384a0-d8db-5988-97a7-a23f125ecc03",
+    "code": "DS",
+    "name": "DS",
+    "section_id": "0d654ed5-8233-5fa2-adb6-c7a753191341",
+    "section": "II AIML-G",
+    "type": "P"
+  },
+  {
+    "id": "85565ebd-77ac-534a-a299-1d0031362858",
+    "code": "DEF",
+    "name": "DEF",
+    "section_id": "0d654ed5-8233-5fa2-adb6-c7a753191341",
+    "section": "II AIML-G",
+    "type": "P"
+  },
+  {
+    "id": "df196f06-3cd0-50d3-8ea4-bf43a21f40ad",
+    "code": "SFCDS",
+    "name": "SFCDS",
+    "section_id": "0d654ed5-8233-5fa2-adb6-c7a753191341",
+    "section": "II AIML-G",
+    "type": "L"
+  },
+  {
+    "id": "f3f51ac3-c5b7-508f-a819-4da1555076a9",
+    "code": "AI",
+    "name": "AI",
+    "section_id": "0d654ed5-8233-5fa2-adb6-c7a753191341",
+    "section": "II AIML-G",
+    "type": "P"
+  },
+  {
+    "id": "2a49f0f3-1505-56c6-add1-15f98f5c7309",
+    "code": "DMS",
+    "name": "DMS",
+    "section_id": "0d654ed5-8233-5fa2-adb6-c7a753191341",
+    "section": "II AIML-G",
+    "type": "L"
+  },
+  {
+    "id": "284d1986-baa3-5f31-adf9-95c9b2444acd",
+    "code": "DBMS",
+    "name": "DBMS",
+    "section_id": "0d654ed5-8233-5fa2-adb6-c7a753191341",
+    "section": "II AIML-G",
+    "type": "P"
+  },
+  {
+    "id": "17e5cdff-cfc1-52cc-aa59-6dd8081c1a09",
+    "code": "OOPS",
+    "name": "OOPS",
+    "section_id": "0d654ed5-8233-5fa2-adb6-c7a753191341",
+    "section": "II AIML-G",
+    "type": "L"
+  },
+  {
+    "id": "14a7da7d-028e-53d7-afaa-3d24ac6f762e",
+    "code": "CC",
+    "name": "CC",
+    "section_id": "0d654ed5-8233-5fa2-adb6-c7a753191341",
+    "section": "II AIML-G",
+    "type": "L"
+  },
+  {
+    "id": "54b042e9-8708-5ba0-b2f9-a05670f5372f",
+    "code": "counselling",
+    "name": "counselling",
+    "section_id": "0d654ed5-8233-5fa2-adb6-c7a753191341",
+    "section": "II AIML-G",
+    "type": "L"
+  },
+  {
+    "id": "d106c2f7-01ef-5110-a91f-2dd612804be1",
+    "code": "DEF",
+    "name": "DEF",
+    "section_id": "fa632814-f5f3-58f0-8463-db81dde3b909",
+    "section": "II AIML-H",
+    "type": "P"
+  },
+  {
+    "id": "b954be86-fdac-5707-b6ef-f70a5d0093f3",
+    "code": "OOPS",
+    "name": "OOPS",
+    "section_id": "fa632814-f5f3-58f0-8463-db81dde3b909",
+    "section": "II AIML-H",
+    "type": "L"
+  },
+  {
+    "id": "b35598e2-d73d-5b79-91c3-54629115cfbe",
+    "code": "AI",
+    "name": "AI",
+    "section_id": "fa632814-f5f3-58f0-8463-db81dde3b909",
+    "section": "II AIML-H",
+    "type": "L"
+  },
+  {
+    "id": "f0da0810-eb48-5a05-8f37-353720ec51a9",
+    "code": "DMS",
+    "name": "DMS",
+    "section_id": "fa632814-f5f3-58f0-8463-db81dde3b909",
+    "section": "II AIML-H",
+    "type": "T"
+  },
+  {
+    "id": "a0f72a36-c811-503f-8153-92d428ebdd91",
+    "code": "counselling",
+    "name": "counselling",
+    "section_id": "fa632814-f5f3-58f0-8463-db81dde3b909",
+    "section": "II AIML-H",
+    "type": "L"
+  },
+  {
+    "id": "68c5e4ea-c764-5f86-be03-2aee21e37793",
+    "code": "SFCDS",
+    "name": "SFCDS",
+    "section_id": "fa632814-f5f3-58f0-8463-db81dde3b909",
+    "section": "II AIML-H",
+    "type": "L"
+  },
+  {
+    "id": "6f7b74fb-3b3a-5419-a977-2f4b09849a99",
+    "code": "DBMS",
+    "name": "DBMS",
+    "section_id": "fa632814-f5f3-58f0-8463-db81dde3b909",
+    "section": "II AIML-H",
+    "type": "L"
+  },
+  {
+    "id": "23e430f8-0830-50ee-9107-4204b8f5eebb",
+    "code": "DS",
+    "name": "DS",
+    "section_id": "fa632814-f5f3-58f0-8463-db81dde3b909",
+    "section": "II AIML-H",
+    "type": "T"
+  },
+  {
+    "id": "8f4f8908-2bbf-5a3f-b355-9b876ca378f5",
+    "code": "CC",
+    "name": "CC",
+    "section_id": "fa632814-f5f3-58f0-8463-db81dde3b909",
+    "section": "II AIML-H",
+    "type": "L"
+  },
+  {
+    "id": "99e43f53-d67d-5f3b-8382-740458d1ec65",
+    "code": "DS",
+    "name": "DS",
+    "section_id": "892dbf87-d7bd-59bd-9fdc-d9652464a84d",
+    "section": "II AIML-I",
+    "type": "P"
+  },
+  {
+    "id": "14f4c8d6-db6e-5e59-8237-ff2b1ea8279d",
+    "code": "AI",
+    "name": "AI",
+    "section_id": "892dbf87-d7bd-59bd-9fdc-d9652464a84d",
+    "section": "II AIML-I",
+    "type": "L"
+  },
+  {
+    "id": "800dfc44-cc1c-5db2-90cc-f8351fb5a01f",
+    "code": "counselling",
+    "name": "counselling",
+    "section_id": "892dbf87-d7bd-59bd-9fdc-d9652464a84d",
+    "section": "II AIML-I",
+    "type": "L"
+  },
+  {
+    "id": "e3a9e8e8-561d-58e5-b8a5-b23f7113fdc2",
+    "code": "SFCDS",
+    "name": "SFCDS",
+    "section_id": "892dbf87-d7bd-59bd-9fdc-d9652464a84d",
+    "section": "II AIML-I",
+    "type": "L"
+  },
+  {
+    "id": "888492be-3cc2-501d-be3b-92d9450de524",
+    "code": "DEF",
+    "name": "DEF",
+    "section_id": "892dbf87-d7bd-59bd-9fdc-d9652464a84d",
+    "section": "II AIML-I",
+    "type": "P"
+  },
+  {
+    "id": "b0971fc6-1367-52e7-a991-e6f000e680d1",
+    "code": "DMS",
+    "name": "DMS",
+    "section_id": "892dbf87-d7bd-59bd-9fdc-d9652464a84d",
+    "section": "II AIML-I",
+    "type": "T"
+  },
+  {
+    "id": "6c248682-4134-57bd-a27e-6c9a38be89e7",
+    "code": "OOPS",
+    "name": "OOPS",
+    "section_id": "892dbf87-d7bd-59bd-9fdc-d9652464a84d",
+    "section": "II AIML-I",
+    "type": "L"
+  },
+  {
+    "id": "bc011d31-a702-5558-968a-39169ccc753f",
+    "code": "DBMS",
+    "name": "DBMS",
+    "section_id": "892dbf87-d7bd-59bd-9fdc-d9652464a84d",
+    "section": "II AIML-I",
+    "type": "P"
+  },
+  {
+    "id": "d2e189d0-038f-5012-a8bb-6aa9de8ffdbd",
+    "code": "CC",
+    "name": "CC",
+    "section_id": "892dbf87-d7bd-59bd-9fdc-d9652464a84d",
+    "section": "II AIML-I",
+    "type": "L"
+  },
+  {
+    "id": "c5bf0b1f-a9db-5498-8f4e-cc5ae88ee198",
+    "code": "OOPS",
+    "name": "OOPS",
+    "section_id": "d2e3711b-9973-5c53-9312-cfa23fb1d9c6",
+    "section": "II AIML-J",
+    "type": "T"
+  },
+  {
+    "id": "abdf3cf3-2055-5363-84d4-ee4d95b60cc4",
+    "code": "SFCDS",
+    "name": "SFCDS",
+    "section_id": "d2e3711b-9973-5c53-9312-cfa23fb1d9c6",
+    "section": "II AIML-J",
+    "type": "L"
+  },
+  {
+    "id": "20cea3e3-5316-5666-afa4-0324d24730c1",
+    "code": "CC",
+    "name": "CC",
+    "section_id": "d2e3711b-9973-5c53-9312-cfa23fb1d9c6",
+    "section": "II AIML-J",
+    "type": "L"
+  },
+  {
+    "id": "0e92791c-5e27-5c16-9aaf-e2365ba9b01e",
+    "code": "DMS",
+    "name": "DMS",
+    "section_id": "d2e3711b-9973-5c53-9312-cfa23fb1d9c6",
+    "section": "II AIML-J",
+    "type": "L"
+  },
+  {
+    "id": "25d66f2d-721d-5467-842c-afd875c383dc",
+    "code": "DBMS",
+    "name": "DBMS",
+    "section_id": "d2e3711b-9973-5c53-9312-cfa23fb1d9c6",
+    "section": "II AIML-J",
+    "type": "P"
+  },
+  {
+    "id": "a4aa8f3e-69a0-55e6-a6c8-d758c9ad3faf",
+    "code": "DEF",
+    "name": "DEF",
+    "section_id": "d2e3711b-9973-5c53-9312-cfa23fb1d9c6",
+    "section": "II AIML-J",
+    "type": "T"
+  },
+  {
+    "id": "5515ae1b-4037-54ba-b4ba-a6118309874b",
+    "code": "DS",
+    "name": "DS",
+    "section_id": "d2e3711b-9973-5c53-9312-cfa23fb1d9c6",
+    "section": "II AIML-J",
+    "type": "P"
+  },
+  {
+    "id": "65fd6aca-af1b-5504-86a3-9ec8c1af8089",
+    "code": "AI",
+    "name": "AI",
+    "section_id": "d2e3711b-9973-5c53-9312-cfa23fb1d9c6",
+    "section": "II AIML-J",
+    "type": "L"
+  },
+  {
+    "id": "06a5147e-027c-5860-aba4-4c0f7d7c64b8",
+    "code": "DBMS",
+    "name": "DBMS",
+    "section_id": "97064654-ce05-52e6-bb00-d22801228e65",
+    "section": "II AIML-K",
+    "type": "P"
+  },
+  {
+    "id": "1a197aab-123a-5b02-8a39-e70f2938c22a",
+    "code": "OOPS",
+    "name": "OOPS",
+    "section_id": "97064654-ce05-52e6-bb00-d22801228e65",
+    "section": "II AIML-K",
+    "type": "L"
+  },
+  {
+    "id": "85111741-27e8-572a-84a2-17590c91c393",
+    "code": "CC",
+    "name": "CC",
+    "section_id": "97064654-ce05-52e6-bb00-d22801228e65",
+    "section": "II AIML-K",
+    "type": "L"
+  },
+  {
+    "id": "d166c6e0-1b75-57e9-8a00-377bace4a111",
+    "code": "DS",
+    "name": "DS",
+    "section_id": "97064654-ce05-52e6-bb00-d22801228e65",
+    "section": "II AIML-K",
+    "type": "T"
+  },
+  {
+    "id": "f9bdc301-e822-5613-998a-004a898e0ab1",
+    "code": "DMS",
+    "name": "DMS",
+    "section_id": "97064654-ce05-52e6-bb00-d22801228e65",
+    "section": "II AIML-K",
+    "type": "L"
+  },
+  {
+    "id": "fe328235-531e-58b1-aa55-2e004244d58b",
+    "code": "SFCDS",
+    "name": "SFCDS",
+    "section_id": "97064654-ce05-52e6-bb00-d22801228e65",
+    "section": "II AIML-K",
+    "type": "L"
+  },
+  {
+    "id": "1aa9e67d-f355-5ffa-91d9-3593c32fa1a1",
+    "code": "AI",
+    "name": "AI",
+    "section_id": "97064654-ce05-52e6-bb00-d22801228e65",
+    "section": "II AIML-K",
+    "type": "P"
+  },
+  {
+    "id": "087bf47e-499d-5290-afc0-d4a79e10b2f0",
+    "code": "DEF",
+    "name": "DEF",
+    "section_id": "97064654-ce05-52e6-bb00-d22801228e65",
+    "section": "II AIML-K",
+    "type": "T"
+  },
+  {
+    "id": "3a30f239-9d95-5f7a-8fce-d66bb3a4e1b8",
+    "code": "counselling",
+    "name": "counselling",
+    "section_id": "97064654-ce05-52e6-bb00-d22801228e65",
+    "section": "II AIML-K",
+    "type": "L"
+  },
+  {
+    "id": "a7a9b839-dca4-5660-b87e-9f78f25b61d3",
+    "code": "SFCDS",
+    "name": "SFCDS",
+    "section_id": "33d1e055-7e54-5056-a21e-c5c7093c8f0c",
+    "section": "II AIML-L",
+    "type": "L"
+  },
+  {
+    "id": "bc137186-9e28-5fc6-ad73-3c228a7ef39d",
+    "code": "DMS",
+    "name": "DMS",
+    "section_id": "33d1e055-7e54-5056-a21e-c5c7093c8f0c",
+    "section": "II AIML-L",
+    "type": "L"
+  },
+  {
+    "id": "66c11670-a6a7-53f7-bfd6-c695555f73d1",
+    "code": "CC",
+    "name": "CC",
+    "section_id": "33d1e055-7e54-5056-a21e-c5c7093c8f0c",
+    "section": "II AIML-L",
+    "type": "L"
+  },
+  {
+    "id": "6af91aad-74e4-54b3-b50d-70a99533151b",
+    "code": "DS",
+    "name": "DS",
+    "section_id": "33d1e055-7e54-5056-a21e-c5c7093c8f0c",
+    "section": "II AIML-L",
+    "type": "L"
+  },
+  {
+    "id": "5cb459ec-2bfb-5252-8d64-3ea5ae979007",
+    "code": "AI",
+    "name": "AI",
+    "section_id": "33d1e055-7e54-5056-a21e-c5c7093c8f0c",
+    "section": "II AIML-L",
+    "type": "L"
+  },
+  {
+    "id": "7a4e5bfc-4002-5cf3-b7e3-7dab77035d1c",
+    "code": "DBMS",
+    "name": "DBMS",
+    "section_id": "33d1e055-7e54-5056-a21e-c5c7093c8f0c",
+    "section": "II AIML-L",
+    "type": "T"
+  },
+  {
+    "id": "e4ac619a-5916-57c8-9e38-1f2c85095578",
+    "code": "OOPS",
+    "name": "OOPS",
+    "section_id": "33d1e055-7e54-5056-a21e-c5c7093c8f0c",
+    "section": "II AIML-L",
+    "type": "L"
+  },
+  {
+    "id": "79f2639f-72df-5a7f-9def-988b685d098a",
+    "code": "DEF",
+    "name": "DEF",
+    "section_id": "33d1e055-7e54-5056-a21e-c5c7093c8f0c",
+    "section": "II AIML-L",
+    "type": "T"
+  },
+  {
+    "id": "659dffd6-8d83-5d03-bef4-52efaa0bf5b0",
+    "code": "QALR",
+    "name": "QALR",
+    "section_id": "6572dbad-ba08-549c-ac1a-1cbd969f1bc6",
+    "section": "III AIML-A",
+    "type": "T"
+  },
+  {
+    "id": "479698a0-78ef-5ed2-a1ac-1a93548b79b1",
+    "code": "ADS",
+    "name": "ADS",
+    "section_id": "6572dbad-ba08-549c-ac1a-1cbd969f1bc6",
+    "section": "III AIML-A",
+    "type": "P"
+  },
+  {
+    "id": "9d03f075-55ad-53b8-b1a0-0bb478e38407",
+    "code": "DL",
+    "name": "DL",
+    "section_id": "6572dbad-ba08-549c-ac1a-1cbd969f1bc6",
+    "section": "III AIML-A",
+    "type": "L"
+  },
+  {
+    "id": "439455ff-686d-5f55-a942-85305440f376",
+    "code": "SL(SELF LEARNING)",
+    "name": "SL(SELF LEARNING)",
+    "section_id": "6572dbad-ba08-549c-ac1a-1cbd969f1bc6",
+    "section": "III AIML-A",
+    "type": "L"
+  },
+  {
+    "id": "4741d074-f943-53f1-9d48-c2faf4cb934f",
+    "code": "WT",
+    "name": "WT",
+    "section_id": "6572dbad-ba08-549c-ac1a-1cbd969f1bc6",
+    "section": "III AIML-A",
+    "type": "L"
+  },
+  {
+    "id": "da4eb537-17e2-59bc-9586-12c494a65bd9",
+    "code": "CRT",
+    "name": "CRT",
+    "section_id": "6572dbad-ba08-549c-ac1a-1cbd969f1bc6",
+    "section": "III AIML-A",
+    "type": "L"
+  },
+  {
+    "id": "2c28261e-3914-5b49-8ee0-43749da0d239",
+    "code": "CV",
+    "name": "CV",
+    "section_id": "6572dbad-ba08-549c-ac1a-1cbd969f1bc6",
+    "section": "III AIML-A",
+    "type": "L"
+  },
+  {
+    "id": "2b7f55b9-4478-502d-9bd7-9205d3959485",
+    "code": "OE",
+    "name": "OE",
+    "section_id": "6572dbad-ba08-549c-ac1a-1cbd969f1bc6",
+    "section": "III AIML-A",
+    "type": "L"
+  },
+  {
+    "id": "7c184d4a-c154-56f3-8265-f8f76cc3e22e",
+    "code": "CRT-FSD",
+    "name": "CRT-FSD",
+    "section_id": "6572dbad-ba08-549c-ac1a-1cbd969f1bc6",
+    "section": "III AIML-A",
+    "type": "L"
+  },
+  {
+    "id": "4678c30b-9921-5ed4-91b6-cd827efb7570",
+    "code": "MINORS/HONORS",
+    "name": "MINORS/HONORS",
+    "section_id": "6572dbad-ba08-549c-ac1a-1cbd969f1bc6",
+    "section": "III AIML-A",
+    "type": "L"
+  },
+  {
+    "id": "a11c76e5-4d4e-52ec-a117-7161661d3d07",
+    "code": "IDP",
+    "name": "IDP",
+    "section_id": "6572dbad-ba08-549c-ac1a-1cbd969f1bc6",
+    "section": "III AIML-A",
+    "type": "L"
+  },
+  {
+    "id": "afa5a01b-fde2-5f31-9d80-083c7ed8169d",
+    "code": "counselling",
+    "name": "counselling",
+    "section_id": "6572dbad-ba08-549c-ac1a-1cbd969f1bc6",
+    "section": "III AIML-A",
+    "type": "L"
+  },
+  {
+    "id": "c6b06566-b7c1-5314-9f20-d28ec79c6d25",
+    "code": "DL",
+    "name": "DL",
+    "section_id": "5c6062fe-d101-5565-9c99-2f25fd7485af",
+    "section": "III AIML-B",
+    "type": "L"
+  },
+  {
+    "id": "6618e69a-4d6f-5ff2-902d-a817ab71b4ab",
+    "code": "WT",
+    "name": "WT",
+    "section_id": "5c6062fe-d101-5565-9c99-2f25fd7485af",
+    "section": "III AIML-B",
+    "type": "L"
+  },
+  {
+    "id": "99bcc9e3-ef4d-59f2-bf47-f984772d2ad5",
+    "code": "QALR",
+    "name": "QALR",
+    "section_id": "5c6062fe-d101-5565-9c99-2f25fd7485af",
+    "section": "III AIML-B",
+    "type": "P"
+  },
+  {
+    "id": "4e487686-8b12-50ff-b876-a09ab7e50937",
+    "code": "MLOP",
+    "name": "MLOP",
+    "section_id": "5c6062fe-d101-5565-9c99-2f25fd7485af",
+    "section": "III AIML-B",
+    "type": "L"
+  },
+  {
+    "id": "85e34b84-431d-5029-a4a6-fcb585f3e8df",
+    "code": "CRT-FSD",
+    "name": "CRT-FSD",
+    "section_id": "5c6062fe-d101-5565-9c99-2f25fd7485af",
+    "section": "III AIML-B",
+    "type": "L"
+  },
+  {
+    "id": "cb1dbbd7-f59c-5de2-9ca8-17ab0b5ea21f",
+    "code": "CV",
+    "name": "CV",
+    "section_id": "5c6062fe-d101-5565-9c99-2f25fd7485af",
+    "section": "III AIML-B",
+    "type": "L"
+  },
+  {
+    "id": "e0c68145-a061-55ff-bd39-b2140b78c622",
+    "code": "LIB",
+    "name": "LIB",
+    "section_id": "5c6062fe-d101-5565-9c99-2f25fd7485af",
+    "section": "III AIML-B",
+    "type": "L"
+  },
+  {
+    "id": "1d2747cb-15ca-52d1-9c8b-3797be6e5729",
+    "code": "IDP",
+    "name": "IDP",
+    "section_id": "5c6062fe-d101-5565-9c99-2f25fd7485af",
+    "section": "III AIML-B",
+    "type": "L"
+  },
+  {
+    "id": "04707cd4-89d3-5882-929a-a91a01efb270",
+    "code": "MINORS/HONORS",
+    "name": "MINORS/HONORS",
+    "section_id": "5c6062fe-d101-5565-9c99-2f25fd7485af",
+    "section": "III AIML-B",
+    "type": "L"
+  },
+  {
+    "id": "0fd7641f-3017-57c5-a8ea-d1a2dd63db6b",
+    "code": "counselling",
+    "name": "counselling",
+    "section_id": "5c6062fe-d101-5565-9c99-2f25fd7485af",
+    "section": "III AIML-B",
+    "type": "L"
+  },
+  {
+    "id": "7fb299ce-d350-57cd-9473-52f27b9006a7",
+    "code": "SL(SELF LEARNING)",
+    "name": "SL(SELF LEARNING)",
+    "section_id": "5c6062fe-d101-5565-9c99-2f25fd7485af",
+    "section": "III AIML-B",
+    "type": "L"
+  },
+  {
+    "id": "5b2270ef-d55c-56c8-a27e-63bb3745aec3",
+    "code": "OE",
+    "name": "OE",
+    "section_id": "5c6062fe-d101-5565-9c99-2f25fd7485af",
+    "section": "III AIML-B",
+    "type": "L"
+  },
+  {
+    "id": "86e878c8-9e51-5cf7-8aaa-06e50da157ae",
+    "code": "SL/EL",
+    "name": "SL/EL",
+    "section_id": "5c6062fe-d101-5565-9c99-2f25fd7485af",
+    "section": "III AIML-B",
+    "type": "L"
+  },
+  {
+    "id": "d5fa43bb-857f-51d1-8211-027b19da7b10",
+    "code": "CV",
+    "name": "CV",
+    "section_id": "29c07922-2e4b-5abf-b5ea-21a36e6a6346",
+    "section": "III AIML-C",
+    "type": "L"
+  },
+  {
+    "id": "3af77383-368e-5a3e-bb3b-4c14bda31087",
+    "code": "DL",
+    "name": "DL",
+    "section_id": "29c07922-2e4b-5abf-b5ea-21a36e6a6346",
+    "section": "III AIML-C",
+    "type": "L"
+  },
+  {
+    "id": "c4322cb4-568b-52d3-99b4-92b78947ac64",
+    "code": "WT",
+    "name": "WT",
+    "section_id": "29c07922-2e4b-5abf-b5ea-21a36e6a6346",
+    "section": "III AIML-C",
+    "type": "L"
+  },
+  {
+    "id": "dc56c619-1e7e-522b-a3cd-cad23c650874",
+    "code": "IDP",
+    "name": "IDP",
+    "section_id": "29c07922-2e4b-5abf-b5ea-21a36e6a6346",
+    "section": "III AIML-C",
+    "type": "L"
+  },
+  {
+    "id": "9804f159-bdc4-5a5b-a004-cb3840d70a07",
+    "code": "SL(SELF LEARNING)",
+    "name": "SL(SELF LEARNING)",
+    "section_id": "29c07922-2e4b-5abf-b5ea-21a36e6a6346",
+    "section": "III AIML-C",
+    "type": "L"
+  },
+  {
+    "id": "4e4db6f9-36d1-547f-8d80-41a00492b834",
+    "code": "QALR",
+    "name": "QALR",
+    "section_id": "29c07922-2e4b-5abf-b5ea-21a36e6a6346",
+    "section": "III AIML-C",
+    "type": "L"
+  },
+  {
+    "id": "35845b03-7ddb-520f-b835-0366b85d2773",
+    "code": "ADS",
+    "name": "ADS",
+    "section_id": "29c07922-2e4b-5abf-b5ea-21a36e6a6346",
+    "section": "III AIML-C",
+    "type": "L"
+  },
+  {
+    "id": "9599b5da-ec60-577a-a127-c89f41279469",
+    "code": "MINORS/HONORS",
+    "name": "MINORS/HONORS",
+    "section_id": "29c07922-2e4b-5abf-b5ea-21a36e6a6346",
+    "section": "III AIML-C",
+    "type": "L"
+  },
+  {
+    "id": "5f86e336-103f-5156-a66d-abcb6e9c15f4",
+    "code": "CRT-FSD",
+    "name": "CRT-FSD",
+    "section_id": "29c07922-2e4b-5abf-b5ea-21a36e6a6346",
+    "section": "III AIML-C",
+    "type": "L"
+  },
+  {
+    "id": "8c4d97cd-9981-596b-a111-8af52d6de1ae",
+    "code": "OE",
+    "name": "OE",
+    "section_id": "29c07922-2e4b-5abf-b5ea-21a36e6a6346",
+    "section": "III AIML-C",
+    "type": "L"
+  },
+  {
+    "id": "76884d42-bbe0-53e8-ac36-df952e6476c2",
+    "code": "CRT-FSD",
+    "name": "CRT-FSD",
+    "section_id": "6f0202d3-1898-52ee-a76c-918711f201de",
+    "section": "III AIML-D",
+    "type": "L"
+  },
+  {
+    "id": "1b8b6f07-6b87-5021-a11a-bac1cdd7f385",
+    "code": "OE",
+    "name": "OE",
+    "section_id": "6f0202d3-1898-52ee-a76c-918711f201de",
+    "section": "III AIML-D",
+    "type": "L"
+  },
+  {
+    "id": "f629abc2-bc89-54eb-9b91-30fff5aad8a2",
+    "code": "DL",
+    "name": "DL",
+    "section_id": "6f0202d3-1898-52ee-a76c-918711f201de",
+    "section": "III AIML-D",
+    "type": "P"
+  },
+  {
+    "id": "9fb93806-b0a7-596a-91b3-39c22007afd1",
+    "code": "WT",
+    "name": "WT",
+    "section_id": "6f0202d3-1898-52ee-a76c-918711f201de",
+    "section": "III AIML-D",
+    "type": "L"
+  },
+  {
+    "id": "e298b382-ba78-5871-8056-c822c8560d02",
+    "code": "MLOP",
+    "name": "MLOP",
+    "section_id": "6f0202d3-1898-52ee-a76c-918711f201de",
+    "section": "III AIML-D",
+    "type": "L"
+  },
+  {
+    "id": "d922e9b1-ca5f-527c-be8e-5e362ff8421e",
+    "code": "QALR",
+    "name": "QALR",
+    "section_id": "6f0202d3-1898-52ee-a76c-918711f201de",
+    "section": "III AIML-D",
+    "type": "L"
+  },
+  {
+    "id": "1a1cb10f-e277-5bae-9fcb-4e0f115b750e",
+    "code": "SL(SELF LEARNING)",
+    "name": "SL(SELF LEARNING)",
+    "section_id": "6f0202d3-1898-52ee-a76c-918711f201de",
+    "section": "III AIML-D",
+    "type": "L"
+  },
+  {
+    "id": "31693029-c98f-57d2-bca7-940e1e9cde4b",
+    "code": "CV",
+    "name": "CV",
+    "section_id": "6f0202d3-1898-52ee-a76c-918711f201de",
+    "section": "III AIML-D",
+    "type": "L"
+  },
+  {
+    "id": "259dc95a-f64a-5ba1-a04b-df4777977ac2",
+    "code": "counselling",
+    "name": "counselling",
+    "section_id": "6f0202d3-1898-52ee-a76c-918711f201de",
+    "section": "III AIML-D",
+    "type": "L"
+  },
+  {
+    "id": "de9c9c57-0260-5dfc-85cc-086db0c1e7b4",
+    "code": "MINORS/HONORS",
+    "name": "MINORS/HONORS",
+    "section_id": "6f0202d3-1898-52ee-a76c-918711f201de",
+    "section": "III AIML-D",
+    "type": "L"
+  },
+  {
+    "id": "1d404186-ace6-54d2-91c3-6416b211fce5",
+    "code": "LIB",
+    "name": "LIB",
+    "section_id": "6f0202d3-1898-52ee-a76c-918711f201de",
+    "section": "III AIML-D",
+    "type": "L"
+  },
+  {
+    "id": "73cc9edd-3214-5729-90be-2b5ab7422042",
+    "code": "IDP",
+    "name": "IDP",
+    "section_id": "6f0202d3-1898-52ee-a76c-918711f201de",
+    "section": "III AIML-D",
+    "type": "L"
+  },
+  {
+    "id": "12814cb2-5e9f-5cb4-a216-94611d86e83f",
+    "code": "SL/EL",
+    "name": "SL/EL",
+    "section_id": "6f0202d3-1898-52ee-a76c-918711f201de",
+    "section": "III AIML-D",
+    "type": "L"
+  },
+  {
+    "id": "e8c9c7b4-5e6c-51e5-918a-c400698f70e1",
+    "code": "CV",
+    "name": "CV",
+    "section_id": "119a12ff-6e45-5d8a-971f-827e75542e36",
+    "section": "III AIML-E",
+    "type": "L"
+  },
+  {
+    "id": "480df22a-4f40-537c-84cb-9b48608f1982",
+    "code": "MLOP",
+    "name": "MLOP",
+    "section_id": "119a12ff-6e45-5d8a-971f-827e75542e36",
+    "section": "III AIML-E",
+    "type": "L"
+  },
+  {
+    "id": "ba657344-e401-5297-90b9-bdd4d3dee360",
+    "code": "QALR",
+    "name": "QALR",
+    "section_id": "119a12ff-6e45-5d8a-971f-827e75542e36",
+    "section": "III AIML-E",
+    "type": "L"
+  },
+  {
+    "id": "e9fe4dd9-d7f2-5dc1-a06c-ee411501ece4",
+    "code": "DL",
+    "name": "DL",
+    "section_id": "119a12ff-6e45-5d8a-971f-827e75542e36",
+    "section": "III AIML-E",
+    "type": "L"
+  },
+  {
+    "id": "c6e59cb7-8ee2-5bb6-b4f8-1422387dfb48",
+    "code": "WT",
+    "name": "WT",
+    "section_id": "119a12ff-6e45-5d8a-971f-827e75542e36",
+    "section": "III AIML-E",
+    "type": "P"
+  },
+  {
+    "id": "4cb8cddf-a93f-50d7-9f9a-4cd4b988dae8",
+    "code": "LIB",
+    "name": "LIB",
+    "section_id": "119a12ff-6e45-5d8a-971f-827e75542e36",
+    "section": "III AIML-E",
+    "type": "L"
+  },
+  {
+    "id": "f4e2e235-46d4-54a7-81c9-48b193980a7c",
+    "code": "CRT-FSD",
+    "name": "CRT-FSD",
+    "section_id": "119a12ff-6e45-5d8a-971f-827e75542e36",
+    "section": "III AIML-E",
+    "type": "L"
+  },
+  {
+    "id": "cc480fc9-dfed-5376-945e-75c97fcc8df8",
+    "code": "MINORS/HONORS",
+    "name": "MINORS/HONORS",
+    "section_id": "119a12ff-6e45-5d8a-971f-827e75542e36",
+    "section": "III AIML-E",
+    "type": "L"
+  },
+  {
+    "id": "4385765c-5135-5cf8-9967-4ca9cac17123",
+    "code": "IDP",
+    "name": "IDP",
+    "section_id": "119a12ff-6e45-5d8a-971f-827e75542e36",
+    "section": "III AIML-E",
+    "type": "L"
+  },
+  {
+    "id": "da10994c-d16f-5ff9-a527-e600578c0b5f",
+    "code": "OE",
+    "name": "OE",
+    "section_id": "119a12ff-6e45-5d8a-971f-827e75542e36",
+    "section": "III AIML-E",
+    "type": "L"
+  },
+  {
+    "id": "c72c20f5-be2e-5984-bb9d-5831464077ef",
+    "code": "SL(SELF LEARNING)",
+    "name": "SL(SELF LEARNING)",
+    "section_id": "119a12ff-6e45-5d8a-971f-827e75542e36",
+    "section": "III AIML-E",
+    "type": "L"
+  },
+  {
+    "id": "5c4beddb-5180-5be1-b515-5a07aeffc9d3",
+    "code": "FIP",
+    "name": "FIP",
+    "section_id": "0dceb5e8-2733-5dac-8490-28a33399c208",
+    "section": "III AIML-F",
+    "type": "P"
+  },
+  {
+    "id": "86551f7f-e21b-549e-a1c7-e9f3dddcd5d7",
+    "code": "CV",
+    "name": "CV",
+    "section_id": "0dceb5e8-2733-5dac-8490-28a33399c208",
+    "section": "III AIML-F",
+    "type": "L"
+  },
+  {
+    "id": "b050bd66-b2de-5cdb-b3df-cbfab45f9cb0",
+    "code": "WT",
+    "name": "WT",
+    "section_id": "0dceb5e8-2733-5dac-8490-28a33399c208",
+    "section": "III AIML-F",
+    "type": "P"
+  },
+  {
+    "id": "01b129d3-41e8-50e0-a8b1-1621bffcfa38",
+    "code": "SL(SELF LEARNING)",
+    "name": "SL(SELF LEARNING)",
+    "section_id": "0dceb5e8-2733-5dac-8490-28a33399c208",
+    "section": "III AIML-F",
+    "type": "L"
+  },
+  {
+    "id": "f83fee18-0bdf-5a1b-89e2-7e2599dea6ef",
+    "code": "QALR",
+    "name": "QALR",
+    "section_id": "0dceb5e8-2733-5dac-8490-28a33399c208",
+    "section": "III AIML-F",
+    "type": "L"
+  },
+  {
+    "id": "f9aa562c-6a1f-5f8e-84b2-211bc9958bb2",
+    "code": "CRT-FSD",
+    "name": "CRT-FSD",
+    "section_id": "0dceb5e8-2733-5dac-8490-28a33399c208",
+    "section": "III AIML-F",
+    "type": "L"
+  },
+  {
+    "id": "64a7da17-850b-54b1-be38-6166c65a050b",
+    "code": "DL",
+    "name": "DL",
+    "section_id": "0dceb5e8-2733-5dac-8490-28a33399c208",
+    "section": "III AIML-F",
+    "type": "L"
+  },
+  {
+    "id": "bfd32c9e-789d-59c6-9217-4886b2508047",
+    "code": "counselling",
+    "name": "counselling",
+    "section_id": "0dceb5e8-2733-5dac-8490-28a33399c208",
+    "section": "III AIML-F",
+    "type": "L"
+  },
+  {
+    "id": "03cad72e-72a0-50cb-b16f-23126aa9fd4b",
+    "code": "MINORS/HONORS",
+    "name": "MINORS/HONORS",
+    "section_id": "0dceb5e8-2733-5dac-8490-28a33399c208",
+    "section": "III AIML-F",
+    "type": "L"
+  },
+  {
+    "id": "4d18d11f-cbf7-5f0f-bb08-0b9964aababa",
+    "code": "IDP",
+    "name": "IDP",
+    "section_id": "0dceb5e8-2733-5dac-8490-28a33399c208",
+    "section": "III AIML-F",
+    "type": "L"
+  },
+  {
+    "id": "63632fd6-df84-56a9-9a52-0749683f25c2",
+    "code": "OE",
+    "name": "OE",
+    "section_id": "0dceb5e8-2733-5dac-8490-28a33399c208",
+    "section": "III AIML-F",
+    "type": "L"
+  },
+  {
+    "id": "1aec6e65-b2fa-52f5-9598-2f5252fa3c33",
+    "code": "DL",
+    "name": "DL",
+    "section_id": "26ae89a1-1341-501f-a06a-ae2f087f0314",
+    "section": "III AIML-G",
+    "type": "L"
+  },
+  {
+    "id": "68a9a202-feb3-5a21-af38-f41d021e770c",
+    "code": "CV",
+    "name": "CV",
+    "section_id": "26ae89a1-1341-501f-a06a-ae2f087f0314",
+    "section": "III AIML-G",
+    "type": "L"
+  },
+  {
+    "id": "4d06fec4-7f3e-5bcb-b546-65cca39ad3df",
+    "code": "MLOP",
+    "name": "MLOP",
+    "section_id": "26ae89a1-1341-501f-a06a-ae2f087f0314",
+    "section": "III AIML-G",
+    "type": "L"
+  },
+  {
+    "id": "d3567096-da32-56be-9276-ab562bc0fc3e",
+    "code": "CRT-FSD",
+    "name": "CRT-FSD",
+    "section_id": "26ae89a1-1341-501f-a06a-ae2f087f0314",
+    "section": "III AIML-G",
+    "type": "L"
+  },
+  {
+    "id": "ba6ef5f4-a9e4-51a2-91a7-a1f9700e1d54",
+    "code": "WT",
+    "name": "WT",
+    "section_id": "26ae89a1-1341-501f-a06a-ae2f087f0314",
+    "section": "III AIML-G",
+    "type": "L"
+  },
+  {
+    "id": "7fbccca8-b8df-5441-951b-32d22c1b07e2",
+    "code": "LIB",
+    "name": "LIB",
+    "section_id": "26ae89a1-1341-501f-a06a-ae2f087f0314",
+    "section": "III AIML-G",
+    "type": "L"
+  },
+  {
+    "id": "a6eba70d-aaea-53cb-b2af-a39b3dddadbf",
+    "code": "counselling",
+    "name": "counselling",
+    "section_id": "26ae89a1-1341-501f-a06a-ae2f087f0314",
+    "section": "III AIML-G",
+    "type": "L"
+  },
+  {
+    "id": "2017bdf7-2dfa-50f1-9663-f81bcaea1cc0",
+    "code": "MINORS/HONORS",
+    "name": "MINORS/HONORS",
+    "section_id": "26ae89a1-1341-501f-a06a-ae2f087f0314",
+    "section": "III AIML-G",
+    "type": "L"
+  },
+  {
+    "id": "b9708014-ff34-52ef-aba6-a9a1dc1e0838",
+    "code": "QALR",
+    "name": "QALR",
+    "section_id": "26ae89a1-1341-501f-a06a-ae2f087f0314",
+    "section": "III AIML-G",
+    "type": "L"
+  },
+  {
+    "id": "b3f5e121-1be0-5163-a9e9-5a501a94f270",
+    "code": "OE",
+    "name": "OE",
+    "section_id": "26ae89a1-1341-501f-a06a-ae2f087f0314",
+    "section": "III AIML-G",
+    "type": "L"
+  },
+  {
+    "id": "e62841ce-e3fb-5f5f-85ab-dea77708b389",
+    "code": "IDP",
+    "name": "IDP",
+    "section_id": "26ae89a1-1341-501f-a06a-ae2f087f0314",
+    "section": "III AIML-G",
+    "type": "L"
+  },
+  {
+    "id": "501e2a62-4fa5-5a2f-a1d5-cdd99a84d981",
+    "code": "SL(SELF LEARNING)",
+    "name": "SL(SELF LEARNING)",
+    "section_id": "26ae89a1-1341-501f-a06a-ae2f087f0314",
+    "section": "III AIML-G",
+    "type": "L"
+  },
+  {
+    "id": "5559700b-472b-544b-8781-f6fdf3c7e999",
+    "code": "SL/EL",
+    "name": "SL/EL",
+    "section_id": "26ae89a1-1341-501f-a06a-ae2f087f0314",
+    "section": "III AIML-G",
+    "type": "L"
+  },
+  {
+    "id": "7aad70de-1e09-56b7-8495-3bab15d11cdf",
+    "code": "CNS",
+    "name": "CNS",
+    "section_id": "c9f5c6a8-c31f-58bd-b497-39a9e246070e",
+    "section": "IV AIML-A",
+    "type": "L"
+  },
+  {
+    "id": "a918ba43-24ad-57c0-83b2-d4e4e0c3c1ba",
+    "code": "TM",
+    "name": "TM",
+    "section_id": "c9f5c6a8-c31f-58bd-b497-39a9e246070e",
+    "section": "IV AIML-A",
+    "type": "L"
+  },
+  {
+    "id": "6045b410-2465-546c-bf75-b4e5395d3049",
+    "code": "KRR",
+    "name": "KRR",
+    "section_id": "c9f5c6a8-c31f-58bd-b497-39a9e246070e",
+    "section": "IV AIML-A",
+    "type": "L"
+  },
+  {
+    "id": "7bd7c754-8986-5c47-a203-4cd0303ea919",
+    "code": "GEN AI & AS",
+    "name": "GEN AI & AS",
+    "section_id": "c9f5c6a8-c31f-58bd-b497-39a9e246070e",
+    "section": "IV AIML-A",
+    "type": "L"
+  },
+  {
+    "id": "e4f8dfbd-6773-5e47-8329-844964fcb191",
+    "code": "ETHICS",
+    "name": "ETHICS",
+    "section_id": "c9f5c6a8-c31f-58bd-b497-39a9e246070e",
+    "section": "IV AIML-A",
+    "type": "L"
+  },
+  {
+    "id": "da73f400-2f1c-5a0f-922e-b9f6147c6aa8",
+    "code": "GEN AI",
+    "name": "GEN AI",
+    "section_id": "c9f5c6a8-c31f-58bd-b497-39a9e246070e",
+    "section": "IV AIML-A",
+    "type": "L"
+  },
+  {
+    "id": "cdb005f3-f882-5cd0-85d0-dc9ed1059848",
+    "code": "IOT",
+    "name": "IOT",
+    "section_id": "c9f5c6a8-c31f-58bd-b497-39a9e246070e",
+    "section": "IV AIML-A",
+    "type": "L"
+  },
+  {
+    "id": "6c2729e2-6d13-582e-a6a9-0fd1ee571b56",
+    "code": "MINORS/HONORS",
+    "name": "MINORS/HONORS",
+    "section_id": "c9f5c6a8-c31f-58bd-b497-39a9e246070e",
+    "section": "IV AIML-A",
+    "type": "L"
+  },
+  {
+    "id": "35192878-3100-50c2-994b-e18540eae299",
+    "code": "GENAI",
+    "name": "GENAI",
+    "section_id": "c9f5c6a8-c31f-58bd-b497-39a9e246070e",
+    "section": "IV AIML-A",
+    "type": "L"
+  },
+  {
+    "id": "945f5836-9c77-5e5d-b6d6-96d25fae64d3",
+    "code": "GEN AI",
+    "name": "GEN AI",
+    "section_id": "ffe2c837-ca7e-588f-932c-f2590461fa97",
+    "section": "IV AIML-B",
+    "type": "L"
+  },
+  {
+    "id": "1ce8f03f-d6ae-57ba-812b-146dd5a1dfe7",
+    "code": "CNS",
+    "name": "CNS",
+    "section_id": "ffe2c837-ca7e-588f-932c-f2590461fa97",
+    "section": "IV AIML-B",
+    "type": "P"
+  },
+  {
+    "id": "b9191bda-611c-5983-882a-dba220b7acfb",
+    "code": "TM",
+    "name": "TM",
+    "section_id": "ffe2c837-ca7e-588f-932c-f2590461fa97",
+    "section": "IV AIML-B",
+    "type": "L"
+  },
+  {
+    "id": "d3d20973-80ea-5ee4-add3-286c2f9310f8",
+    "code": "IOT",
+    "name": "IOT",
+    "section_id": "ffe2c837-ca7e-588f-932c-f2590461fa97",
+    "section": "IV AIML-B",
+    "type": "L"
+  },
+  {
+    "id": "36d32d66-9a72-53a3-9dab-153723ca985d",
+    "code": "KRR",
+    "name": "KRR",
+    "section_id": "ffe2c837-ca7e-588f-932c-f2590461fa97",
+    "section": "IV AIML-B",
+    "type": "L"
+  },
+  {
+    "id": "c567349f-8835-524f-8053-5d6fbb12bdee",
+    "code": "ETHICS",
+    "name": "ETHICS",
+    "section_id": "ffe2c837-ca7e-588f-932c-f2590461fa97",
+    "section": "IV AIML-B",
+    "type": "T"
+  },
+  {
+    "id": "2379ab0a-fe89-5c55-bb9a-38b3953f0555",
+    "code": "GEN AI & AS",
+    "name": "GEN AI & AS",
+    "section_id": "ffe2c837-ca7e-588f-932c-f2590461fa97",
+    "section": "IV AIML-B",
+    "type": "L"
+  },
+  {
+    "id": "12db8185-cf86-5afe-b81f-377d9217c1b0",
+    "code": "MINORS/HONORS",
+    "name": "MINORS/HONORS",
+    "section_id": "ffe2c837-ca7e-588f-932c-f2590461fa97",
+    "section": "IV AIML-B",
+    "type": "L"
+  },
+  {
+    "id": "22b3ef27-78ee-5438-a2cd-c768d90cceaa",
+    "code": "SL/EL/IL",
+    "name": "SL/EL/IL",
+    "section_id": "ffe2c837-ca7e-588f-932c-f2590461fa97",
+    "section": "IV AIML-B",
+    "type": "L"
+  },
+  {
+    "id": "7c0ab543-f2c1-5f78-9270-9def9b3cb8ba",
+    "code": "GEN AI",
+    "name": "GEN AI",
+    "section_id": "755ec121-b88a-531e-bc38-dcdb51bb0cf4",
+    "section": "IV AIML-C",
+    "type": "L"
+  },
+  {
+    "id": "12f535be-91d7-5c5e-bd9c-52758dc8134f",
+    "code": "TM",
+    "name": "TM",
+    "section_id": "755ec121-b88a-531e-bc38-dcdb51bb0cf4",
+    "section": "IV AIML-C",
+    "type": "L"
+  },
+  {
+    "id": "fd5d9531-3618-58fe-a631-4aaa9c1f17ed",
+    "code": "KRR",
+    "name": "KRR",
+    "section_id": "755ec121-b88a-531e-bc38-dcdb51bb0cf4",
+    "section": "IV AIML-C",
+    "type": "L"
+  },
+  {
+    "id": "7a39b2e6-4a6d-5eea-8c3a-398bb432dc25",
+    "code": "IOT",
+    "name": "IOT",
+    "section_id": "755ec121-b88a-531e-bc38-dcdb51bb0cf4",
+    "section": "IV AIML-C",
+    "type": "L"
+  },
+  {
+    "id": "3d804256-aa95-5a4f-bb9d-725bcd361b91",
+    "code": "ETHICS",
+    "name": "ETHICS",
+    "section_id": "755ec121-b88a-531e-bc38-dcdb51bb0cf4",
+    "section": "IV AIML-C",
+    "type": "L"
+  },
+  {
+    "id": "fe0be302-00a0-56a3-9a10-10af93609a72",
+    "code": "CNS",
+    "name": "CNS",
+    "section_id": "755ec121-b88a-531e-bc38-dcdb51bb0cf4",
+    "section": "IV AIML-C",
+    "type": "L"
+  },
+  {
+    "id": "6f823c05-88bf-5c44-8b97-d93a238c542e",
+    "code": "SL/EL/AL/IL",
+    "name": "SL/EL/AL/IL",
+    "section_id": "755ec121-b88a-531e-bc38-dcdb51bb0cf4",
+    "section": "IV AIML-C",
+    "type": "L"
+  },
+  {
+    "id": "30b93a39-cc5e-501a-a202-c3bab56d59a5",
+    "code": "GEN AI & AS",
+    "name": "GEN AI & AS",
+    "section_id": "755ec121-b88a-531e-bc38-dcdb51bb0cf4",
+    "section": "IV AIML-C",
+    "type": "L"
+  },
+  {
+    "id": "9da155dc-a981-5311-8f73-076fa16fa9f4",
+    "code": "MINORS/HONORS",
+    "name": "MINORS/HONORS",
+    "section_id": "755ec121-b88a-531e-bc38-dcdb51bb0cf4",
+    "section": "IV AIML-C",
+    "type": "L"
+  },
+  {
+    "id": "7b5e8af3-fedb-5686-b464-67f102640aa1",
+    "code": "IOT",
+    "name": "IOT",
+    "section_id": "e08bfed5-59ae-52c0-adf8-8ea6c43b1469",
+    "section": "IV AIML-D",
+    "type": "L"
+  },
+  {
+    "id": "3bbd0993-9668-5052-8625-e98bb4c9edcf",
+    "code": "GEN AI & AS",
+    "name": "GEN AI & AS",
+    "section_id": "e08bfed5-59ae-52c0-adf8-8ea6c43b1469",
+    "section": "IV AIML-D",
+    "type": "L"
+  },
+  {
+    "id": "5df2b3dd-33af-5e39-a472-8899af68471b",
+    "code": "KRR",
+    "name": "KRR",
+    "section_id": "e08bfed5-59ae-52c0-adf8-8ea6c43b1469",
+    "section": "IV AIML-D",
+    "type": "L"
+  },
+  {
+    "id": "7503fc17-3bbb-5a39-adef-dd4944ed8ed4",
+    "code": "CAL/AL/P",
+    "name": "CAL/AL/P",
+    "section_id": "e08bfed5-59ae-52c0-adf8-8ea6c43b1469",
+    "section": "IV AIML-D",
+    "type": "L"
+  },
+  {
+    "id": "d31f5ece-8a38-55e5-b1dd-af42f3500fdf",
+    "code": "ETHICS",
+    "name": "ETHICS",
+    "section_id": "e08bfed5-59ae-52c0-adf8-8ea6c43b1469",
+    "section": "IV AIML-D",
+    "type": "L"
+  },
+  {
+    "id": "6cf1c3ce-856c-5152-b18e-ad7d866a99fc",
+    "code": "CNS",
+    "name": "CNS",
+    "section_id": "e08bfed5-59ae-52c0-adf8-8ea6c43b1469",
+    "section": "IV AIML-D",
+    "type": "P"
+  },
+  {
+    "id": "d6277754-f05c-5c8a-9756-b45c44593a76",
+    "code": "TM",
+    "name": "TM",
+    "section_id": "e08bfed5-59ae-52c0-adf8-8ea6c43b1469",
+    "section": "IV AIML-D",
+    "type": "L"
+  },
+  {
+    "id": "67b6fa0f-a6bb-5d40-a512-3410f10da7e9",
+    "code": "GEN AI",
+    "name": "GEN AI",
+    "section_id": "e08bfed5-59ae-52c0-adf8-8ea6c43b1469",
+    "section": "IV AIML-D",
+    "type": "L"
+  },
+  {
+    "id": "778df458-efe8-55dc-bda5-5db381f483b1",
+    "code": "MINORS/HONORS",
+    "name": "MINORS/HONORS",
+    "section_id": "e08bfed5-59ae-52c0-adf8-8ea6c43b1469",
+    "section": "IV AIML-D",
+    "type": "L"
+  },
+  {
+    "id": "bc1e5444-c6e7-5b77-98d8-858c8e3631f1",
+    "code": "SL/EL/AL/IL",
+    "name": "SL/EL/AL/IL",
+    "section_id": "5f191f36-8687-5d93-b3cd-06602b596883",
+    "section": "IV AIML-E",
+    "type": "L"
+  },
+  {
+    "id": "54d5c615-a5d6-59a8-8d62-400f92d4044d",
+    "code": "IOT",
+    "name": "IOT",
+    "section_id": "5f191f36-8687-5d93-b3cd-06602b596883",
+    "section": "IV AIML-E",
+    "type": "L"
+  },
+  {
+    "id": "7b450847-1d6c-5515-99e3-d0cd1146a71e",
+    "code": "OE",
+    "name": "OE",
+    "section_id": "5f191f36-8687-5d93-b3cd-06602b596883",
+    "section": "IV AIML-E",
+    "type": "L"
+  },
+  {
+    "id": "f61f1e6d-9035-52f6-b91c-fef82fbe57ae",
+    "code": "ETHICS",
+    "name": "ETHICS",
+    "section_id": "5f191f36-8687-5d93-b3cd-06602b596883",
+    "section": "IV AIML-E",
+    "type": "T"
+  },
+  {
+    "id": "f0b1aac2-846d-5371-b8f9-1b95ee268483",
+    "code": "TM",
+    "name": "TM",
+    "section_id": "5f191f36-8687-5d93-b3cd-06602b596883",
+    "section": "IV AIML-E",
+    "type": "P"
+  },
+  {
+    "id": "abe86e7e-0b42-5185-8659-904915a11b42",
+    "code": "GEN AI",
+    "name": "GEN AI",
+    "section_id": "5f191f36-8687-5d93-b3cd-06602b596883",
+    "section": "IV AIML-E",
+    "type": "L"
+  },
+  {
+    "id": "1ab19924-0809-5bb0-87e1-2fc94977014f",
+    "code": "KRR",
+    "name": "KRR",
+    "section_id": "5f191f36-8687-5d93-b3cd-06602b596883",
+    "section": "IV AIML-E",
+    "type": "L"
+  },
+  {
+    "id": "6e36856c-d59a-50cf-857f-e44fcb4431ea",
+    "code": "CNS",
+    "name": "CNS",
+    "section_id": "5f191f36-8687-5d93-b3cd-06602b596883",
+    "section": "IV AIML-E",
+    "type": "L"
+  },
+  {
+    "id": "583cd098-ebab-5bc9-b224-efce5109de90",
+    "code": "MINORS/HONORS",
+    "name": "MINORS/HONORS",
+    "section_id": "5f191f36-8687-5d93-b3cd-06602b596883",
+    "section": "IV AIML-E",
+    "type": "L"
+  },
+  {
+    "id": "1839268e-99be-5f3d-8390-cb3d1abcbe7e",
+    "code": "GEN AI & AS",
+    "name": "GEN AI & AS",
+    "section_id": "5f191f36-8687-5d93-b3cd-06602b596883",
+    "section": "IV AIML-E",
+    "type": "P"
+  },
+  {
+    "id": "b03cbb5c-8ecb-5f40-a713-d61bdf8f4fda",
+    "code": "WDS",
+    "name": "WDS",
+    "section_id": "d7938f9c-4366-5d1d-be98-609f6d48febd",
+    "section": "IV CS (72)",
+    "type": "P"
+  },
+  {
+    "id": "05ca492e-685a-5898-adb8-2aed12b7f934",
+    "code": "IOT",
+    "name": "IOT",
+    "section_id": "d7938f9c-4366-5d1d-be98-609f6d48febd",
+    "section": "IV CS (72)",
+    "type": "L"
+  },
+  {
+    "id": "b5e85a06-7ca8-58e5-af95-fd02c0df3b1c",
+    "code": "ML",
+    "name": "ML",
+    "section_id": "d7938f9c-4366-5d1d-be98-609f6d48febd",
+    "section": "IV CS (72)",
+    "type": "L"
+  },
+  {
+    "id": "5631de76-6f4d-5949-b6c3-7c62cb2f6ea7",
+    "code": "CS",
+    "name": "CS",
+    "section_id": "d7938f9c-4366-5d1d-be98-609f6d48febd",
+    "section": "IV CS (72)",
+    "type": "L"
+  },
+  {
+    "id": "09cd038e-af3e-55fa-a6cd-55752dd3bac4",
+    "code": "ID&PS",
+    "name": "ID&PS",
+    "section_id": "d7938f9c-4366-5d1d-be98-609f6d48febd",
+    "section": "IV CS (72)",
+    "type": "L"
+  },
+  {
+    "id": "15afe8bf-5a47-5fe5-a165-eb0de87efcb5",
+    "code": "MINORS/HONORS",
+    "name": "MINORS/HONORS",
+    "section_id": "d7938f9c-4366-5d1d-be98-609f6d48febd",
+    "section": "IV CS (72)",
+    "type": "L"
+  },
+  {
+    "id": "5f2fe9a5-1e25-56bb-8d40-ee285b5006c9",
+    "code": "ECCS",
+    "name": "ECCS",
+    "section_id": "d7938f9c-4366-5d1d-be98-609f6d48febd",
+    "section": "IV CS (72)",
+    "type": "L"
+  },
+  {
+    "id": "b770bb5e-e92f-58db-bc50-f1e1f5b5a8c1",
+    "code": "TS&AF",
+    "name": "TS&AF",
+    "section_id": "cdb9ca63-ef30-55ae-bbc2-6a67fcd98428",
+    "section": "III DS-A(62)",
+    "type": "L"
+  },
+  {
+    "id": "eeec769b-ad8e-5c17-8beb-71625e4c7fde",
+    "code": "CV",
+    "name": "CV",
+    "section_id": "cdb9ca63-ef30-55ae-bbc2-6a67fcd98428",
+    "section": "III DS-A(62)",
+    "type": "L"
+  },
+  {
+    "id": "8dd82779-71e2-55e0-b456-10b9700e2cbc",
+    "code": "OE",
+    "name": "OE",
+    "section_id": "cdb9ca63-ef30-55ae-bbc2-6a67fcd98428",
+    "section": "III DS-A(62)",
+    "type": "L"
+  },
+  {
+    "id": "c844837b-3725-521f-b17b-b1f20e360f28",
+    "code": "WT",
+    "name": "WT",
+    "section_id": "cdb9ca63-ef30-55ae-bbc2-6a67fcd98428",
+    "section": "III DS-A(62)",
+    "type": "P"
+  },
+  {
+    "id": "e20b2eaf-3c26-503b-aa47-42d6f30abf53",
+    "code": "SL(SELF LEARNING)",
+    "name": "SL(SELF LEARNING)",
+    "section_id": "cdb9ca63-ef30-55ae-bbc2-6a67fcd98428",
+    "section": "III DS-A(62)",
+    "type": "L"
+  },
+  {
+    "id": "8bcaac1a-a06e-5346-93a2-bf6d1ab53d7b",
+    "code": "ML",
+    "name": "ML",
+    "section_id": "cdb9ca63-ef30-55ae-bbc2-6a67fcd98428",
+    "section": "III DS-A(62)",
+    "type": "L"
+  },
+  {
+    "id": "c7d20a97-f960-5ecc-ba6c-0a6713b86564",
+    "code": "TSAF",
+    "name": "TSAF",
+    "section_id": "cdb9ca63-ef30-55ae-bbc2-6a67fcd98428",
+    "section": "III DS-A(62)",
+    "type": "P"
+  },
+  {
+    "id": "c0d33ab3-bb8f-5eb0-b12e-6bd333d9a773",
+    "code": "QALR",
+    "name": "QALR",
+    "section_id": "cdb9ca63-ef30-55ae-bbc2-6a67fcd98428",
+    "section": "III DS-A(62)",
+    "type": "L"
+  },
+  {
+    "id": "0487287e-ded7-555b-8051-b1408403b395",
+    "code": "CRT-FSD",
+    "name": "CRT-FSD",
+    "section_id": "cdb9ca63-ef30-55ae-bbc2-6a67fcd98428",
+    "section": "III DS-A(62)",
+    "type": "L"
+  },
+  {
+    "id": "93100473-8dac-54cb-a7b0-982edb6306b7",
+    "code": "MINORS/HONORS",
+    "name": "MINORS/HONORS",
+    "section_id": "cdb9ca63-ef30-55ae-bbc2-6a67fcd98428",
+    "section": "III DS-A(62)",
+    "type": "L"
+  },
+  {
+    "id": "326e8dd0-6dc3-5250-89f4-adb7140d3c66",
+    "code": "IDP",
+    "name": "IDP",
+    "section_id": "cdb9ca63-ef30-55ae-bbc2-6a67fcd98428",
+    "section": "III DS-A(62)",
+    "type": "L"
+  },
+  {
+    "id": "4894f23d-b881-5c15-bff4-45294e7bc88b",
+    "code": "TSAF",
+    "name": "TSAF",
+    "section_id": "e01ca30b-abd7-5479-ba73-f4553d2f8c71",
+    "section": "III DS-B( 45)",
+    "type": "L"
+  },
+  {
+    "id": "394210ec-c079-5acd-91d4-0283002ad0bb",
+    "code": "ML",
+    "name": "ML",
+    "section_id": "e01ca30b-abd7-5479-ba73-f4553d2f8c71",
+    "section": "III DS-B( 45)",
+    "type": "L"
+  },
+  {
+    "id": "b46c27fb-622c-52c1-8f6c-e1a7f5c22846",
+    "code": "SL(SELF LEARNING)",
+    "name": "SL(SELF LEARNING)",
+    "section_id": "e01ca30b-abd7-5479-ba73-f4553d2f8c71",
+    "section": "III DS-B( 45)",
+    "type": "L"
+  },
+  {
+    "id": "6eefda0e-55a1-53d8-aeb6-679fb0206787",
+    "code": "QALR",
+    "name": "QALR",
+    "section_id": "e01ca30b-abd7-5479-ba73-f4553d2f8c71",
+    "section": "III DS-B( 45)",
+    "type": "L"
+  },
+  {
+    "id": "b0b3ccc1-8810-5015-98f1-f7dce3e6ec6d",
+    "code": "OE",
+    "name": "OE",
+    "section_id": "e01ca30b-abd7-5479-ba73-f4553d2f8c71",
+    "section": "III DS-B( 45)",
+    "type": "L"
+  },
+  {
+    "id": "c2ce1c8c-78fa-536e-8e98-963e98c09d36",
+    "code": "CV",
+    "name": "CV",
+    "section_id": "e01ca30b-abd7-5479-ba73-f4553d2f8c71",
+    "section": "III DS-B( 45)",
+    "type": "L"
+  },
+  {
+    "id": "2ecb5a21-a26a-58f3-9596-9411394ea9cd",
+    "code": "WT",
+    "name": "WT",
+    "section_id": "e01ca30b-abd7-5479-ba73-f4553d2f8c71",
+    "section": "III DS-B( 45)",
+    "type": "P"
+  },
+  {
+    "id": "f499d66c-aded-5622-8d76-b6c4e77a8965",
+    "code": "CRT-FSD",
+    "name": "CRT-FSD",
+    "section_id": "e01ca30b-abd7-5479-ba73-f4553d2f8c71",
+    "section": "III DS-B( 45)",
+    "type": "L"
+  },
+  {
+    "id": "4ca9ff89-1e9a-57a7-893f-a6bd1c5e91c8",
+    "code": "MINORS/HONORS",
+    "name": "MINORS/HONORS",
+    "section_id": "e01ca30b-abd7-5479-ba73-f4553d2f8c71",
+    "section": "III DS-B( 45)",
+    "type": "L"
+  },
+  {
+    "id": "9c8a1c8b-c4be-56a0-8c9e-5d0584281911",
+    "code": "IDP",
+    "name": "IDP",
+    "section_id": "e01ca30b-abd7-5479-ba73-f4553d2f8c71",
+    "section": "III DS-B( 45)",
+    "type": "L"
+  },
+  {
+    "id": "3c522399-0382-5ebf-87d3-1bf40f44a6ca",
+    "code": "SL/EL/IL",
+    "name": "SL/EL/IL",
+    "section_id": "fdc5fa54-7da7-5084-a618-87437348684a",
+    "section": "IV DS(93)",
+    "type": "L"
+  },
+  {
+    "id": "6a7d5530-80c6-5d4a-aecf-ec9c8d8a75ed",
+    "code": "CCA",
+    "name": "CCA",
+    "section_id": "fdc5fa54-7da7-5084-a618-87437348684a",
+    "section": "IV DS(93)",
+    "type": "L"
+  },
+  {
+    "id": "1bf2d9fc-c3ee-56e0-a0ba-604c70ac87f8",
+    "code": "TM",
+    "name": "TM",
+    "section_id": "fdc5fa54-7da7-5084-a618-87437348684a",
+    "section": "IV DS(93)",
+    "type": "P"
+  },
+  {
+    "id": "c74b6c4d-d4f4-5350-aad9-e14a2358f476",
+    "code": "CNS",
+    "name": "CNS",
+    "section_id": "fdc5fa54-7da7-5084-a618-87437348684a",
+    "section": "IV DS(93)",
+    "type": "L"
+  },
+  {
+    "id": "8e014e11-0171-5f00-bfdb-39e9b94f1686",
+    "code": "GEN AI",
+    "name": "GEN AI",
+    "section_id": "fdc5fa54-7da7-5084-a618-87437348684a",
+    "section": "IV DS(93)",
+    "type": "L"
+  },
+  {
+    "id": "36cb10fc-ff99-5f7d-bbf8-0d98c01bec32",
+    "code": "ETHICS",
+    "name": "ETHICS",
+    "section_id": "fdc5fa54-7da7-5084-a618-87437348684a",
+    "section": "IV DS(93)",
+    "type": "L"
+  },
+  {
+    "id": "dd50afaa-20aa-5106-94f9-3e4762049451",
+    "code": "CC & A",
+    "name": "CC & A",
+    "section_id": "fdc5fa54-7da7-5084-a618-87437348684a",
+    "section": "IV DS(93)",
+    "type": "P"
+  },
+  {
+    "id": "e59788bf-e513-50be-b9c4-772795255249",
+    "code": "TSAF",
+    "name": "TSAF",
+    "section_id": "fdc5fa54-7da7-5084-a618-87437348684a",
+    "section": "IV DS(93)",
+    "type": "L"
+  },
+  {
+    "id": "45b8593a-f10f-53ff-8103-9e99e39bde53",
+    "code": "MINORS/HONORS",
+    "name": "MINORS/HONORS",
+    "section_id": "fdc5fa54-7da7-5084-a618-87437348684a",
+    "section": "IV DS(93)",
+    "type": "L"
+  },
+  {
+    "id": "765e0c3e-1275-52ee-953e-c5f4c38fa492",
+    "code": "HONORS",
+    "name": "HONORS",
+    "section_id": "fdc5fa54-7da7-5084-a618-87437348684a",
+    "section": "IV DS(93)",
+    "type": "L"
+  },
+  {
+    "id": "416a5093-2f19-5a7f-b382-0d02421d473b",
+    "code": "GEN AI & AS",
+    "name": "GEN AI & AS",
+    "section_id": "fdc5fa54-7da7-5084-a618-87437348684a",
+    "section": "IV DS(93)",
+    "type": "L"
+  },
+  {
+    "id": "1824acc3-198d-5f7a-9413-01a9968f2080",
+    "code": "SL/EL/IP",
+    "name": "SL/EL/IP",
+    "section_id": "fdc5fa54-7da7-5084-a618-87437348684a",
+    "section": "IV DS(93)",
+    "type": "L"
+  },
+  {
+    "id": "06c41e94-17e0-5f34-95cd-dfb8d0247486",
+    "code": "ITPM",
+    "name": "ITPM",
+    "section_id": "e1b5e9d7-8c84-55d2-982e-7e687b64c3e1",
+    "section": "III CSBS(23)",
+    "type": "P"
+  },
+  {
+    "id": "4e391763-93ef-5f0a-9353-dab7e81ce1a7",
+    "code": "IS",
+    "name": "IS",
+    "section_id": "e1b5e9d7-8c84-55d2-982e-7e687b64c3e1",
+    "section": "III CSBS(23)",
+    "type": "L"
+  },
+  {
+    "id": "982d10cc-0d0f-52d8-8d81-911119359b9f",
+    "code": "BDA",
+    "name": "BDA",
+    "section_id": "e1b5e9d7-8c84-55d2-982e-7e687b64c3e1",
+    "section": "III CSBS(23)",
+    "type": "L"
+  },
+  {
+    "id": "076ce7b5-735b-571b-b517-98a7c835b926",
+    "code": "ETHICS",
+    "name": "ETHICS",
+    "section_id": "e1b5e9d7-8c84-55d2-982e-7e687b64c3e1",
+    "section": "III CSBS(23)",
+    "type": "T"
+  },
+  {
+    "id": "b1a6ebed-073c-5451-a939-5becd251e2c5",
+    "code": "AI",
+    "name": "AI",
+    "section_id": "e1b5e9d7-8c84-55d2-982e-7e687b64c3e1",
+    "section": "III CSBS(23)",
+    "type": "L"
+  },
+  {
+    "id": "2cca15d1-bb86-5dfe-a09c-e44fdfb13c9d",
+    "code": "UDSA",
+    "name": "UDSA",
+    "section_id": "e1b5e9d7-8c84-55d2-982e-7e687b64c3e1",
+    "section": "III CSBS(23)",
+    "type": "L"
+  },
+  {
+    "id": "b76b46de-13be-5625-afd0-5a6e28c600b2",
+    "code": "HONORS",
+    "name": "HONORS",
+    "section_id": "e1b5e9d7-8c84-55d2-982e-7e687b64c3e1",
+    "section": "III CSBS(23)",
+    "type": "L"
+  },
+  {
+    "id": "a0631899-400d-570a-abbd-a2553329b204",
+    "code": "AAI",
+    "name": "AAI",
+    "section_id": "80092ecf-7198-5066-a6db-fbddca69acd0",
+    "section": "I BS(DS)(44)",
+    "type": "L"
+  },
+  {
+    "id": "8ccb0885-4bc7-5a93-b0c1-b4d7a93d4921",
+    "code": "PIC",
+    "name": "PIC",
+    "section_id": "80092ecf-7198-5066-a6db-fbddca69acd0",
+    "section": "I BS(DS)(44)",
+    "type": "P"
+  },
+  {
+    "id": "51596c2b-3764-5b89-a914-8511e6980e0b",
+    "code": "ES",
+    "name": "ES",
+    "section_id": "80092ecf-7198-5066-a6db-fbddca69acd0",
+    "section": "I BS(DS)(44)",
+    "type": "T"
+  },
+  {
+    "id": "32546a58-50de-5e32-916b-ebfe63bc806e",
+    "code": "LIB",
+    "name": "LIB",
+    "section_id": "80092ecf-7198-5066-a6db-fbddca69acd0",
+    "section": "I BS(DS)(44)",
+    "type": "L"
+  },
+  {
+    "id": "184f42de-e2a1-5b00-af3d-f6bc0fc6816f",
+    "code": "EM",
+    "name": "EM",
+    "section_id": "80092ecf-7198-5066-a6db-fbddca69acd0",
+    "section": "I BS(DS)(44)",
+    "type": "L"
+  },
+  {
+    "id": "5bab17b9-94f3-55e7-8957-ef90ddc57fcf",
+    "code": "SDS",
+    "name": "SDS",
+    "section_id": "80092ecf-7198-5066-a6db-fbddca69acd0",
+    "section": "I BS(DS)(44)",
+    "type": "P"
+  },
+  {
+    "id": "e18e693c-5ad3-5309-ad1c-c64c62a3b70e",
+    "code": "ITW&CS",
+    "name": "ITW&CS",
+    "section_id": "80092ecf-7198-5066-a6db-fbddca69acd0",
+    "section": "I BS(DS)(44)",
+    "type": "L"
+  },
+  {
+    "id": "4eeea883-cea8-5c47-8716-e782caa2efff",
+    "code": "TEC",
+    "name": "TEC",
+    "section_id": "80092ecf-7198-5066-a6db-fbddca69acd0",
+    "section": "I BS(DS)(44)",
+    "type": "L"
+  },
+  {
+    "id": "67cf246e-df57-5e30-94e3-6d1035c92f79",
+    "code": "COI",
+    "name": "COI",
+    "section_id": "80092ecf-7198-5066-a6db-fbddca69acd0",
+    "section": "I BS(DS)(44)",
+    "type": "T"
+  },
+  {
+    "id": "b7d1fbea-292a-5933-b3ca-cab8ec62afd9",
+    "code": "SPORTS",
+    "name": "SPORTS",
+    "section_id": "80092ecf-7198-5066-a6db-fbddca69acd0",
+    "section": "I BS(DS)(44)",
+    "type": "L"
+  },
+  {
+    "id": "ffa9272c-4d60-513f-8df1-83cb1c848893",
+    "code": "DTO",
+    "name": "DTO",
+    "section_id": "ed8a9426-39e5-57c5-adc7-cb5e8de94e19",
+    "section": "II BS(DS)(HONORS)(45)",
+    "type": "T"
+  },
+  {
+    "id": "483539a6-dd9c-5354-85a7-6d95126efa10",
+    "code": "FOOP",
+    "name": "FOOP",
+    "section_id": "ed8a9426-39e5-57c5-adc7-cb5e8de94e19",
+    "section": "II BS(DS)(HONORS)(45)",
+    "type": "L"
+  },
+  {
+    "id": "8e807641-b026-57b7-9ca9-41f31a97474a",
+    "code": "DHV",
+    "name": "DHV",
+    "section_id": "ed8a9426-39e5-57c5-adc7-cb5e8de94e19",
+    "section": "II BS(DS)(HONORS)(45)",
+    "type": "P"
+  },
+  {
+    "id": "f4bf9af1-33d2-584c-a752-4c000f98fcb4",
+    "code": "SL/EL",
+    "name": "SL/EL",
+    "section_id": "ed8a9426-39e5-57c5-adc7-cb5e8de94e19",
+    "section": "II BS(DS)(HONORS)(45)",
+    "type": "L"
+  },
+  {
+    "id": "6732934a-0b29-5c50-9968-fe68bf5cb314",
+    "code": "DBMS",
+    "name": "DBMS",
+    "section_id": "ed8a9426-39e5-57c5-adc7-cb5e8de94e19",
+    "section": "II BS(DS)(HONORS)(45)",
+    "type": "L"
+  },
+  {
+    "id": "162dbe30-5c22-5884-aa94-a2730e452470",
+    "code": "BEC",
+    "name": "BEC",
+    "section_id": "ed8a9426-39e5-57c5-adc7-cb5e8de94e19",
+    "section": "II BS(DS)(HONORS)(45)",
+    "type": "T"
+  },
+  {
+    "id": "b31e2f99-45e5-59bb-a500-66be6e57e0a7",
+    "code": "SPORTS",
+    "name": "SPORTS",
+    "section_id": "ed8a9426-39e5-57c5-adc7-cb5e8de94e19",
+    "section": "II BS(DS)(HONORS)(45)",
+    "type": "L"
+  },
+  {
+    "id": "e69f4ab8-5523-5bea-a794-6af34343960b",
+    "code": "FML",
+    "name": "FML",
+    "section_id": "ed8a9426-39e5-57c5-adc7-cb5e8de94e19",
+    "section": "II BS(DS)(HONORS)(45)",
+    "type": "L"
+  },
+  {
+    "id": "f08956f9-3a90-51fe-b272-da5ec14d643e",
+    "code": "PROJECT",
+    "name": "PROJECT",
+    "section_id": "883b6dfa-5cb6-5b96-96b6-151eded282e9",
+    "section": "III BS(DS)",
+    "type": "L"
+  },
+  {
+    "id": "11385e80-909a-56ac-bb4c-eca25ae2b891",
+    "code": "OS",
+    "name": "OS",
+    "section_id": "883b6dfa-5cb6-5b96-96b6-151eded282e9",
+    "section": "III BS(DS)",
+    "type": "L"
+  },
+  {
+    "id": "c1c525d4-101a-59a6-9266-c23c5577a58e",
+    "code": "FIP",
+    "name": "FIP",
+    "section_id": "883b6dfa-5cb6-5b96-96b6-151eded282e9",
+    "section": "III BS(DS)",
+    "type": "L"
+  },
+  {
+    "id": "32790f30-4027-5e93-a59a-852e749c95c6",
+    "code": "WT",
+    "name": "WT",
+    "section_id": "883b6dfa-5cb6-5b96-96b6-151eded282e9",
+    "section": "III BS(DS)",
+    "type": "P"
+  },
+  {
+    "id": "cb65ffa6-47d0-5ae7-af52-66a456a56330",
+    "code": "QALR",
+    "name": "QALR",
+    "section_id": "883b6dfa-5cb6-5b96-96b6-151eded282e9",
+    "section": "III BS(DS)",
+    "type": "L"
+  },
+  {
+    "id": "3e267e54-081a-5e85-bd64-bdfecdb22e2e",
+    "code": "ML-II",
+    "name": "ML-II",
+    "section_id": "883b6dfa-5cb6-5b96-96b6-151eded282e9",
+    "section": "III BS(DS)",
+    "type": "L"
+  },
+  {
+    "id": "3584bffe-753b-591a-8162-2cf07d556b7c",
+    "code": "ML",
+    "name": "ML",
+    "section_id": "883b6dfa-5cb6-5b96-96b6-151eded282e9",
+    "section": "III BS(DS)",
+    "type": "L"
+  },
+  {
+    "id": "bb4aa311-5186-53db-98a9-f653a6b97145",
+    "code": "OE",
+    "name": "OE",
+    "section_id": "883b6dfa-5cb6-5b96-96b6-151eded282e9",
+    "section": "III BS(DS)",
+    "type": "L"
+  },
+  {
+    "id": "ac789487-66c0-5dd2-bf44-68bbfce84b71",
+    "code": "LIB",
+    "name": "LIB",
+    "section_id": "883b6dfa-5cb6-5b96-96b6-151eded282e9",
+    "section": "III BS(DS)",
+    "type": "L"
+  },
+  {
+    "id": "279f4114-619f-5767-8fba-68c42bab9e10",
+    "code": "SS",
+    "name": "SS",
+    "section_id": "883b6dfa-5cb6-5b96-96b6-151eded282e9",
+    "section": "III BS(DS)",
+    "type": "L"
+  },
+  {
+    "id": "da27d050-b4fe-5164-a3d2-befd304cb8e0",
+    "code": "AAI",
+    "name": "AAI",
+    "section_id": "286a2599-0c8c-5317-91ac-2d02c637dd4c",
+    "section": "I MSC(DS)(7)",
+    "type": "L"
+  },
+  {
+    "id": "deb13036-f029-5754-85fd-93e856030934",
+    "code": "DSA",
+    "name": "DSA",
+    "section_id": "286a2599-0c8c-5317-91ac-2d02c637dd4c",
+    "section": "I MSC(DS)(7)",
+    "type": "L"
+  },
+  {
+    "id": "351da039-aa1c-5faa-b850-60aa6ea0511e",
+    "code": "PDS",
+    "name": "PDS",
+    "section_id": "286a2599-0c8c-5317-91ac-2d02c637dd4c",
+    "section": "I MSC(DS)(7)",
+    "type": "L"
+  },
+  {
+    "id": "14ffef3e-2386-56c4-8b41-1c54a969feab",
+    "code": "--",
+    "name": "--",
+    "section_id": "286a2599-0c8c-5317-91ac-2d02c637dd4c",
+    "section": "I MSC(DS)(7)",
+    "type": "L"
+  },
+  {
+    "id": "a0882bfa-4511-5007-a445-cdd5a9fa4e31",
+    "code": "LIB",
+    "name": "LIB",
+    "section_id": "286a2599-0c8c-5317-91ac-2d02c637dd4c",
+    "section": "I MSC(DS)(7)",
+    "type": "L"
+  },
+  {
+    "id": "267aa141-7a0a-56c6-b847-dff7f531ab64",
+    "code": "DBMS",
+    "name": "DBMS",
+    "section_id": "286a2599-0c8c-5317-91ac-2d02c637dd4c",
+    "section": "I MSC(DS)(7)",
+    "type": "L"
+  },
+  {
+    "id": "8564b573-9461-53d8-b981-a083de700e01",
+    "code": "PSM",
+    "name": "PSM",
+    "section_id": "286a2599-0c8c-5317-91ac-2d02c637dd4c",
+    "section": "I MSC(DS)(7)",
+    "type": "P"
+  },
+  {
+    "id": "73c06c94-078c-5cdc-a6ab-971eb938caa6",
+    "code": "FDS",
+    "name": "FDS",
+    "section_id": "286a2599-0c8c-5317-91ac-2d02c637dd4c",
+    "section": "I MSC(DS)(7)",
+    "type": "T"
+  },
+  {
+    "id": "55ae9e13-4454-58a0-b62d-59e54d7dab6b",
+    "code": "IKS",
+    "name": "IKS",
+    "section_id": "286a2599-0c8c-5317-91ac-2d02c637dd4c",
+    "section": "I MSC(DS)(7)",
+    "type": "L"
+  },
+  {
+    "id": "039ce7a1-795f-53bf-abd3-cbeb471626aa",
+    "code": "ECS",
+    "name": "ECS",
+    "section_id": "286a2599-0c8c-5317-91ac-2d02c637dd4c",
+    "section": "I MSC(DS)(7)",
+    "type": "P"
+  },
+  {
+    "id": "574e22d9-bea8-5379-97ad-de13566926d0",
+    "code": "FIP",
+    "name": "FIP",
+    "section_id": "ab70d032-e1f1-53c0-ab44-5a0368c0feda",
+    "section": "II MSC (DS)",
+    "type": "L"
+  },
+  {
+    "id": "a7cbf63b-5145-53e6-a2be-2da8073cdb62",
+    "code": "BDA",
+    "name": "BDA",
+    "section_id": "ab70d032-e1f1-53c0-ab44-5a0368c0feda",
+    "section": "II MSC (DS)",
+    "type": "L"
+  },
+  {
+    "id": "249737f8-f5a8-5907-8573-afba136d1aac",
+    "code": "MAD",
+    "name": "MAD",
+    "section_id": "ab70d032-e1f1-53c0-ab44-5a0368c0feda",
+    "section": "II MSC (DS)",
+    "type": "L"
+  },
+  {
+    "id": "05689a19-cbc1-502c-b82e-facb5c6b069e",
+    "code": "DL",
+    "name": "DL",
+    "section_id": "ab70d032-e1f1-53c0-ab44-5a0368c0feda",
+    "section": "II MSC (DS)",
+    "type": "L"
+  },
+  {
+    "id": "028a1485-09e7-5d99-8ebf-487a21e789da",
+    "code": "TEACHING ASSITANT SHIP",
+    "name": "TEACHING ASSITANT SHIP",
+    "section_id": "ab70d032-e1f1-53c0-ab44-5a0368c0feda",
+    "section": "II MSC (DS)",
+    "type": "L"
+  },
+  {
+    "id": "404dda13-0201-55a9-a2eb-6da3bd5f2050",
+    "code": "CEA",
+    "name": "CEA",
+    "section_id": "4958688c-825e-5fd7-acd1-4bdc41255e16",
+    "section": "I MTECH(DS)(Room No: 602)",
+    "type": "P"
+  },
+  {
+    "id": "b1d192e2-e166-5b72-ae5a-de69428dacdb",
+    "code": "DSA",
+    "name": "DSA",
+    "section_id": "4958688c-825e-5fd7-acd1-4bdc41255e16",
+    "section": "I MTECH(DS)(Room No: 602)",
+    "type": "L"
+  },
+  {
+    "id": "19eb999c-da0b-5851-89c5-30f649a164ef",
+    "code": "DEP",
+    "name": "DEP",
+    "section_id": "4958688c-825e-5fd7-acd1-4bdc41255e16",
+    "section": "I MTECH(DS)(Room No: 602)",
+    "type": "L"
+  },
+  {
+    "id": "a70759ba-7ee3-5da0-babb-0518bf668c85",
+    "code": "IKS",
+    "name": "IKS",
+    "section_id": "4958688c-825e-5fd7-acd1-4bdc41255e16",
+    "section": "I MTECH(DS)(Room No: 602)",
+    "type": "L"
+  },
+  {
+    "id": "bc416ea5-7389-5e3f-a5ab-ee140cb3748f",
+    "code": "MAI",
+    "name": "MAI",
+    "section_id": "4958688c-825e-5fd7-acd1-4bdc41255e16",
+    "section": "I MTECH(DS)(Room No: 602)",
+    "type": "L"
+  },
+  {
+    "id": "29326ff2-1275-50b0-9992-01256cbfeb28",
+    "code": "AML",
+    "name": "AML",
+    "section_id": "4958688c-825e-5fd7-acd1-4bdc41255e16",
+    "section": "I MTECH(DS)(Room No: 602)",
+    "type": "L"
+  }
+]

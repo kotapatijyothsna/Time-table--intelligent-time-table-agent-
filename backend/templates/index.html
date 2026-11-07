@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Campus — VFSTR AIML Intelligent Scheduling Platform</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- React & Babel for zero-build execution -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen">
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const { useState, useEffect } = React;
+
+    function Navbar({ activeTab, setActiveTab, openChat }) {
+      const navItems = [
+        { id: 'dashboard', label: 'Dashboard' },
+        { id: 'faculty', label: 'Faculty Availability' },
+        { id: 'resources', label: 'Classrooms & Labs' },
+        { id: 'timetable', label: 'Timetable Matrix' },
+        { id: 'admin', label: 'Admin Portal' },
+      ];
+
+      return (
+        <header className="bg-slate-900 border-b border-slate-800 text-white sticky top-0 z-40">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div className="flex items-center space-x-3 cursor-pointer" onClick={() => setActiveTab('dashboard')}>
+              <div className="h-10 w-10 rounded-lg bg-indigo-600 flex items-center justify-center font-bold text-xl shadow-md">
+                VF
+              </div>
+              <div>
+                <h1 className="font-bold text-base leading-tight tracking-wide">Smart Campus</h1>
+                <p className="text-xs text-indigo-400 font-medium">VFSTR • AIML Department</p>
+              </div>
+            </div>
+
+            <nav className="hidden md:flex space-x-1">
+              {navItems.map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => setActiveTab(item.id)}
+                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                    activeTab === item.id
+                      ? 'bg-indigo-600 text-white shadow-sm'
+                      : 'text-slate-300 hover:bg-slate-800 hover:text-white'
+                  }`}
+                >
+                  {item.label}
+                </button>
+              ))}
+            </nav>
+
+            <button
+              onClick={openChat}
+              className="flex items-center space-x-2 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white px-3.5 py-1.5 rounded-full text-xs font-semibold shadow-md transition-all scale-100 hover:scale-105"
+            >
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span>Ask AI Assistant</span>
+            </button>
+          </div>
+        </header>
+      );
+    }
+
+    function Dashboard({ setActiveTab, openChat }) {
+      const cards = [
+        { title: 'Academic Cohorts', value: '24 Sections', subtitle: 'II Year (12), III Year (7), IV Year (5)', color: 'border-blue-500', action: () => setActiveTab('timetable') },
+        { title: 'Teaching Faculty', value: '202 Members', subtitle: 'Standardized IDs: F0001 – F0202', color: 'border-emerald-500', action: () => setActiveTab('faculty') },
+        { title: 'Academic Subjects', value: '98 Courses', subtitle: 'Standardized IDs: S0001 – S0098', color: 'border-purple-500', action: () => setActiveTab('timetable') },
+        { title: 'Physical Facilities', value: '36 Rooms & Labs', subtitle: 'Matched to Faculty & Cohorts', color: 'border-amber-500', action: () => setActiveTab('resources') }
+      ];
+
+      return (
+        <div className="space-y-8">
+          <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 text-white shadow-xl">
+            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 mb-4">
+              Semester I • Academic Year 2026–27
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight">
+              Intelligent Timetable & Resource Scheduling Agent
+            </h2>
+            <p className="mt-3 text-sm sm:text-base text-slate-300 leading-relaxed max-w-3xl">
+              Real-time schedule intelligence matching faculty, subjects, and student cohorts directly to classrooms and specialized computing laboratories.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <button
+                onClick={() => setActiveTab('faculty')}
+                className="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg text-sm font-semibold shadow-md transition"
+              >
+                Track Faculty Availability
+              </button>
+              <button
+                onClick={() => setActiveTab('resources')}
+                className="bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 px-4 py-2 rounded-lg text-sm font-semibold transition"
+              >
+                Inspect Classroom Schedules
+              </button>
+              <button
+                onClick={openChat}
+                className="bg-purple-600 hover:bg-purple-500 text-white px-4 py-2 rounded-lg text-sm font-semibold transition"
+              >
+                Query Grounded AI Agent
+              </button>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {cards.map((c, idx) => (
+              <div
+                key={idx}
+                onClick={c.action}
+                className={`bg-white border-l-4 ${c.color} rounded-xl p-5 shadow-sm hover:shadow-md cursor-pointer transition border border-slate-200/80`}
+              >
+                <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider">{c.title}</p>
+                <p className="mt-2 text-2xl font-bold text-slate-900">{c.value}</p>
+                <p className="mt-1 text-xs text-slate-600">{c.subtitle}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="bg-indigo-50/70 border border-indigo-100 rounded-xl p-6 text-slate-800">
+            <h3 className="font-bold text-base text-indigo-950">Standardized Department Mapping Engine:</h3>
+            <div className="mt-3 grid grid-cols-1 md:grid-cols-3 gap-4 text-xs text-slate-700">
+              <div className="bg-white p-3.5 rounded-lg border border-indigo-100 shadow-2xs">
+                <strong className="text-indigo-900 block mb-1">Exact Faculty Allocation</strong>
+                Every class period is matched to the specific faculty assigned in the official departmental teaching records (e.g. Dr. Srikantha Reddy for Data Structures in Room 619).
+              </div>
+              <div className="bg-white p-3.5 rounded-lg border border-indigo-100 shadow-2xs">
+                <strong className="text-indigo-900 block mb-1">Multi-Faculty Practical Labs</strong>
+                Hands-on practical sessions with 2 to 5 instructors concurrently occupy all assigned teachers in that laboratory.
+              </div>
+              <div className="bg-white p-3.5 rounded-lg border border-indigo-100 shadow-2xs">
+                <strong className="text-indigo-900 block mb-1">Shared Facility Transparency</strong>
+                Rooms shared across other programmes are flagged with <code className="bg-slate-100 px-1 py-0.5 rounded text-slate-700">NOT_VERIFIED</code> outside verified AIML periods.
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    function FacultyAvailability() {
+      const [facultyList, setFacultyList] = useState([]);
+      const [searchQuery, setSearchQuery] = useState('');
+      const [selectedSlot, setSelectedSlot] = useState({ start: '08:15', end: '09:05' });
+      const [selectedDate, setSelectedDate] = useState('2026-11-06');
+      const [loading, setLoading] = useState(false);
+
+      const slots = [
+        { label: 'Period 1 (08:15 - 09:05)', start: '08:15', end: '09:05' },
+        { label: 'Period 2 (09:05 - 09:55)', start: '09:05', end: '09:55' },
+        { label: 'Period 3 (10:10 - 11:00)', start: '10:10', end: '11:00' },
+        { label: 'Period 4 (11:00 - 11:50)', start: '11:00', end: '11:50' },
+        { label: 'Period 5 (11:50 - 12:40)', start: '11:50', end: '12:40' },
+        { label: 'Period 6 (01:40 - 02:30)', start: '13:40', end: '14:30' },
+        { label: 'Period 7 (02:30 - 03:20)', start: '14:30', end: '15:20' },
+        { label: 'Period 8 (03:20 - 04:05)', start: '15:20', end: '16:05' },
+      ];
+
+      useEffect(() => {
+        setLoading(true);
+        fetch(`/api/v1/availability/faculty/?date=${selectedDate}&start_time=${selectedSlot.start}&end_time=${selectedSlot.end}`)
+          .then(res => res.json())
+          .then(data => {
+            setFacultyList(data.faculty || []);
+            setLoading(false);
+          });
+      }, [selectedDate, selectedSlot]);
+
+      const filteredFaculty = facultyList.filter(f =>
+        f.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        (f.faculty_code && f.faculty_code.toLowerCase().includes(searchQuery.toLowerCase()))
+      );
+
+      return (
+        <div className="space-y-6">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+            <div>
+              <h2 className="text-xl font-bold text-slate-900">Faculty Availability Tracker</h2>
+              <p className="text-xs text-slate-500">Real-time status based on verified AIML timetable & standardized assignments</p>
+            </div>
+
+            <div className="flex flex-wrap items-center gap-3">
+              <input
+                type="date"
+                value={selectedDate}
+                onChange={(e) => setSelectedDate(e.target.value)}
+                className="border border-slate-300 rounded-lg px-3 py-1.5 text-xs text-slate-700 bg-white shadow-2xs"
+              />
+              <select
+                value={`${selectedSlot.start}-${selectedSlot.end}`}
+                onChange={(e) => {
+                  const [start, end] = e.target.value.split('-');
+                  setSelectedSlot({ start, end });
+                }}
+                className="border border-slate-300 rounded-lg px-3 py-1.5 text-xs text-slate-700 bg-white shadow-2xs font-semibold"
+              >
+                {slots.map((s, i) => (
+                  <option key={i} value={`${s.start}-${s.end}`}>{s.label}</option>
+                ))}
+              </select>
+            </div>
+          </div>
+
+          <input
+            type="text"
+            placeholder="Search faculty name or ID (e.g. Dr. Srikantha Reddy, Dr. Sudha Rani, F0050, F0028)..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="w-full px-4 py-2.5 bg-white border border-slate-300 rounded-xl text-sm placeholder-slate-400 shadow-2xs focus:ring-2 focus:ring-indigo-500"
+          />
+
+          {loading ? (
+            <div className="p-12 text-center text-slate-500 text-sm">Evaluating faculty availability intervals...</div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {filteredFaculty.map((f) => {
+                const isAvail = f.status === 'AVAILABLE';
+                return (
+                  <div
+                    key={f.id}
+                    className={`p-4 rounded-xl border transition shadow-2xs ${
+                      isAvail ? 'bg-emerald-50/40 border-emerald-200' : 'bg-rose-50/40 border-rose-200'
+                    }`}
+                  >
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <div className="flex items-center space-x-2">
+                          <h4 className="font-bold text-sm text-slate-900 leading-tight">{f.name}</h4>
+                          {f.faculty_code && (
+                            <span className="text-3xs font-mono bg-slate-100 text-slate-600 px-1.5 py-0.5 rounded font-bold">
+                              {f.faculty_code}
+                            </span>
+                          )}
+                        </div>
+                        <p className="text-xs text-slate-500 mt-0.5">{f.designation || 'Faculty'}</p>
+                      </div>
+                      <span className={`px-2 py-0.5 text-3xs font-bold uppercase rounded-md tracking-wider ${
+                        isAvail ? 'bg-emerald-100 text-emerald-800' : 'bg-rose-100 text-rose-800'
+                      }`}>
+                        {f.status}
+                      </span>
+                    </div>
+                    <div className="mt-3 pt-3 border-t border-slate-200/60 text-xs text-slate-600">
+                      {isAvail ? (
+                        <p className="text-emerald-700 font-medium">Verified Free • Ready for scheduling</p>
+                      ) : (
+                        <div>
+                          <p className="text-rose-700 font-semibold">{f.reason}</p>
+                          {f.details && (
+                            <p className="mt-1 text-3xs text-slate-700 bg-white/60 p-1.5 rounded border border-rose-100 font-mono">
+                              <strong>Room: {f.details.room}</strong> • {f.details.section} • {f.details.start_time.slice(0,5)}–{f.details.end_time.slice(0,5)}
+                            </p>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+        </div>
+      );
+    }
+
+    function ClassroomAvailability() {
+      const [resourceList, setResourceList] = useState([]);
+      const [resType, setResType] = useState('CLASSROOM');
+      const [selectedSlot, setSelectedSlot] = useState({ start: '08:15', end: '09:05' });
+      const [selectedDate, setSelectedDate] = useState('2026-11-06');
+      const [loading, setLoading] = useState(false);
+
+      const slots = [
+        { label: 'Period 1 (08:15 - 09:05)', start: '08:15', end: '09:05' },
+        { label: 'Period 2 (09:05 - 09:55)', start: '09:05', end: '09:55' },
+        { label: 'Period 3 (10:10 - 11:00)', start: '10:10', end: '11:00' },
+        { label: 'Period 4 (11:00 - 11:50)', start: '11:00', end: '11:50' },
+        { label: 'Period 5 (11:50 - 12:40)', start: '11:50', end: '12:40' },
+        { label: 'Period 6 (01:40 - 02:30)', start: '13:40', end: '14:30' },
+        { label: 'Period 7 (02:30 - 03:20)', start: '14:30', end: '15:20' },
+        { label: 'Period 8 (03:20 - 04:05)', start: '15:20', end: '16:05' },
+      ];
+
+      useEffect(() => {
+        setLoading(true);
+        fetch(`/api/v1/availability/resources/?date=${selectedDate}&start_time=${selectedSlot.start}&end_time=${selectedSlot.end}&type=${resType}`)
+          .then(res => res.json())
+          .then(data => {
+            setResourceList(data.resources || []);
+            setLoading(false);
+          });
+      }, [resType, selectedSlot, selectedDate]);
+
+      return (
+        <div className="space-y-6">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+            <div>
+              <h2 className="text-xl font-bold text-slate-900">Academic Facilities & Labs</h2>
+              <p className="text-xs text-slate-500">Live vacancy, class occupancy, and assigned faculty</p>
+            </div>
+
+            <div className="flex flex-wrap items-center gap-3">
+              <div className="inline-flex rounded-lg border border-slate-200 bg-white p-1">
+                <button
+                  onClick={() => setResType('CLASSROOM')}
+                  className={`px-3 py-1 rounded-md text-xs font-semibold ${
+                    resType === 'CLASSROOM' ? 'bg-indigo-600 text-white' : 'text-slate-600'
+                  }`}
+                >
+                  Classrooms
+                </button>
+                <button
+                  onClick={() => setResType('LABORATORY')}
+                  className={`px-3 py-1 rounded-md text-xs font-semibold ${
+                    resType === 'LABORATORY' ? 'bg-indigo-600 text-white' : 'text-slate-600'
+                  }`}
+                >
+                  Laboratories
+                </button>
+              </div>
+
+              <input
+                type="date"
+                value={selectedDate}
+                onChange={(e) => setSelectedDate(e.target.value)}
+                className="border border-slate-300 rounded-lg px-3 py-1.5 text-xs text-slate-700 bg-white"
+              />
+
+              <select
+                value={`${selectedSlot.start}-${selectedSlot.end}`}
+                onChange={(e) => {
+                  const [start, end] = e.target.value.split('-');
+                  setSelectedSlot({ start, end });
+                }}
+                className="border border-slate-300 rounded-lg px-3 py-1.5 text-xs text-slate-700 bg-white font-semibold"
+              >
+                {slots.map((s, i) => (
+                  <option key={i} value={`${s.start}-${s.end}`}>{s.label}</option>
+                ))}
+              </select>
+            </div>
+          </div>
+
+          {loading ? (
+            <div className="p-12 text-center text-slate-500 text-sm">Evaluating physical room schedules...</div>
+          ) : (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {resourceList.map((r) => {
+                const isAvail = r.status === 'AVAILABLE';
+                const isShared = r.status === 'UNSCHEDULED';
+                return (
+                  <div
+                    key={r.id}
+                    className={`p-4 rounded-xl border transition shadow-2xs ${
+                      isAvail ? 'bg-emerald-50/50 border-emerald-200' : isShared ? 'bg-slate-50 border-slate-200' : 'bg-rose-50/50 border-rose-200'
+                    }`}
+                  >
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <h4 className="font-extrabold text-base text-slate-900">Room {r.code}</h4>
+                        <p className="text-xs text-slate-500">{r.name}</p>
+                      </div>
+                      <span className={`px-2 py-0.5 text-3xs font-bold uppercase rounded-md tracking-wider ${
+                        isAvail ? 'bg-emerald-100 text-emerald-800' : isShared ? 'bg-amber-100 text-amber-800' : 'bg-rose-100 text-rose-800'
+                      }`}>
+                        {isShared ? 'NOT VERIFIED' : r.status}
+                      </span>
+                    </div>
+
+                    <div className="mt-3 flex items-center justify-between text-xs text-slate-600 pt-3 border-t border-slate-200/60">
+                      <span>Capacity: <strong>{r.capacity} seats</strong></span>
+                      {r.is_shared && (
+                        <span className="text-3xs text-slate-400 font-medium bg-slate-200/60 px-1.5 py-0.5 rounded">
+                          Shared Facility
+                        </span>
+                      )}
+                    </div>
+
+                    <div className="mt-2 text-xs">
+                      {isAvail && <p className="text-emerald-700 font-medium">Verified Free • Ready for booking</p>}
+                      {isShared && (
+                        <p className="text-slate-500 text-3xs leading-relaxed">
+                          Shared facility. Non-AIML occupancy unverified in department workbook.
+                        </p>
+                      )}
+                      {!isAvail && !isShared && r.details && (
+                        <div className="mt-1 bg-white/70 p-2 rounded border border-rose-200 text-3xs space-y-0.5">
+                          <p className="font-bold text-rose-800">Class: {r.details.section}</p>
+                          <p className="text-slate-700">Subject: {r.details.subject}</p>
+                          <p className="text-slate-900 font-semibold truncate">Faculty: {r.details.faculty}</p>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+        </div>
+      );
+    }
+
+    function TimetableViewer() {
+      const [sections, setSections] = useState([]);
+      const [selectedSecId, setSelectedSecId] = useState('');
+      const [timetableData, setTimetableData] = useState(null);
+      const [loading, setLoading] = useState(false);
+
+      useEffect(() => {
+        fetch('/api/v1/timetables/sections/')
+          .then(res => res.json())
+          .then(data => {
+            setSections(data);
+            if (data.length > 0) setSelectedSecId(data[0].id);
+          });
+      }, []);
+
+      useEffect(() => {
+        if (!selectedSecId) return;
+        setLoading(true);
+        fetch(`/api/v1/timetables/sections/${selectedSecId}/`)
+          .then(res => res.json())
+          .then(data => {
+            setTimetableData(data);
+            setLoading(false);
+          });
+      }, [selectedSecId]);
+
+      const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+      return (
+        <div className="space-y-6">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+            <div>
+              <h2 className="text-xl font-bold text-slate-900">Academic Timetable Matrix</h2>
+              <p className="text-xs text-slate-500">24 AIML cohorts • Fully matched faculty, subjects & classrooms</p>
+            </div>
+
+            <div className="flex items-center space-x-2">
+              <label className="text-xs font-semibold text-slate-600">Cohort:</label>
+              <select
+                value={selectedSecId}
+                onChange={(e) => setSelectedSecId(e.target.value)}
+                className="border border-slate-300 rounded-lg px-3 py-1.5 text-xs text-slate-800 bg-white font-bold"
+              >
+                {sections.map(s => (
+                  <option key={s.id} value={s.id}>{s.full_name}</option>
+                ))}
+              </select>
+            </div>
+          </div>
+
+          {loading ? (
+            <div className="p-12 text-center text-slate-500 text-sm">Loading weekly schedule grid...</div>
+          ) : timetableData ? (
+            <div className="bg-white border border-slate-200 rounded-xl shadow-xs overflow-hidden">
+              <div className="bg-slate-50 px-6 py-3 border-b border-slate-200 flex justify-between items-center">
+                <h3 className="font-extrabold text-sm text-slate-800">
+                  {timetableData.section} Weekly Schedule Matrix
+                </h3>
+                <span className="text-3xs font-semibold bg-indigo-100 text-indigo-800 px-2 py-0.5 rounded">
+                  Active Version {timetableData.version}
+                </span>
+              </div>
+
+              <div className="p-4 space-y-4">
+                {days.map((dayName, dayIdx) => {
+                  const dayEntries = timetableData.entries.filter(e => e.day_of_week === dayIdx);
+                  return (
+                    <div key={dayIdx} className="border border-slate-200/80 rounded-lg p-3">
+                      <h4 className="text-xs font-bold text-indigo-900 uppercase tracking-wider mb-2">
+                        {dayName}
+                      </h4>
+                      {dayEntries.length === 0 ? (
+                        <p className="text-xs text-slate-400 italic">No scheduled sessions</p>
+                      ) : (
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5">
+                          {dayEntries.map(e => (
+                            <div key={e.id} className="bg-slate-50 hover:bg-slate-100/80 p-2.5 rounded-md border border-slate-200 text-xs">
+                              <div className="flex justify-between items-center text-3xs text-slate-500 font-mono">
+                                <span>{e.start_time.slice(0,5)} - {e.end_time.slice(0,5)}</span>
+                                <span className="font-bold text-indigo-600 bg-indigo-50 px-1 py-0.5 rounded">
+                                  {e.session_type}
+                                </span>
+                              </div>
+                              <p className="font-bold text-slate-900 mt-1 leading-snug">{e.subject}</p>
+                              <div className="mt-1 pt-1 border-t border-slate-200/60 text-3xs space-y-0.5">
+                                <p className="text-slate-700 font-medium truncate" title={e.faculty}>
+                                  Faculty: {e.faculty}
+                                </p>
+                                <p className="font-mono text-indigo-700 font-semibold">Room: {e.room}</p>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          ) : null}
+        </div>
+      );
+    }
+
+    function AdminDashboard() {
+      return (
+        <div className="space-y-6">
+          <div>
+            <h2 className="text-xl font-bold text-slate-900">Department Administration & Governance</h2>
+            <p className="text-xs text-slate-500">Standardized ID mappings, timetable versioning, and zero-conflict audit</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div className="bg-white border border-slate-200 rounded-xl p-5 shadow-2xs">
+              <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">Active Version</span>
+              <h3 className="text-lg font-extrabold text-slate-900 mt-2">Version 7.0</h3>
+              <p className="text-xs text-slate-500 mt-1">Source: ACSE TIMETABLE (V7) - W.e.f 17-8-2026.xlsx</p>
+              <div className="mt-4 pt-3 border-t border-slate-100 text-3xs text-slate-600 space-y-1">
+                <p>• 24 Verified Academic Sections</p>
+                <p>• 202 Standardized Faculty IDs</p>
+                <p>• 628 Active Weekly Sessions</p>
+              </div>
+            </div>
+
+            <div className="bg-white border border-slate-200 rounded-xl p-5 shadow-2xs">
+              <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">Conflict Engine</span>
+              <h3 className="text-lg font-extrabold text-emerald-600 mt-2">0 Overlap Conflicts</h3>
+              <p className="text-xs text-slate-500 mt-1">Full cross-section interval scan passed</p>
+              <div className="mt-4 pt-3 border-t border-slate-100 text-3xs text-slate-600 space-y-1">
+                <p>• Faculty Collisions: 0</p>
+                <p>• Classroom Collisions: 0</p>
+                <p>• Multi-Faculty Sessions: 165 Verified</p>
+              </div>
+            </div>
+
+            <div className="bg-white border border-slate-200 rounded-xl p-5 shadow-2xs">
+              <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">Schedule Exceptions</span>
+              <h3 className="text-lg font-extrabold text-slate-900 mt-2">Leave & Swap Manager</h3>
+              <p className="text-xs text-slate-500 mt-1">Log substitutions and room reallocations</p>
+              <button className="mt-4 w-full bg-slate-900 text-white text-xs font-bold py-2 rounded-lg">
+                Create Schedule Exception
+              </button>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    function AIAssistantModal({ isOpen, onClose }) {
+      if (!isOpen) return null;
+
+      const [messages, setMessages] = useState([
+        { 
+          role: 'assistant', 
+          text: 'Hello! I am the AIML Smart Campus Scheduling Agent converted to a full Retrieval-Augmented Generation (RAG) pipeline powered by Groq LLM (LLaMA-3.3-70B). I retrieve verified database records and synthesize natural, grounded answers with zero hallucinations.',
+          evidence: null
+        }
+      ]);
+      const [inputQuery, setInputQuery] = useState('');
+      const [loading, setLoading] = useState(false);
+      const [groqApiKey, setGroqApiKey] = useState(localStorage.getItem('groq_api_key') || '');
+      const [showKeyConfig, setShowKeyConfig] = useState(false);
+      const [expandedDocIdx, setExpandedDocIdx] = useState(null);
+
+      const sampleQueries = [
+        "Where is Dr. Srikantha Reddy on Monday at 8:15 AM?",
+        "Who is teaching in Room 604 on Tuesday at 8:15 AM?",
+        "Which AIML faculty are free at 11 AM today?",
+        "Find an available classroom for 50 students at 10:10 AM"
+      ];
+
+      const handleSaveKey = (keyVal) => {
+        setGroqApiKey(keyVal);
+        localStorage.setItem('groq_api_key', keyVal);
+      };
+
+      const sendQuery = async (queryText) => {
+        const q = queryText || inputQuery;
+        if (!q.trim()) return;
+
+        setMessages(prev => [...prev, { role: 'user', text: q }]);
+        setInputQuery('');
+        setLoading(true);
+
+        try {
+          const res = await fetch('/api/v1/assistant/query/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ 
+              query: q,
+              groq_api_key: groqApiKey
+            })
+          });
+          if (res.ok) {
+            const data = await res.json();
+            setMessages(prev => [
+              ...prev, 
+              { 
+                role: 'assistant', 
+                text: data.reply, 
+                tools: data.tools_invoked,
+                evidence: data.evidence,
+                rag_meta: data.rag_metadata
+              }
+            ]);
+          }
+        } catch (e) {
+          console.error(e);
+        } finally {
+          setLoading(false);
+        }
+      };
+
+      return (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-xs">
+          <div className="bg-white rounded-2xl shadow-2xl border border-slate-200 w-full max-w-2xl flex flex-col h-[620px] overflow-hidden">
+            {/* Header */}
+            <div className="bg-gradient-to-r from-purple-700 via-indigo-700 to-slate-900 p-4 text-white flex justify-between items-center shadow-sm">
+              <div className="flex items-center space-x-2.5">
+                <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                <div>
+                  <div className="flex items-center space-x-2">
+                    <h3 className="font-bold text-sm tracking-wide">Intelligent RAG Scheduling Agent</h3>
+                    <span className="bg-purple-500/30 border border-purple-400/40 text-3xs font-mono px-2 py-0.5 rounded-full text-purple-200 font-bold">
+                      Groq Qwen-27B High-Speed RAG
+                    </span>
+                  </div>
+                  <p className="text-3xs text-purple-200">Retrieval-Augmented Academic Database Engine</p>
+                </div>
+              </div>
+              <div className="flex items-center space-x-2">
+                <button
+                  onClick={() => setShowKeyConfig(!showKeyConfig)}
+                  className="text-xs bg-white/10 hover:bg-white/20 text-purple-100 px-2 py-1 rounded-md transition"
+                  title="Configure Groq API Key"
+                >
+                  ⚙️ {groqApiKey ? 'Key Active' : 'Set Key'}
+                </button>
+                <button onClick={onClose} className="text-white text-lg font-bold px-1.5 py-0.5 rounded-md hover:bg-white/10">✕</button>
+              </div>
+            </div>
+
+            {/* Groq API Key Configuration Banner */}
+            {showKeyConfig && (
+              <div className="bg-indigo-950 p-3 text-xs border-b border-indigo-900 text-indigo-100 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2">
+                <div className="flex-1 flex items-center space-x-2">
+                  <span className="font-bold text-indigo-300 whitespace-nowrap">Groq API Key:</span>
+                  <input
+                    type="password"
+                    placeholder="Enter Groq Key (gsk_...)"
+                    value={groqApiKey}
+                    onChange={(e) => handleSaveKey(e.target.value)}
+                    className="flex-1 bg-slate-900/80 border border-indigo-700 rounded-lg px-2.5 py-1 text-xs text-white placeholder-slate-500 focus:ring-1 focus:ring-purple-400 font-mono"
+                  />
+                </div>
+                <div className="flex items-center space-x-2 justify-end">
+                  <span className={`text-3xs font-bold px-2 py-0.5 rounded ${
+                    groqApiKey ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40' : 'bg-amber-500/20 text-amber-300 border border-amber-500/40'
+                  }`}>
+                    {groqApiKey ? '⚡ Groq RAG Active' : '⚪ Deterministic RAG Mode'}
+                  </span>
+                  <button
+                    onClick={() => setShowKeyConfig(false)}
+                    className="text-3xs bg-indigo-800 hover:bg-indigo-700 text-white px-2 py-1 rounded"
+                  >
+                    Done
+                  </button>
+                </div>
+              </div>
+            )}
+
+            {/* Message Area */}
+            <div className="flex-1 p-4 overflow-y-auto space-y-3 bg-slate-50/50">
+              {messages.map((m, idx) => (
+                <div key={idx} className={`flex flex-col ${m.role === 'user' ? 'items-end' : 'items-start'}`}>
+                  <div className={`max-w-[88%] rounded-xl p-3 text-xs ${
+                    m.role === 'user' ? 'bg-indigo-600 text-white shadow-xs' : 'bg-white text-slate-800 border border-slate-200 shadow-2xs'
+                  }`}>
+                    <div className="whitespace-pre-line leading-relaxed">{m.text}</div>
+
+                    {/* RAG & Tool Metadata Badge */}
+                    {m.rag_meta && (
+                      <div className="mt-2.5 pt-2 border-t border-slate-100 flex items-center justify-between text-3xs text-slate-500">
+                        <span className="font-mono font-bold text-indigo-600">
+                          {m.rag_meta.rag_mode}
+                        </span>
+                        {m.evidence && m.evidence.length > 0 && (
+                          <button
+                            onClick={() => setExpandedDocIdx(expandedDocIdx === idx ? null : idx)}
+                            className="text-purple-600 hover:underline font-bold"
+                          >
+                            {expandedDocIdx === idx ? 'Hide Verified Evidence' : `View Retrieved Evidence (${m.evidence.length})`}
+                          </button>
+                        )}
+                      </div>
+                    )}
+
+                    {/* Expandable Grounded Context Drawer */}
+                    {expandedDocIdx === idx && m.evidence && (
+                      <div className="mt-2 p-2 bg-slate-50 rounded-lg border border-slate-200 text-3xs font-mono text-slate-700 space-y-1 overflow-x-auto max-h-40 overflow-y-auto">
+                        <p className="font-bold text-slate-900 border-b border-slate-200 pb-1">Retrieved Knowledge Base Documents:</p>
+                        <pre className="text-3xs leading-tight whitespace-pre-wrap">{JSON.stringify(m.evidence, null, 2)}</pre>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ))}
+              {loading && (
+                <div className="flex items-center space-x-2 text-xs text-purple-600 font-semibold p-2 animate-pulse">
+                  <span>⚡ Groq LLaMA-3.3-70B RAG Synthesizing...</span>
+                </div>
+              )}
+            </div>
+
+            {/* Quick Prompt Pills */}
+            <div className="px-4 py-2 bg-white border-t border-slate-100 flex items-center space-x-1.5 overflow-x-auto">
+              {sampleQueries.map((sq, i) => (
+                <button
+                  key={i}
+                  onClick={() => sendQuery(sq)}
+                  className="text-3xs whitespace-nowrap bg-slate-100 hover:bg-indigo-50 hover:text-indigo-600 text-slate-600 px-2.5 py-1 rounded-full transition font-medium"
+                >
+                  {sq}
+                </button>
+              ))}
+            </div>
+
+            {/* Input Form */}
+            <div className="p-3 bg-white border-t border-slate-200 flex items-center space-x-2">
+              <input
+                type="text"
+                placeholder="Ask about faculty schedules, classroom vacancy, or multi-teacher labs..."
+                value={inputQuery}
+                onChange={(e) => setInputQuery(e.target.value)}
+                onKeyDown={(e) => e.key === 'Enter' && sendQuery()}
+                className="flex-1 border border-slate-300 rounded-xl px-3.5 py-2 text-xs text-slate-800 focus:outline-hidden focus:ring-2 focus:ring-indigo-500"
+              />
+              <button
+                onClick={() => sendQuery()}
+                disabled={loading}
+                className="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-xl text-xs font-bold transition disabled:opacity-50"
+              >
+                Send
+              </button>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    function App() {
+      const [activeTab, setActiveTab] = useState('dashboard');
+      const [isChatOpen, setIsChatOpen] = useState(false);
+
+      return (
+        <div className="min-h-screen bg-slate-50 flex flex-col font-sans">
+          <Navbar activeTab={activeTab} setActiveTab={setActiveTab} openChat={() => setIsChatOpen(true)} />
+          <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            {activeTab === 'dashboard' && <Dashboard setActiveTab={setActiveTab} openChat={() => setIsChatOpen(true)} />}
+            {activeTab === 'faculty' && <FacultyAvailability />}
+            {activeTab === 'resources' && <ClassroomAvailability />}
+            {activeTab === 'timetable' && <TimetableViewer />}
+            {activeTab === 'admin' && <AdminDashboard />}
+          </main>
+          <AIAssistantModal isOpen={isChatOpen} onClose={() => setIsChatOpen(false)} />
+          <footer className="bg-white border-t border-slate-200 py-6 text-center text-xs text-slate-500">
+            © 2026 Vignan's Foundation for Science, Technology and Research (VFSTR) • AIML Department
+          </footer>
+        </div>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+  </script>
+</body>
+</html>

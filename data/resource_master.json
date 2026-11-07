@@ -1,0 +1,290 @@
+[
+  {
+    "id": "162cf51d-b9dd-5d3a-a6fc-a541ad89123a",
+    "code": "619",
+    "name": "Room 619",
+    "resource_type": "CLASSROOM",
+    "capacity": 60,
+    "is_shared": false
+  },
+  {
+    "id": "cc6b6e0b-2901-573c-a3da-49f4de781c43",
+    "code": "615",
+    "name": "Computer Lab 615",
+    "resource_type": "LABORATORY",
+    "capacity": 60,
+    "is_shared": false
+  },
+  {
+    "id": "d7bbe41a-209d-59ef-8ced-d3e5ae7befd7",
+    "code": "607",
+    "name": "Room 607",
+    "resource_type": "CLASSROOM",
+    "capacity": 60,
+    "is_shared": false
+  },
+  {
+    "id": "d60a36f2-444b-5c25-b02e-50c2c112e566",
+    "code": "606",
+    "name": "Computer Lab 606",
+    "resource_type": "LABORATORY",
+    "capacity": 60,
+    "is_shared": false
+  },
+  {
+    "id": "b73a53e1-4d5a-5180-b917-a1162a5b2b4c",
+    "code": "604",
+    "name": "Computer Lab 604",
+    "resource_type": "LABORATORY",
+    "capacity": 60,
+    "is_shared": false
+  },
+  {
+    "id": "5f146575-6185-596c-aac8-1d5e42683813",
+    "code": "605",
+    "name": "Computer Lab 605",
+    "resource_type": "LABORATORY",
+    "capacity": 60,
+    "is_shared": false
+  },
+  {
+    "id": "52f3b578-5aaa-50e5-89e2-6f5775a9c5c9",
+    "code": "218",
+    "name": "Room 218",
+    "resource_type": "CLASSROOM",
+    "capacity": 60,
+    "is_shared": false
+  },
+  {
+    "id": "e30b5bfa-07f2-5192-a7e7-4f78d37f3d2d",
+    "code": "601",
+    "name": "Computer Lab 601",
+    "resource_type": "LABORATORY",
+    "capacity": 60,
+    "is_shared": false
+  },
+  {
+    "id": "10162b66-234b-53c9-8a54-a3463ded660f",
+    "code": "216",
+    "name": "Room 216",
+    "resource_type": "CLASSROOM",
+    "capacity": 60,
+    "is_shared": false
+  },
+  {
+    "id": "4c02d290-c5c2-5e2a-890b-4afa122a9bfa",
+    "code": "514-A",
+    "name": "Room 514-A",
+    "resource_type": "CLASSROOM",
+    "capacity": 60,
+    "is_shared": true
+  },
+  {
+    "id": "082efbea-9683-55f5-93b2-8c951524804f",
+    "code": "616",
+    "name": "Computer Lab 616",
+    "resource_type": "LABORATORY",
+    "capacity": 60,
+    "is_shared": false
+  },
+  {
+    "id": "db47c210-d308-57f3-a790-018edd8296a6",
+    "code": "418",
+    "name": "Room 418",
+    "resource_type": "CLASSROOM",
+    "capacity": 60,
+    "is_shared": false
+  },
+  {
+    "id": "55e63ce7-aa11-50c5-adc5-29947b048450",
+    "code": "618",
+    "name": "Room 618",
+    "resource_type": "CLASSROOM",
+    "capacity": 60,
+    "is_shared": false
+  },
+  {
+    "id": "383280e7-4f66-519d-9fe6-e17cadca237e",
+    "code": "614",
+    "name": "Room 614",
+    "resource_type": "CLASSROOM",
+    "capacity": 60,
+    "is_shared": false
+  },
+  {
+    "id": "9ed27d5d-71df-5d2a-bf26-f0587227e03a",
+    "code": "501",
+    "name": "Room 501",
+    "resource_type": "CLASSROOM",
+    "capacity": 60,
+    "is_shared": true
+  },
+  {
+    "id": "340e930c-cabb-585f-ac57-f17ae282fb7a",
+    "code": "608",
+    "name": "Room 608",
+    "resource_type": "CLASSROOM",
+    "capacity": 60,
+    "is_shared": true
+  },
+  {
+    "id": "b70bef03-79f8-5a9b-916d-8dcd8e5351d5",
+    "code": "219",
+    "name": "Room 219",
+    "resource_type": "CLASSROOM",
+    "capacity": 60,
+    "is_shared": false
+  },
+  {
+    "id": "3aa4018e-acf4-51d4-b20e-cecf6210e931",
+    "code": "611",
+    "name": "Computer Lab 611",
+    "resource_type": "LABORATORY",
+    "capacity": 60,
+    "is_shared": false
+  },
+  {
+    "id": "92a40ce1-6fc0-53f5-abf5-04bb0c51e10c",
+    "code": "617",
+    "name": "Computer Lab 617",
+    "resource_type": "LABORATORY",
+    "capacity": 60,
+    "is_shared": false
+  },
+  {
+    "id": "f9dff65b-dae4-53aa-ac25-e872f35cb7d6",
+    "code": "217",
+    "name": "Room 217",
+    "resource_type": "CLASSROOM",
+    "capacity": 60,
+    "is_shared": false
+  },
+  {
+    "id": "e8351a5c-3965-5d6e-ae5d-92ff7bbaa1de",
+    "code": "215",
+    "name": "Room 215",
+    "resource_type": "CLASSROOM",
+    "capacity": 60,
+    "is_shared": false
+  },
+  {
+    "id": "cf1727ec-7b5b-5837-8342-7e5c93a5a58d",
+    "code": "613",
+    "name": "Room 613",
+    "resource_type": "CLASSROOM",
+    "capacity": 60,
+    "is_shared": false
+  },
+  {
+    "id": "8b564e32-bb44-581e-9c23-8d4df52fd847",
+    "code": "514-B",
+    "name": "Room 514-B",
+    "resource_type": "CLASSROOM",
+    "capacity": 60,
+    "is_shared": true
+  },
+  {
+    "id": "665b555f-108d-55d4-ba95-58cb0b956536",
+    "code": "612",
+    "name": "Computer Lab 612",
+    "resource_type": "LABORATORY",
+    "capacity": 60,
+    "is_shared": false
+  },
+  {
+    "id": "81b81f7a-93b9-5046-a563-d2a5a0fdaf6a",
+    "code": "518",
+    "name": "Room 518",
+    "resource_type": "CLASSROOM",
+    "capacity": 60,
+    "is_shared": true
+  },
+  {
+    "id": "15b6863b-8463-5746-a79a-d1cd2c3ea824",
+    "code": "AFTF-7E",
+    "name": "Room AFTF-7E",
+    "resource_type": "CLASSROOM",
+    "capacity": 60,
+    "is_shared": true
+  },
+  {
+    "id": "ada2792a-b434-501d-b859-953f13eaead4",
+    "code": "514A",
+    "name": "Room 514A",
+    "resource_type": "CLASSROOM",
+    "capacity": 60,
+    "is_shared": false
+  },
+  {
+    "id": "ebfb7527-cad5-5e0e-81c7-b1c354ceee6a",
+    "code": "514B",
+    "name": "Room 514B",
+    "resource_type": "CLASSROOM",
+    "capacity": 60,
+    "is_shared": false
+  },
+  {
+    "id": "30b0a80a-4636-5f46-996e-8ae35482930e",
+    "code": "AFTF-13",
+    "name": "Room AFTF-13",
+    "resource_type": "CLASSROOM",
+    "capacity": 60,
+    "is_shared": true
+  },
+  {
+    "id": "69388579-db4e-538e-95af-016c159141a3",
+    "code": "LAB-1",
+    "name": "Computer Lab LAB-1",
+    "resource_type": "LABORATORY",
+    "capacity": 60,
+    "is_shared": true
+  },
+  {
+    "id": "bac8f931-91f0-570a-b37c-dcc10d97c1ea",
+    "code": "LAB-1(LIB)-2 FLOOR",
+    "name": "Computer Lab LAB-1(LIB)-2 FLOOR",
+    "resource_type": "LABORATORY",
+    "capacity": 60,
+    "is_shared": false
+  },
+  {
+    "id": "7cc10742-3698-5e7d-b382-73db8110eacc",
+    "code": "LAB-1(LIB)",
+    "name": "Computer Lab LAB-1(LIB)",
+    "resource_type": "LABORATORY",
+    "capacity": 60,
+    "is_shared": false
+  },
+  {
+    "id": "71215a7e-708a-5996-952a-a0b9c10f2d9c",
+    "code": "LAB-2(LIB)-2 FLOOR",
+    "name": "Computer Lab LAB-2(LIB)-2 FLOOR",
+    "resource_type": "LABORATORY",
+    "capacity": 60,
+    "is_shared": false
+  },
+  {
+    "id": "959f9d44-523f-5539-93f6-81c63a7b1fbc",
+    "code": "LAB-1 (LIBRARY BLOCK 2ND FLOOR)",
+    "name": "Computer Lab LAB-1 (LIBRARY BLOCK 2ND FLOOR)",
+    "resource_type": "LABORATORY",
+    "capacity": 60,
+    "is_shared": false
+  },
+  {
+    "id": "3bb7b108-b612-5986-9dba-b467810d64ed",
+    "code": "AFTF-14",
+    "name": "Room AFTF-14",
+    "resource_type": "CLASSROOM",
+    "capacity": 60,
+    "is_shared": true
+  },
+  {
+    "id": "f22b62e9-d895-520d-ab58-58db5b8505aa",
+    "code": "/AL/IL",
+    "name": "Room /AL/IL",
+    "resource_type": "CLASSROOM",
+    "capacity": 60,
+    "is_shared": false
+  }
+]
