@@ -37,12 +37,28 @@ from apps.api_views import (
     resolve_timetable_clash_api
 )
 
+from django.conf import settings
+from django.http import HttpResponse
+from django.views.static import serve
+from pathlib import Path
+
+dist_dir = settings.BASE_DIR.parent / 'frontend' / 'dist'
+assets_dir = dist_dir / 'assets'
+
 def index_view(request):
+    dist_index = dist_dir / 'index.html'
+    if dist_index.exists():
+        try:
+            with open(dist_index, 'r', encoding='utf-8') as f:
+                return HttpResponse(f.read(), content_type='text/html')
+        except Exception:
+            pass
     return render(request, 'index.html')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index_view, name='index-app'),
+    path('assets/<path:path>', serve, {'document_root': assets_dir}),
 
     # Metadata & Reference APIs
     path('api/v1/academics/departments/', list_departments, name='list-departments'),

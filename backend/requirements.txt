@@ -8,3 +8,4 @@ redis>=5.0.0
 pytest>=8.0.0
 pytest-django>=4.8.0
 groq>=1.7.0
+gunicorn>=22.0.0

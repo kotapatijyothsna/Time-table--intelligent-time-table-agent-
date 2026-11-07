@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: smart-campus-timetable
+    runtime: python
+    region: singapore
+    plan: free
+    branch: main
+    buildCommand: "npm --prefix frontend install && npm --prefix frontend run build && pip install -r backend/requirements.txt"
+    startCommand: "cd backend && gunicorn config.wsgi:application --bind 0.0.0.0:$PORT"
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
+      - key: GROQ_MODEL
+        value: qwen/qwen3.8-27b
+      - key: PYTHON_VERSION
+        value: 3.11.9
