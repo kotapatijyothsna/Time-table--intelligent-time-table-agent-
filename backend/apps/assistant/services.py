@@ -722,7 +722,13 @@ class AIAssistantService:
         # Category M: Intelligent Keyword Fallback
         # -------------------------------------------------------------
         # Extract meaningful terms to search across faculty, subjects, and rooms
-        tokens = [t for t in re.findall(r'[a-zA-Z]{4,}', prompt_lower) if t not in stop_tokens]
+        COMMON_STOP_TOKENS = {
+    'free', 'today', 'tomorrow', 'class', 'classes', 'schedule', 'hour', 'period',
+    'available', 'busy', 'teaching', 'subject', 'time', 'slot', 'room', 'lab',
+    'who', 'what', 'when', 'which', 'show', 'tell', 'check', 'any', 'find', 'section',
+    'hello', 'help', 'please', 'there', 'some', 'give', 'detail', 'details', 'status'
+}
+        tokens = [t for t in re.findall(r'[a-zA-Z]{4,}', prompt_lower) if t not in COMMON_STOP_TOKENS]
         matched_facs = []
         matched_rooms = []
         matched_subs = []

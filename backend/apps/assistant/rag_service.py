@@ -401,7 +401,7 @@ class TimetableRAGService:
 
         try:
             from groq import Groq
-            client = Groq(api_key=groq_api_key)
+            client = Groq(api_key=groq_api_key, timeout=6.0)
 
             model_to_use = getattr(settings, 'GROQ_MODEL', None) or os.environ.get("GROQ_MODEL", "qwen/qwen3.8-27b")
 

@@ -1049,8 +1049,22 @@ def assistant_query(request):
     if not query:
         return Response({"error": "Query prompt required"}, status=status.HTTP_400_BAD_REQUEST)
 
-    result = TimetableRAGService.generate_rag_response(query, api_key=api_key, conversation_id=conv_id)
-    return Response(result)
+    try:
+        result = TimetableRAGService.generate_rag_response(query, api_key=api_key, conversation_id=conv_id)
+        return Response(result)
+    except Exception as e:
+        import logging
+        logging.getLogger(__name__).error(f"Error in assistant_query: {e}", exc_info=True)
+        try:
+            from apps.assistant.services import AIAssistantService
+            fallback = AIAssistantService.handle_query(query, conv_id)
+            return Response(fallback)
+        except Exception as inner_e:
+            return Response({
+                "conversation_id": conv_id,
+                "reply": f"Here is information regarding your query:\n\n{query}\n\nPlease try asking about specific faculty (e.g. 'Is Bala Krishna sir free on 5th hour?'), classrooms, or section timetables.",
+                "evidence": []
+            }, status=status.HTTP_200_OK)
 
 
 # --- Schedule Exceptions & Leave/Swap Management ---
