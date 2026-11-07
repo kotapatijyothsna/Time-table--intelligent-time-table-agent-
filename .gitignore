@@ -6,4 +6,3 @@ venv/
 *.log
 .vite/
 node_modules/
-dist/

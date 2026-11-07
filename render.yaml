@@ -5,7 +5,7 @@ services:
     region: singapore
     plan: free
     branch: main
-    buildCommand: "npm --prefix frontend install && npm --prefix frontend run build && pip install -r backend/requirements.txt"
+    buildCommand: "pip install -r backend/requirements.txt"
     startCommand: "cd backend && gunicorn config.wsgi:application --bind 0.0.0.0:$PORT"
     envVars:
       - key: GROQ_API_KEY
